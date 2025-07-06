@@ -1,22 +1,32 @@
+# Refactored version of dump.py focusing on modularization
+
 import json
 from pptx import Presentation
 from pptx.enum.shapes import MSO_SHAPE_TYPE
-from pptx.enum.dml import MSO_LINE_DASH_STYLE
+from pptx.enum.text import PP_ALIGN
+from pptx.oxml.ns import qn
+from pptx.dml.fill import _NoFill
+
+SHAPE_TYPES_WITH_FILL_LINE = {1, 8, 13, 17}
+TAG_MAP = {
+    "left": "lnL",
+    "right": "lnR",
+    "top": "lnT",
+    "bottom": "lnB",
+    "diagonal_down": "lnTlToBr",
+    "diagonal_up": "lnBlToTr"
+}
 
 def safe_deep_dump(obj, max_depth=2, _visited=None, _depth=0):
     if _visited is None:
         _visited = set()
-
     if id(obj) in _visited:
         return "[Circular Reference]"
     _visited.add(id(obj))
-
     if isinstance(obj, (str, int, float, bool, type(None))):
         return obj
-
     if _depth >= max_depth:
         return f"<{type(obj).__name__}>"
-
     result = {}
     for attr in dir(obj):
         if attr.startswith("_"):
@@ -30,35 +40,165 @@ def safe_deep_dump(obj, max_depth=2, _visited=None, _depth=0):
             result[attr] = f"[Error: {e}]"
     return result
 
-def get_rgb_safe(color_obj):
-    """Trích màu RGB an toàn từ color object (font.color hoặc fill.fore_color)."""
+def get_rgb_safe(color_obj, context="(unknown context)"):
     if color_obj is None:
         return "None"
-
     try:
-        if color_obj.rgb:  # Đây là kiểu RGBColor → an toàn
-            return str(color_obj.rgb)
+        if color_obj.rgb:
+            return f"RGB:{color_obj.rgb}"
     except AttributeError:
         pass
-
     try:
-        if color_obj.type == 2 and color_obj.theme_color:
-            return f"Theme:{color_obj.theme_color.name}"
+        if color_obj.theme_color:
+            theme_name = color_obj.theme_color.name
+            raise ValueError(f"{context} – sử dụng màu theo theme ({theme_name}) mà không có RGB cụ thể.")
     except:
         pass
+    raise ValueError(f"{context} – không xác định được màu fill/font.")
 
-    return "Theme color or undefined"
+def extract_shape_border_info(shape, context):
+    if not hasattr(shape, "line") or shape.line is None:
+        raise ValueError(f"{context} không có shape.line")
+    line = shape.line
+    line_fill = line.fill
+    no_outline = line_fill is None or line_fill.type is None or isinstance(line.fill._fill, _NoFill)
+    if not no_outline:
+        try:
+            if line_fill.fore_color is None or line_fill.fore_color.rgb is None:
+                no_outline = True
+        except AttributeError:
+            no_outline = True
+    if no_outline:
+        return {"color": "None", "width_pt": "Default", "style": "None"}
+    return {
+        "color": get_rgb_safe(line.color, context=f"{context} border.color"),
+        "width_pt": round(line.width / 12700, 2) if line.width else "Default",
+        "style": str(line.dash_style) if line.dash_style else "None"
+    }
 
-def extract_slide_data(pptx_path, for_txt=False):
+def extract_run_info(run, context):
+    font = run.font
+    font_size_pt = font.size.pt if font.size else None
+    if font_size_pt is None:
+        raise ValueError(f"{context} thiếu font size rõ ràng")
+    font_name = font.name or (font._element.get("typeface") if font._element is not None else None)
+    if font_name is None:
+        raise ValueError(f"{context} thiếu font name rõ ràng")
+    return {
+        "text": run.text,
+        "font_name": font_name,
+        "font_size": font_size_pt,
+        "bold": font.bold,
+        "italic": font.italic,
+        "font_color": get_rgb_safe(font.color, context=context)
+    }
+
+def extract_paragraph_info(paragraph, context):
+    alignment_val = paragraph.alignment or PP_ALIGN.LEFT
+    para_info = {
+        "alignment": alignment_val,
+        "runs": []
+    }
+    for run_idx, run in enumerate(paragraph.runs):
+        run_ctx = f"{context} - Run {run_idx+1}"
+        run_info = extract_run_info(run, run_ctx)
+        run_info["run_index"] = run_idx + 1
+        para_info["runs"].append(run_info)
+    return para_info
+
+def extract_cell_text_detail(cell, slide_idx, shape_idx, r_idx, c_idx):
+    context = f"[Slide {slide_idx+1} - Shape {shape_idx+1} - Cell ({r_idx+1},{c_idx+1})]"
+    detail = []
+    for p_idx, para in enumerate(cell.text_frame.paragraphs):
+        para_ctx = f"{context} - Para {p_idx+1}"
+        para_info = extract_paragraph_info(para, para_ctx)
+        para_info["paragraph_index"] = p_idx + 1
+        detail.append(para_info)
+    return detail
+
+def extract_cell_border(cell, slide_idx, shape_idx, r_idx, c_idx):
+    tcPr = cell._tc.tcPr
+    borders = {}
+    for side, tag in TAG_MAP.items():
+        ln = tcPr.find(qn(f'a:{tag}'))
+        border_info = {"color": "None", "width": "Default", "dash_type": "None"}
+        if ln is not None:
+            solid_fill = ln.find(qn("a:solidFill"))
+            if solid_fill is not None:
+                srgb = solid_fill.find(qn("a:srgbClr"))
+                if srgb is not None:
+                    hex_val = srgb.attrib.get("val")
+                    border_info["color"] = f"RGB:{hex_val.upper()}"
+            if "w" in ln.attrib:
+                try:
+                    border_info["width"] = round(int(ln.attrib["w"]) / 12700, 2)
+                except:
+                    border_info["width"] = "Error"
+            prst_dash = ln.find(qn("a:prstDash"))
+            if prst_dash is not None:
+                border_info["dash_type"] = prst_dash.attrib.get("val", "None")
+        borders[side] = border_info
+    return borders
+
+def extract_text_from_shape(shape, slide_idx, shape_idx, for_txt):
+    tf = shape.text_frame
+    paragraphs = []
+    for p_idx, para in enumerate(tf.paragraphs):
+        context = f"[Slide {slide_idx+1} - Shape {shape_idx+1} - Paragraph {p_idx+1}]"
+        para_info = extract_paragraph_info(para, context)
+        para_info["paragraph_index"] = p_idx + 1
+        if for_txt and "text" in para:
+            para_info["text"] = para.text.strip().replace("\n", "\\n")
+        else:
+            para_info["text"] = para.text.strip()
+        paragraphs.append(para_info)
+    return paragraphs
+
+def extract_table_from_shape(shape, slide_idx, shape_idx, for_txt):
+    tbl = shape.table
+    num_rows = len(tbl.rows)
+    num_cols = len(tbl.columns)
+    table_data = [["" for _ in range(num_cols)] for _ in range(num_rows)]
+    table_data_detail = [[None for _ in range(num_cols)] for _ in range(num_rows)]
+    cell_fills = [["None" for _ in range(num_cols)] for _ in range(num_rows)]
+    merge_info = []
+    cell_borders = [[None for _ in range(num_cols)] for _ in range(num_rows)]
+
+    for r_idx in range(num_rows):
+        for c_idx in range(num_cols):
+            cell = tbl.cell(r_idx, c_idx)
+            if cell.is_spanned and not cell.is_merge_origin:
+                continue
+            table_data[r_idx][c_idx] = cell.text.strip().replace("\n", "\\n") if for_txt else cell.text.strip()
+            table_data_detail[r_idx][c_idx] = extract_cell_text_detail(cell, slide_idx, shape_idx, r_idx, c_idx)
+            if not hasattr(cell, "fill") or cell.fill is None or not cell.fill.fore_color:
+                raise ValueError(f"[Slide {slide_idx+1} - Shape {shape_idx+1} - Cell ({r_idx+1},{c_idx+1})] thiếu fill")
+            cell_fills[r_idx][c_idx] = get_rgb_safe(cell.fill.fore_color, context=f"[Slide {slide_idx+1} - Shape {shape_idx+1} - Cell ({r_idx+1},{c_idx+1})]")
+            if cell.span_height > 1 or cell.span_width > 1:
+                merge_info.append({"row": r_idx, "col": c_idx, "row_span": cell.span_height, "col_span": cell.span_width})
+            cell_borders[r_idx][c_idx] = extract_cell_border(cell, slide_idx, shape_idx, r_idx, c_idx)
+
+    col_widths = [col.width for col in tbl.columns]
+    row_heights = [row.height for row in tbl.rows]
+
+    return {
+        "rows": num_rows,
+        "cols": num_cols,
+        "data": table_data,
+        "data_detail": table_data_detail,
+        "cell_fills": cell_fills,
+        "merge_info": merge_info,
+        "col_widths": col_widths,
+        "row_heights": row_heights,
+        "cell_borders": cell_borders
+    }
+
+def extract_slide_data(pptx_path, for_txt=False, is_debug=False):
     prs = Presentation(pptx_path)
     slides = []
 
     for i, slide in enumerate(prs.slides):
-        slide_info = {
-            "slide_number": i + 1,
-            "shapes": []
-        }
-
+        slide_info = {"slide_number": i + 1, "shapes": []}
         for j, shape in enumerate(slide.shapes):
             shape_info = {
                 "shape_index": j + 1,
@@ -74,76 +214,23 @@ def extract_slide_data(pptx_path, for_txt=False):
                 "text": [],
                 "table": None
             }
-            shape_info["raw_attributes"] = safe_deep_dump(shape, max_depth=2)
-            # Fill color
-            try:
-                if shape.fill and shape.fill.fore_color:
-                    shape_info["background_fill_color"] = get_rgb_safe(shape.fill.fore_color)
-            except:
-                shape_info["background_fill_color"] = "Error reading"
-
-            # Border
-            try:
-                if shape.line:
-                    line = shape.line
-                    shape_info["border"] = {
-                        "color": get_rgb_safe(line.color),
-                        "width_pt": round(line.width / 12700, 2) if line.width else "Default",
-                        "style": str(line.dash_style) if line.dash_style else "None"
-                    }
-            except:
-                shape_info["border"] = {"error": "Error reading"}
-
-            # Text
+            if is_debug:
+                shape_info["raw_attributes"] = safe_deep_dump(shape, max_depth=2)
+            shape_type = shape.shape_type
+            has_visual_style = shape_type in SHAPE_TYPES_WITH_FILL_LINE
+            if has_visual_style and hasattr(shape, "fill") and shape.fill and shape.fill.fore_color:
+                shape_info["background_fill_color"] = get_rgb_safe(shape.fill.fore_color, context=f"[Slide {i+1} - Shape {j+1}] fill")
+                shape_info["border"] = extract_shape_border_info(shape, context=f"[Slide {i+1} - Shape {j+1}]")
             if shape.has_text_frame:
-                tf = shape.text_frame
-                for p_idx, para in enumerate(tf.paragraphs):
-                    para_info = {
-                        "paragraph_index": p_idx + 1,
-                        "text": para.text.strip().replace("\n", "\\n") if for_txt else para.text.strip(),
-                        "runs": []
-                    }
-                    for run_idx, run in enumerate(para.runs):
-                        font = run.font
-                        run_info = {
-                            "run_index": run_idx + 1,
-                            "text": run.text.replace("\n", "\\n") if for_txt else run.text,
-                            "font_name": font.name,
-                            "font_size": font.size.pt if font.size else None,
-                            "bold": font.bold,
-                            "italic": font.italic,
-                            "font_color": get_rgb_safe(font.color)
-                        }
-                        para_info["runs"].append(run_info)
-                    shape_info["text"].append(para_info)
-
-            # Table
+                shape_info["text"] = extract_text_from_shape(shape, i, j, for_txt)
             if shape.shape_type == MSO_SHAPE_TYPE.TABLE:
-                try:
-                    tbl = shape.table
-                    table_data = []
-                    for row in tbl.rows:
-                        row_data = [cell.text.strip().replace("\n", "\\n") if for_txt else cell.text.strip() for cell in row.cells]
-                        table_data.append(row_data)
-                    shape_info["table"] = {
-                        "rows": len(tbl.rows),
-                        "cols": len(tbl.columns),
-                        "data": table_data
-                    }
-                except Exception as e:
-                    shape_info["table"] = {"error": str(e)}
-
+                shape_info["table"] = extract_table_from_shape(shape, i, j, for_txt)
             slide_info["shapes"].append(shape_info)
         slides.append(slide_info)
-    result = {
-        "slide_width": prs.slide_width,
-        "slide_height": prs.slide_height,
-        "slides": slides
-    }
-    return result
+
+    return {"slide_width": prs.slide_width, "slide_height": prs.slide_height, "slides": slides}
 
 
-# ✅ Dump ra TXT dễ đọc
 def describe_pptx_to_txt(pptx_path, output_txt):
     slides_data = extract_slide_data(pptx_path, for_txt=True)
     slides = slides_data["slides"]
@@ -159,17 +246,13 @@ def describe_pptx_to_txt(pptx_path, output_txt):
             lines.append(f"    - Background fill color: {shape['background_fill_color']}")
 
             border = shape.get("border", {})
-            if "error" in border:
-                lines.append("    - Border info: [error reading]")
-            else:
-                lines.append(f"    - Border color: {border['color']}")
-                lines.append(f"    - Border width: {border['width_pt']} pt")
-                lines.append(f"    - Border style: {border['style']}")
+            lines.append(f"    - Border color: {border.get('color', 'None')}")
+            lines.append(f"    - Border width: {border.get('width_pt', 'Default')} pt")
+            lines.append(f"    - Border style: {border.get('style', 'None')}")
 
-            # Text
-            for para in shape["text"]:
-                lines.append(f"    - Paragraph {para['paragraph_index']}: \"{para['text']}\"")
-                for run in para["runs"]:
+            for para in shape.get("text", []):
+                lines.append(f"    - Paragraph {para['paragraph_index']}: \"{para.get('text', '')}\"")
+                for run in para.get("runs", []):
                     lines.append(f"      ▸ Run {run['run_index']}: \"{run['text']}\"")
                     lines.append(f"        - Font name: {run['font_name']}")
                     lines.append(f"        - Font size: {run['font_size']}")
@@ -177,23 +260,17 @@ def describe_pptx_to_txt(pptx_path, output_txt):
                     lines.append(f"        - Italic: {run['italic']}")
                     lines.append(f"        - Font color: {run['font_color']}")
 
-            # Table
-            table = shape["table"]
+            table = shape.get("table")
             if table:
-                if "error" in table:
-                    lines.append(f"    - Table content: [error reading] ({table['error']})")
-                else:
-                    lines.append(f"    - Table content ({table['rows']} rows x {table['cols']} cols):")
-                    for r_idx, row in enumerate(table["data"]):
-                        row_text = [f"[{c_idx+1}] {val}" for c_idx, val in enumerate(row)]
-                        lines.append(f"      Row {r_idx+1}: " + " | ".join(row_text))
-        lines.append("")
+                lines.append(f"    - Table content ({table['rows']} rows x {table['cols']} cols):")
+                for r_idx, row in enumerate(table["data"]):
+                    row_text = [f"[{c_idx+1}] {val}" for c_idx, val in enumerate(row)]
+                    lines.append(f"      Row {r_idx+1}: " + " | ".join(row_text))
 
     with open(output_txt, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
     print(f"✅ Đã ghi log TXT vào: {output_txt}")
-
-# ✅ Dump ra JSON
+    
 def describe_pptx_to_json(pptx_path, output_json):
     data = extract_slide_data(pptx_path, for_txt=False)
     with open(output_json, "w", encoding="utf-8") as f:
@@ -202,5 +279,7 @@ def describe_pptx_to_json(pptx_path, output_json):
 
 # Ví dụ sử dụng
 if __name__ == "__main__":
-    #describe_pptx_to_txt("template\\Pre_DOI_Form_05_2024.pptx", "bin\\dump_output.txt")
-    describe_pptx_to_json("template\\Pre_DOI_Form_05_2024.pptx", "bin\\dump_output.json")
+    describe_pptx_to_json(
+        "utest\\test_ppt1.pptx", "bin\\test_ppt1.json")
+    describe_pptx_to_json("bin\\test_ppt1_restored_from_json.pptx",
+                          "bin\\dump_test_ppt1_restored_from_json.json")

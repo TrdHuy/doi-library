@@ -1,12 +1,15 @@
+# Refactored build.py with modular table and text rebuild logic
+
 import json
 from pptx import Presentation
-from pptx.util import Pt
+from pptx.util import Inches, Pt
+from pptx.enum.text import PP_ALIGN
 from pptx.dml.color import RGBColor
 from pptx.enum.dml import MSO_THEME_COLOR
+from pptx.oxml.xmlchemy import OxmlElement
 
 EMU = 1  # đơn vị đã là EMU trong JSON dump
 
-from pptx.enum.dml import MSO_THEME_COLOR
 
 def apply_shape_format(shape_obj, raw_attrs):
     # Fill
@@ -16,7 +19,8 @@ def apply_shape_format(shape_obj, raw_attrs):
             r, g, b = map(int, fill_rgb.strip("RGBColor() ").split(","))
             shape_obj.fill.solid()
             shape_obj.fill.fore_color.rgb = RGBColor(r, g, b)
-    except: pass
+    except:
+        pass
 
     # Border
     try:
@@ -28,7 +32,8 @@ def apply_shape_format(shape_obj, raw_attrs):
         width = line_info.get("width")
         if width and isinstance(width, (int, float)):
             shape_obj.line.width = Pt(width)
-    except: pass
+    except:
+        pass
 
     # TextFrame
     try:
@@ -40,147 +45,252 @@ def apply_shape_format(shape_obj, raw_attrs):
         tf.margin_right = tf_attrs.get("margin_right", tf.margin_right)
         tf.auto_size = tf_attrs.get("auto_size", tf.auto_size)
         tf.word_wrap = tf_attrs.get("word_wrap", tf.word_wrap)
-    except: pass
-
-def parse_color(json_color_str):
-    if not json_color_str or "None" in json_color_str:
-        return {"type": "none"}
-
-    if json_color_str.startswith("RGBColor"):
-        try:
-            r, g, b = map(int, json_color_str.strip("RGBColor() ").split(","))
-            return {"type": "rgb", "value": RGBColor(r, g, b)}
-        except:
-            return {"type": "error"}
-
-    if json_color_str.startswith("Theme:"):
-        theme_str = json_color_str.replace("Theme:", "").strip().upper()
-        try:
-            theme_enum = MSO_THEME_COLOR.__members__.get(theme_str)
-            if theme_enum:
-                return {"type": "theme", "value": theme_enum}
-        except:
-            pass
-
-    # Trường hợp hex như "002060"
-    try:
-        if len(json_color_str) == 6:
-            r = int(json_color_str[0:2], 16)
-            g = int(json_color_str[2:4], 16)
-            b = int(json_color_str[4:6], 16)
-            return {"type": "rgb", "value": RGBColor(r, g, b)}
     except:
         pass
 
+
+def apply_cell_border(cell, border_info):
+    tcPr = cell._tc.get_or_add_tcPr()
+    side_map = {
+        "left": "a:lnL",
+        "right": "a:lnR",
+        "top": "a:lnT",
+        "bottom": "a:lnB",
+        "tl2br": "a:lnTlToBr",
+        "bl2tr": "a:lnBlToTr"
+    }
+
+    for side, tag in side_map.items():
+        if side not in border_info:
+            continue
+
+        side_border = border_info[side]
+        color_str = side_border.get("color")
+        width = side_border.get("width")
+        dash_style = side_border.get("dash_style")
+
+        ln = OxmlElement(tag)
+        if width and isinstance(width, (int, float)):
+            ln.set("w", str(int(width * 12700)))  # convert pt to EMU
+
+        # Dash style
+        if dash_style and dash_style.lower() != "none":
+            prstDash = OxmlElement("a:prstDash")
+            prstDash.set("val", dash_style)
+            ln.append(prstDash)
+
+        # Color
+        color_info = parse_color(color_str)
+        if color_info["type"] == "rgb":
+            solidFill = OxmlElement("a:solidFill")
+            srgbClr = OxmlElement("a:srgbClr")
+            rgb_val = color_info["value"]
+            srgbClr.set(
+                "val", f"{rgb_val[0]:02X}{rgb_val[1]:02X}{rgb_val[2]:02X}")
+            solidFill.append(srgbClr)
+            ln.append(solidFill)
+        elif color_info["type"] == "theme":
+            solidFill = OxmlElement("a:solidFill")
+            schemeClr = OxmlElement("a:schemeClr")
+            schemeClr.set("val", color_info["value"].name.lower())
+            solidFill.append(schemeClr)
+            ln.append(solidFill)
+
+        tcPr.append(ln)
+
+
+def parse_color(color_str):
+    if color_str is None or color_str == "None":
+        return {"type": "none"}
+    if color_str.startswith("RGB:"):
+        hex_str = color_str[4:].strip()
+        return {
+            "type": "rgb",
+            "value": RGBColor(int(hex_str[0:2], 16), int(hex_str[2:4], 16), int(hex_str[4:6], 16))
+        }
+    if color_str.startswith("Theme:"):
+        theme_name = color_str[6:].strip()
+        return {
+            "type": "theme",
+            "value": getattr(MSO_THEME_COLOR, theme_name, None)
+        }
     return {"type": "unknown"}
 
-def parse_rgb_color(color_str):
-    """Chuyển chuỗi màu (hex hoặc RGBColor) thành RGBColor(r, g, b) hoặc None"""
-    if not color_str or "undefined" in color_str.lower():
-        return None
-    try:
-        if color_str.startswith("RGBColor"):
-            # RGBColor(0, 0, 0)
-            rgb_str = color_str.strip("RGBColor() ")
-            r, g, b = map(int, rgb_str.split(","))
-            return RGBColor(r, g, b)
-        else:
-            # Hex dạng "002060"
-            color_str = color_str.strip().lstrip("#")
-            if len(color_str) == 6:
-                r = int(color_str[0:2], 16)
-                g = int(color_str[2:4], 16)
-                b = int(color_str[4:6], 16)
-                return RGBColor(r, g, b)
-    except:
-        return None
 
-def build_pptx_from_json(json_path, output_pptx):
+def apply_fill_color(obj, color_str):
+    if color_str in [None, "None"]:
+        return
+    color_info = parse_color(color_str)
+    if color_info["type"] == "rgb":
+        obj.fill.solid()
+        obj.fill.fore_color.rgb = color_info["value"]
+    elif color_info["type"] == "theme":
+        obj.fill.solid()
+        obj.fill.fore_color.theme_color = color_info["value"]
+
+
+def apply_border(shape_obj, border_dict):
+    if not hasattr(shape_obj, "line") or not border_dict:
+        return
+    line = shape_obj.line
+    color_info = parse_color(border_dict.get("color"))
+    if color_info["type"] == "rgb":
+        line.fill.solid()
+        line.color.rgb = color_info["value"]
+    elif color_info["type"] == "theme":
+        line.fill.solid()
+        line.color.theme_color = color_info["value"]
+    elif color_info["type"] == "none":
+        line.fill.background()
+
+    if border_dict.get("width_pt") not in [None, "Default"]:
+        try:
+            line.width = Pt(float(border_dict.get("width_pt")))
+        except:
+            pass
+
+
+def apply_run(run, run_data):
+    run.text = run_data.get("text", "")
+    font = run.font
+    if run_data.get("font_name"):
+        font.name = run_data["font_name"]
+        if font._element is not None:
+            font._element.set("typeface", run_data["font_name"])
+    if run_data.get("font_size"):
+        font.size = Pt(run_data["font_size"])
+    font.bold = run_data.get("bold", False)
+    font.italic = run_data.get("italic", False)
+    color_info = parse_color(run_data.get("font_color"))
+    if color_info["type"] == "rgb":
+        font.color.rgb = color_info["value"]
+    elif color_info["type"] == "theme":
+        font.color.theme_color = color_info["value"]
+
+
+def apply_paragraph(p, para_data):
+    p.alignment = PP_ALIGN(para_data.get("alignment", PP_ALIGN.LEFT))
+    p.font.bold = False
+    p.font.italic = False
+    for run_data in para_data.get("runs", []):
+        run = p.add_run()
+        apply_run(run, run_data)
+
+
+def apply_text_detail(text_frame, detail):
+    text_frame.clear()
+    for para_data in detail:
+        if para_data is None:
+            continue
+        if len(text_frame.paragraphs) == 0:
+            p = text_frame.add_paragraph()
+        elif len(text_frame.paragraphs) == 1 and len(text_frame.paragraphs[0].runs) == 0:
+            p = text_frame.paragraphs[0]
+        else:
+            p = text_frame.add_paragraph()
+        apply_paragraph(p, para_data)
+
+
+def rebuild_table(shape_data, slide):
+    tbl_info = shape_data["table"]
+    rows, cols = tbl_info["rows"], tbl_info["cols"]
+    x, y, w, h = shape_data["position"].values()
+    shape = slide.shapes.add_table(rows, cols, x, y, w, h)
+    tbl = shape.table
+
+    # Set col widths
+    col_widths = tbl_info.get("col_widths", [])
+    for c in range(min(cols, len(col_widths))):
+        tbl.columns[c].width = col_widths[c]
+
+    # Set row heights
+    row_heights = tbl_info.get("row_heights", [])
+    for r in range(min(rows, len(row_heights))):
+        tbl.rows[r].height = row_heights[r]
+    shape.width = w
+    shape.height = h
+    
+    # Merge cells
+    merged_cells = set()
+    for merge in tbl_info.get("merge_info", []):
+        r, c = merge["row"], merge["col"]
+        row_span = merge.get("row_span", 1)
+        col_span = merge.get("col_span", 1)
+        target = tbl.cell(r + row_span - 1, c + col_span - 1)
+        tbl.cell(r, c).merge(target)
+        for i in range(r, r + row_span):
+            for j in range(c, c + col_span):
+                if (i, j) != (r, c):
+                    merged_cells.add((i, j))
+
+    # Fill cell data
+    for r in range(rows):
+        for c in range(cols):
+            if (r, c) in merged_cells:
+                continue
+            cell = tbl.cell(r, c)
+            cell.text_frame.word_wrap = True
+
+            # Border
+            border_info = tbl_info.get(
+                "cell_borders", [[None]*cols]*rows)[r][c]
+            if border_info:
+                apply_cell_border(cell, border_info)
+
+            # Text
+            detail = tbl_info.get("data_detail", [[[]]*cols]*rows)
+            if r < len(detail) and c < len(detail[r]):
+                apply_text_detail(cell.text_frame, detail[r][c])
+
+            # Fill
+            fills = tbl_info.get("cell_fills", [["None"]*cols]*rows)
+            if r < len(fills) and c < len(fills[r]):
+                apply_fill_color(cell, fills[r][c])
+
+    return shape
+
+
+def rebuild_textbox(shape_data, slide):
+    x, y, w, h = shape_data["position"].values()
+    shape_type = shape_data.get("type", -1)
+    if shape_type == 1:
+        shape = slide.shapes.add_shape(
+            autoshape_type_id=shape_data.get(
+                "raw_attributes", {}).get("auto_shape_type", 1),
+            left=x, top=y, width=w, height=h
+        )
+    else:
+        shape = slide.shapes.add_textbox(x, y, w, h)
+    tf = shape.text_frame
+    apply_text_detail(tf, shape_data.get("text", []))
+    return shape
+
+
+def build_pptx_from_json(json_path, output_path):
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     prs = Presentation()
-    prs.slide_width = data.get("slide_width", prs.slide_width)
-    prs.slide_height = data.get("slide_height", prs.slide_height)
     blank_layout = prs.slide_layouts[6]
+    prs.slide_width = data["slide_width"]
+    prs.slide_height = data["slide_height"]
 
     for slide_data in data["slides"]:
         slide = prs.slides.add_slide(blank_layout)
-        #if slide_data["slide_number"] != 2: # For debug
-         #   continue
-
         for shape_data in slide_data["shapes"]:
-            pos = shape_data["position"]
-            left, top, width, height = pos["x"], pos["y"], pos["width"], pos["height"]
-            shape_type = shape_data.get("type", -1)
-            bg_color = parse_rgb_color(shape_data.get("background_fill_color"))
+            if "table" in shape_data and shape_data["table"]:
+                shape = rebuild_table(shape_data, slide)
+            elif "text" in shape_data and shape_data["text"]:
+                shape = rebuild_textbox(shape_data, slide)
+            else:
+                continue
+            #apply_shape_format(shape, shape_data.get("raw_attributes", {}))
+            apply_fill_color(shape, shape_data.get("background_fill_color"))
+            apply_border(shape, shape_data.get("border"))
 
-            shape_obj = None
+    prs.save(output_path)
+    print(f"✅ PPTX đã được tạo tại: {output_path}")
 
-            # TABLE
-            if shape_type == 19 and shape_data.get("table") and "data" in shape_data["table"]:
-                tbl_data = shape_data["table"]["data"]
-                rows, cols = len(tbl_data), len(tbl_data[0])
-                shape_obj = slide.shapes.add_table(rows, cols, left, top, width, height)
-                tbl = shape_obj.table
-                for r in range(rows):
-                    for c in range(cols):
-                        tbl.cell(r, c).text = tbl_data[r][c]
-
-            # TEXTBOX
-            elif shape_data.get("text"):
-                shape_obj = slide.shapes.add_textbox(left, top, width, height)
-                tf = shape_obj.text_frame
-                tf.clear()
-                for para_data in shape_data["text"]:
-                    p = tf.add_paragraph()
-                    for run_data in para_data["runs"]:
-                        r = p.add_run()
-                        r.text = run_data["text"]
-
-                        font = r.font
-                        if run_data.get("font_name"):
-                            font.name = run_data["font_name"]
-                        if run_data.get("font_size"):
-                            font.size = Pt(run_data["font_size"])
-                        if run_data.get("bold") is not None:
-                            font.bold = run_data["bold"]
-                        if run_data.get("italic") is not None:
-                            font.italic = run_data["italic"]
-                        color_info = parse_color(run_data.get("font_color"))
-                        if color_info["type"] == "rgb":
-                            font.color.rgb = color_info["value"]
-                        elif color_info["type"] == "theme":
-                            font.color.theme_color = color_info["value"]
-
-            if not shape_obj:
-                continue  # không tạo shape nếu không xử lý được
-            
-            apply_shape_format(shape_obj, shape_data.get("raw_attributes", {}))
-            # Áp dụng màu nền (background_fill_color)
-            if bg_color:
-                try:
-                    shape_obj.fill.solid()
-                    shape_obj.fill.fore_color.rgb = bg_color
-                except:
-                    pass
-
-            # Áp dụng border nếu có
-            border = shape_data.get("border", {})
-            border_color = parse_rgb_color(border.get("color"))
-            if border_color:
-                try:
-                    shape_obj.line.color.rgb = border_color
-                except:
-                    pass
-            if border.get("width_pt") not in [None, "Default"]:
-                try:
-                    shape_obj.line.width = Pt(float(border["width_pt"]))
-                except:
-                    pass
-
-    prs.save(output_pptx)
-    print(f"✅ Đã phục hồi PowerPoint: {output_pptx}")
 
 if __name__ == "__main__":
-    build_pptx_from_json("bin/dump_output.json", "bin/restored_from_json.pptx")
+    build_pptx_from_json("bin/test_ppt1.json", "bin/test_ppt1_restored_from_json.pptx")

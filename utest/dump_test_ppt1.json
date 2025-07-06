@@ -1,0 +1,1324 @@
+{
+  "slide_width": 12192000,
+  "slide_height": 6858000,
+  "slides": [
+    {
+      "slide_number": 1,
+      "shapes": [
+        {
+          "shape_index": 1,
+          "type": 1,
+          "position": {
+            "x": 0,
+            "y": 2384981,
+            "width": 12192000,
+            "height": 2149312
+          },
+          "background_fill_color": "RGB:FF0000",
+          "border": {
+            "color": "RGB:271C44",
+            "width_pt": 3.0,
+            "style": "None"
+          },
+          "text": [
+            {
+              "alignment": 2,
+              "runs": [
+                {
+                  "text": "A method to do something",
+                  "font_name": "Calibri",
+                  "font_size": 36.0,
+                  "bold": true,
+                  "italic": null,
+                  "font_color": "RGB:FFFFFF",
+                  "run_index": 1
+                }
+              ],
+              "paragraph_index": 1,
+              "text": "A method to do something"
+            }
+          ],
+          "table": null,
+          "raw_attributes": {
+            "adjustments": {},
+            "auto_shape_type": 1,
+            "click_action": {
+              "action": 0,
+              "hyperlink": "<Hyperlink>",
+              "part": "<SlidePart>",
+              "target_slide": null
+            },
+            "element": {
+              "attrib": "<_Attrib>",
+              "base": "[Circular Reference]",
+              "cx": 12192000,
+              "cy": 2149312,
+              "flipH": false,
+              "flipV": "[Circular Reference]",
+              "has_custom_geometry": "[Circular Reference]",
+              "has_ph_elm": "[Circular Reference]",
+              "is_autoshape": true,
+              "is_textbox": "[Circular Reference]",
+              "ln": "<CT_LineProperties>",
+              "nsmap": "<dict>",
+              "nvSpPr": "[Circular Reference]",
+              "ph": "[Circular Reference]",
+              "ph_idx": "[Error: not a placeholder shape]",
+              "ph_orient": "[Error: not a placeholder shape]",
+              "ph_sz": "[Error: not a placeholder shape]",
+              "ph_type": "[Error: not a placeholder shape]",
+              "prefix": "p",
+              "prst": "[Circular Reference]",
+              "prstGeom": "<CT_PresetGeometry2D>",
+              "rot": 0.0,
+              "shape_id": 4,
+              "shape_name": "Rectangle 3",
+              "sourceline": 2,
+              "spPr": "<CT_ShapeProperties>",
+              "tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}sp",
+              "tail": "[Circular Reference]",
+              "text": "[Circular Reference]",
+              "txBody": "[Circular Reference]",
+              "x": 0,
+              "xfrm": "[Circular Reference]",
+              "xml": "<p:sp xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\" xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\">\n  <p:nvSpPr>\n    <p:cNvPr id=\"4\" name=\"Rectangle 3\">\n      <a:extLst>\n        <a:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\">\n          <a16:creationId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" id=\"{43341D10-8ACA-8719-45D7-35ED9A699805}\"/>\n        </a:ext>\n      </a:extLst>\n    </p:cNvPr>\n    <p:cNvSpPr/>\n    <p:nvPr/>\n  </p:nvSpPr>\n  <p:spPr>\n    <a:xfrm>\n      <a:off x=\"0\" y=\"2384981\"/>\n      <a:ext cx=\"12192000\" cy=\"2149312\"/>\n    </a:xfrm>\n    <a:prstGeom prst=\"rect\">\n      <a:avLst/>\n    </a:prstGeom>\n    <a:solidFill>\n      <a:srgbClr val=\"FF0000\"/>\n    </a:solidFill>\n    <a:ln w=\"38100\">\n      <a:solidFill>\n        <a:srgbClr val=\"271C44\"/>\n      </a:solidFill>\n    </a:ln>\n  </p:spPr>\n  <p:style>\n    <a:lnRef idx=\"2\">\n      <a:schemeClr val=\"accent1\">\n        <a:shade val=\"15000\"/>\n      </a:schemeClr>\n    </a:lnRef>\n    <a:fillRef idx=\"1\">\n      <a:schemeClr val=\"accent1\"/>\n    </a:fillRef>\n    <a:effectRef idx=\"0\">\n      <a:schemeClr val=\"accent1\"/>\n    </a:effectRef>\n    <a:fontRef idx=\"minor\">\n      <a:schemeClr val=\"lt1\"/>\n    </a:fontRef>\n  </p:style>\n  <p:txBody>\n    <a:bodyPr rtlCol=\"0\" anchor=\"ctr\"/>\n    <a:lstStyle/>\n    <a:p>\n      <a:pPr algn=\"ctr\"/>\n      <a:r>\n        <a:rPr lang=\"en-US\" sz=\"3600\" b=\"1\">\n          <a:solidFill>\n            <a:srgbClr val=\"FFFFFF\"/>\n          </a:solidFill>\n          <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n        </a:rPr>\n        <a:t>A method to do something</a:t>\n      </a:r>\n    </a:p>\n  </p:txBody>\n</p:sp>\n",
+              "y": 2384981
+            },
+            "fill": {
+              "back_color": "[Error: fill type _SolidFill has no background color, call .patterned() first]",
+              "fore_color": "<ColorFormat>",
+              "gradient_angle": "[Error: Fill is not of type MSO_FILL_TYPE.GRADIENT]",
+              "gradient_stops": "[Error: Fill is not of type MSO_FILL_TYPE.GRADIENT]",
+              "pattern": "[Error: fill type _SolidFill has no pattern, call .patterned() first]",
+              "type": 1
+            },
+            "has_chart": "[Circular Reference]",
+            "has_table": "[Circular Reference]",
+            "has_text_frame": "[Circular Reference]",
+            "height": 2149312,
+            "is_placeholder": "[Circular Reference]",
+            "left": 0,
+            "line": {
+              "color": "<ColorFormat>",
+              "dash_style": "[Circular Reference]",
+              "fill": "<FillFormat>",
+              "width": 38100
+            },
+            "ln": {
+              "attrib": "[Circular Reference]",
+              "base": "[Circular Reference]",
+              "custDash": "[Circular Reference]",
+              "eg_fillProperties": "<CT_SolidColorFillProperties>",
+              "eg_lineFillProperties": "[Circular Reference]",
+              "gradFill": "[Circular Reference]",
+              "noFill": "[Circular Reference]",
+              "nsmap": "<dict>",
+              "pattFill": "[Circular Reference]",
+              "prefix": "a",
+              "prstDash": "[Circular Reference]",
+              "prstDash_val": "[Circular Reference]",
+              "solidFill": "[Circular Reference]",
+              "sourceline": "[Circular Reference]",
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}ln",
+              "tail": "[Circular Reference]",
+              "text": "[Circular Reference]",
+              "w": 38100,
+              "xml": "<a:ln xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\" w=\"38100\">\n  <a:solidFill>\n    <a:srgbClr val=\"271C44\"/>\n  </a:solidFill>\n</a:ln>\n"
+            },
+            "name": "Rectangle 3",
+            "part": "[Circular Reference]",
+            "placeholder_format": "[Error: shape is not a placeholder]",
+            "rotation": "[Circular Reference]",
+            "shadow": {
+              "inherit": "[Circular Reference]"
+            },
+            "shape_id": "[Circular Reference]",
+            "shape_type": 1,
+            "text": "A method to do something",
+            "text_frame": {
+              "auto_size": "[Circular Reference]",
+              "margin_bottom": 45720,
+              "margin_left": 91440,
+              "margin_right": 91440,
+              "margin_top": 45720,
+              "paragraphs": "<tuple>",
+              "part": "[Circular Reference]",
+              "text": "A method to do something",
+              "vertical_anchor": 3,
+              "word_wrap": "[Circular Reference]"
+            },
+            "top": 2384981,
+            "width": 12192000
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "shapes": [
+        {
+          "shape_index": 1,
+          "type": 19,
+          "position": {
+            "x": 0,
+            "y": 1092200,
+            "width": 12192000,
+            "height": 3497072
+          },
+          "background_fill_color": null,
+          "border": {},
+          "text": [],
+          "table": {
+            "rows": 4,
+            "cols": 5,
+            "data": [
+              [
+                "Data1: \nData2:\nData3",
+                "",
+                "",
+                "Data1:\nData10:\nData100:",
+                ""
+              ],
+              [
+                "ID",
+                "Inventor",
+                "Role",
+                "Contribute rate",
+                ""
+              ],
+              [
+                "1",
+                "Tran Duc Huy",
+                "",
+                "",
+                ""
+              ],
+              [
+                "2",
+                "",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "data_detail": [
+              [
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [
+                      {
+                        "text": "Data1: ",
+                        "font_name": "Calibri",
+                        "font_size": 18.0,
+                        "bold": null,
+                        "italic": null,
+                        "font_color": "RGB:040404",
+                        "run_index": 1
+                      }
+                    ],
+                    "paragraph_index": 1
+                  },
+                  {
+                    "alignment": 1,
+                    "runs": [
+                      {
+                        "text": "Data2:",
+                        "font_name": "Calibri",
+                        "font_size": 18.0,
+                        "bold": null,
+                        "italic": null,
+                        "font_color": "RGB:040404",
+                        "run_index": 1
+                      }
+                    ],
+                    "paragraph_index": 2
+                  },
+                  {
+                    "alignment": 1,
+                    "runs": [
+                      {
+                        "text": "Data3",
+                        "font_name": "Calibri",
+                        "font_size": 18.0,
+                        "bold": null,
+                        "italic": null,
+                        "font_color": "RGB:040404",
+                        "run_index": 1
+                      }
+                    ],
+                    "paragraph_index": 3
+                  }
+                ],
+                null,
+                null,
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [
+                      {
+                        "text": "Data1:",
+                        "font_name": "Calibri",
+                        "font_size": 18.0,
+                        "bold": null,
+                        "italic": null,
+                        "font_color": "RGB:040404",
+                        "run_index": 1
+                      }
+                    ],
+                    "paragraph_index": 1
+                  },
+                  {
+                    "alignment": 1,
+                    "runs": [
+                      {
+                        "text": "Data10:",
+                        "font_name": "Calibri",
+                        "font_size": 18.0,
+                        "bold": null,
+                        "italic": null,
+                        "font_color": "RGB:040404",
+                        "run_index": 1
+                      }
+                    ],
+                    "paragraph_index": 2
+                  },
+                  {
+                    "alignment": 1,
+                    "runs": [
+                      {
+                        "text": "Data100:",
+                        "font_name": "Calibri",
+                        "font_size": 18.0,
+                        "bold": null,
+                        "italic": null,
+                        "font_color": "RGB:040404",
+                        "run_index": 1
+                      }
+                    ],
+                    "paragraph_index": 3
+                  }
+                ],
+                null
+              ],
+              [
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [
+                      {
+                        "text": "ID",
+                        "font_name": "Calibri",
+                        "font_size": 17.9,
+                        "bold": true,
+                        "italic": null,
+                        "font_color": "RGB:040404",
+                        "run_index": 1
+                      }
+                    ],
+                    "paragraph_index": 1
+                  }
+                ],
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [
+                      {
+                        "text": "Inventor",
+                        "font_name": "Calibri",
+                        "font_size": 17.9,
+                        "bold": true,
+                        "italic": null,
+                        "font_color": "RGB:040404",
+                        "run_index": 1
+                      }
+                    ],
+                    "paragraph_index": 1
+                  }
+                ],
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [
+                      {
+                        "text": "Role",
+                        "font_name": "Calibri",
+                        "font_size": 17.9,
+                        "bold": true,
+                        "italic": null,
+                        "font_color": "RGB:040404",
+                        "run_index": 1
+                      }
+                    ],
+                    "paragraph_index": 1
+                  }
+                ],
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [
+                      {
+                        "text": "Contribute rate",
+                        "font_name": "Calibri",
+                        "font_size": 17.9,
+                        "bold": true,
+                        "italic": null,
+                        "font_color": "RGB:040404",
+                        "run_index": 1
+                      }
+                    ],
+                    "paragraph_index": 1
+                  }
+                ],
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [],
+                    "paragraph_index": 1
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [
+                      {
+                        "text": "1",
+                        "font_name": "Calibri",
+                        "font_size": 17.9,
+                        "bold": null,
+                        "italic": null,
+                        "font_color": "RGB:040404",
+                        "run_index": 1
+                      }
+                    ],
+                    "paragraph_index": 1
+                  }
+                ],
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [
+                      {
+                        "text": "Tran Duc Huy",
+                        "font_name": "Calibri",
+                        "font_size": 17.9,
+                        "bold": null,
+                        "italic": null,
+                        "font_color": "RGB:040404",
+                        "run_index": 1
+                      }
+                    ],
+                    "paragraph_index": 1
+                  }
+                ],
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [],
+                    "paragraph_index": 1
+                  }
+                ],
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [],
+                    "paragraph_index": 1
+                  }
+                ],
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [],
+                    "paragraph_index": 1
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [
+                      {
+                        "text": "2",
+                        "font_name": "Calibri",
+                        "font_size": 17.9,
+                        "bold": null,
+                        "italic": null,
+                        "font_color": "RGB:040404",
+                        "run_index": 1
+                      }
+                    ],
+                    "paragraph_index": 1
+                  }
+                ],
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [],
+                    "paragraph_index": 1
+                  }
+                ],
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [],
+                    "paragraph_index": 1
+                  }
+                ],
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [],
+                    "paragraph_index": 1
+                  }
+                ],
+                [
+                  {
+                    "alignment": 1,
+                    "runs": [],
+                    "paragraph_index": 1
+                  }
+                ]
+              ]
+            ],
+            "cell_fills": [
+              [
+                "RGB:D6D16C",
+                "None",
+                "None",
+                "RGB:D6D16C",
+                "None"
+              ],
+              [
+                "RGB:D6D16C",
+                "RGB:D6D16C",
+                "RGB:D6D16C",
+                "RGB:D6D16C",
+                "RGB:D6D16C"
+              ],
+              [
+                "RGB:D6D16C",
+                "RGB:D6D16C",
+                "RGB:D6D16C",
+                "RGB:D6D16C",
+                "RGB:D6D16C"
+              ],
+              [
+                "RGB:D6D16C",
+                "RGB:D6D16C",
+                "RGB:D6D16C",
+                "RGB:D6D16C",
+                "RGB:D6D16C"
+              ]
+            ],
+            "merge_info": [
+              {
+                "row": 0,
+                "col": 0,
+                "row_span": 1,
+                "col_span": 3
+              },
+              {
+                "row": 0,
+                "col": 3,
+                "row_span": 1,
+                "col_span": 2
+              }
+            ],
+            "col_widths": [
+              696686,
+              4180114,
+              2438400,
+              2438400,
+              2438400
+            ],
+            "row_heights": [
+              2306320,
+              462280,
+              292100,
+              292100
+            ],
+            "cell_borders": [
+              [
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null,
+                null,
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:FF0000",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ]
+            ]
+          },
+          "raw_attributes": {
+            "chart": "[Error: shape does not contain a chart]",
+            "chart_part": "[Error: this graphic frame does not contain a chart]",
+            "click_action": {
+              "action": 0,
+              "hyperlink": "<Hyperlink>",
+              "part": "<SlidePart>",
+              "target_slide": null
+            },
+            "element": {
+              "attrib": "<_Attrib>",
+              "base": "[Circular Reference]",
+              "chart": "[Circular Reference]",
+              "chart_rId": "[Circular Reference]",
+              "cx": 12192000,
+              "cy": 3497072,
+              "flipH": false,
+              "flipV": "[Circular Reference]",
+              "graphic": "<CT_GraphicalObject>",
+              "graphicData": "<CT_GraphicalObjectData>",
+              "graphicData_uri": "http://schemas.openxmlformats.org/drawingml/2006/table",
+              "has_oleobj": "[Circular Reference]",
+              "has_ph_elm": "[Circular Reference]",
+              "is_embedded_ole_obj": "[Circular Reference]",
+              "nsmap": "<dict>",
+              "nvGraphicFramePr": "[Circular Reference]",
+              "ph": "[Circular Reference]",
+              "ph_idx": "[Error: not a placeholder shape]",
+              "ph_orient": "[Error: not a placeholder shape]",
+              "ph_sz": "[Error: not a placeholder shape]",
+              "ph_type": "[Error: not a placeholder shape]",
+              "prefix": "p",
+              "rot": 0.0,
+              "shape_id": 2,
+              "shape_name": "Table 1",
+              "sourceline": "[Circular Reference]",
+              "tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}graphicFrame",
+              "tail": "[Circular Reference]",
+              "text": "[Circular Reference]",
+              "txBody": "[Circular Reference]",
+              "x": 0,
+              "xfrm": "<CT_Transform2D>",
+              "xml": "<p:graphicFrame xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\" xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\">\n  <p:nvGraphicFramePr>\n    <p:cNvPr id=\"2\" name=\"Table 1\">\n      <a:extLst>\n        <a:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\">\n          <a16:creationId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" id=\"{5D72783F-7DE6-4B7C-8861-A9FEAC31157A}\"/>\n        </a:ext>\n      </a:extLst>\n    </p:cNvPr>\n    <p:cNvGraphicFramePr>\n      <a:graphicFrameLocks noGrp=\"1\"/>\n    </p:cNvGraphicFramePr>\n    <p:nvPr>\n      <p:extLst>\n        <p:ext uri=\"{D42A27DB-BD31-4B8C-83A1-F6EECF244321}\">\n          <p14:modId xmlns:p14=\"http://schemas.microsoft.com/office/powerpoint/2010/main\" val=\"3592313580\"/>\n        </p:ext>\n      </p:extLst>\n    </p:nvPr>\n  </p:nvGraphicFramePr>\n  <p:xfrm>\n    <a:off x=\"0\" y=\"1092200\"/>\n    <a:ext cx=\"12192000\" cy=\"3497072\"/>\n  </p:xfrm>\n  <a:graphic>\n    <a:graphicData uri=\"http://schemas.openxmlformats.org/drawingml/2006/table\">\n      <a:tbl>\n        <a:tblPr>\n          <a:tableStyleId>{5C22544A-7EE6-4342-B048-85BDC9FD1C3A}</a:tableStyleId>\n        </a:tblPr>\n        <a:tblGrid>\n          <a:gridCol w=\"696686\">\n            <a:extLst>\n              <a:ext uri=\"{9D8B030D-6E8A-4147-A177-3AD203B41FA5}\">\n                <a16:colId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" val=\"157689889\"/>\n              </a:ext>\n            </a:extLst>\n          </a:gridCol>\n          <a:gridCol w=\"4180114\">\n            <a:extLst>\n              <a:ext uri=\"{9D8B030D-6E8A-4147-A177-3AD203B41FA5}\">\n                <a16:colId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" val=\"4016296265\"/>\n              </a:ext>\n            </a:extLst>\n          </a:gridCol>\n          <a:gridCol w=\"2438400\">\n            <a:extLst>\n              <a:ext uri=\"{9D8B030D-6E8A-4147-A177-3AD203B41FA5}\">\n                <a16:colId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" val=\"2549276720\"/>\n              </a:ext>\n            </a:extLst>\n          </a:gridCol>\n          <a:gridCol w=\"2438400\">\n            <a:extLst>\n              <a:ext uri=\"{9D8B030D-6E8A-4147-A177-3AD203B41FA5}\">\n                <a16:colId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" val=\"50746286\"/>\n              </a:ext>\n            </a:extLst>\n          </a:gridCol>\n          <a:gridCol w=\"2438400\">\n            <a:extLst>\n              <a:ext uri=\"{9D8B030D-6E8A-4147-A177-3AD203B41FA5}\">\n                <a16:colId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" val=\"1630403512\"/>\n              </a:ext>\n            </a:extLst>\n          </a:gridCol>\n        </a:tblGrid>\n        <a:tr h=\"2306320\">\n          <a:tc gridSpan=\"3\">\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:r>\n                  <a:rPr lang=\"en-US\" sz=\"1800\" baseline=\"0\">\n                    <a:solidFill>\n                      <a:srgbClr val=\"040404\"/>\n                    </a:solidFill>\n                    <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                  </a:rPr>\n                  <a:t>Data1: </a:t>\n                </a:r>\n              </a:p>\n              <a:p>\n                <a:r>\n                  <a:rPr lang=\"en-US\" sz=\"1800\" baseline=\"0\">\n                    <a:solidFill>\n                      <a:srgbClr val=\"040404\"/>\n                    </a:solidFill>\n                    <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                  </a:rPr>\n                  <a:t>Data2:</a:t>\n                </a:r>\n              </a:p>\n              <a:p>\n                <a:r>\n                  <a:rPr lang=\"en-US\" sz=\"1800\" baseline=\"0\">\n                    <a:solidFill>\n                      <a:srgbClr val=\"040404\"/>\n                    </a:solidFill>\n                    <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                  </a:rPr>\n                  <a:t>Data3</a:t>\n                </a:r>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:tc hMerge=\"1\">\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:endParaRPr lang=\"en-US\"/>\n              </a:p>\n            </a:txBody>\n            <a:tcPr/>\n          </a:tc>\n          <a:tc hMerge=\"1\">\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:endParaRPr lang=\"en-US\"/>\n              </a:p>\n            </a:txBody>\n            <a:tcPr/>\n          </a:tc>\n          <a:tc gridSpan=\"2\">\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:r>\n                  <a:rPr lang=\"en-US\" sz=\"1800\" baseline=\"0\">\n                    <a:solidFill>\n                      <a:srgbClr val=\"040404\"/>\n                    </a:solidFill>\n                    <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                  </a:rPr>\n                  <a:t>Data1:</a:t>\n                </a:r>\n              </a:p>\n              <a:p>\n                <a:r>\n                  <a:rPr lang=\"en-US\" sz=\"1800\" baseline=\"0\">\n                    <a:solidFill>\n                      <a:srgbClr val=\"040404\"/>\n                    </a:solidFill>\n                    <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                  </a:rPr>\n                  <a:t>Data10:</a:t>\n                </a:r>\n              </a:p>\n              <a:p>\n                <a:r>\n                  <a:rPr lang=\"en-US\" sz=\"1800\" baseline=\"0\">\n                    <a:solidFill>\n                      <a:srgbClr val=\"040404\"/>\n                    </a:solidFill>\n                    <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                  </a:rPr>\n                  <a:t>Data100:</a:t>\n                </a:r>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:tc hMerge=\"1\">\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:endParaRPr lang=\"en-US\"/>\n              </a:p>\n            </a:txBody>\n            <a:tcPr/>\n          </a:tc>\n          <a:extLst>\n            <a:ext uri=\"{0D108BD9-81ED-4DB2-BD59-A6C34878D82A}\">\n              <a16:rowId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" val=\"3059830193\"/>\n            </a:ext>\n          </a:extLst>\n        </a:tr>\n        <a:tr h=\"462280\">\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:r>\n                  <a:rPr lang=\"en-US\" sz=\"1790\" b=\"1\" baseline=\"0\">\n                    <a:solidFill>\n                      <a:srgbClr val=\"040404\"/>\n                    </a:solidFill>\n                    <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                  </a:rPr>\n                  <a:t>ID</a:t>\n                </a:r>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:r>\n                  <a:rPr lang=\"en-US\" sz=\"1790\" b=\"1\" baseline=\"0\">\n                    <a:solidFill>\n                      <a:srgbClr val=\"040404\"/>\n                    </a:solidFill>\n                    <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                  </a:rPr>\n                  <a:t>Inventor</a:t>\n                </a:r>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:r>\n                  <a:rPr lang=\"en-US\" sz=\"1790\" b=\"1\" baseline=\"0\">\n                    <a:solidFill>\n                      <a:srgbClr val=\"040404\"/>\n                    </a:solidFill>\n                    <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                  </a:rPr>\n                  <a:t>Role</a:t>\n                </a:r>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:r>\n                  <a:rPr lang=\"en-US\" sz=\"1790\" b=\"1\" baseline=\"0\">\n                    <a:solidFill>\n                      <a:srgbClr val=\"040404\"/>\n                    </a:solidFill>\n                    <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                  </a:rPr>\n                  <a:t>Contribute rate</a:t>\n                </a:r>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:endParaRPr lang=\"en-US\" sz=\"1790\" b=\"1\" baseline=\"0\">\n                  <a:solidFill>\n                    <a:srgbClr val=\"040404\"/>\n                  </a:solidFill>\n                  <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                </a:endParaRPr>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:extLst>\n            <a:ext uri=\"{0D108BD9-81ED-4DB2-BD59-A6C34878D82A}\">\n              <a16:rowId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" val=\"2858922446\"/>\n            </a:ext>\n          </a:extLst>\n        </a:tr>\n        <a:tr h=\"292100\">\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:r>\n                  <a:rPr lang=\"en-US\" sz=\"1790\" baseline=\"0\">\n                    <a:solidFill>\n                      <a:srgbClr val=\"040404\"/>\n                    </a:solidFill>\n                    <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                  </a:rPr>\n                  <a:t>1</a:t>\n                </a:r>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:r>\n                  <a:rPr lang=\"en-US\" sz=\"1790\" baseline=\"0\">\n                    <a:solidFill>\n                      <a:srgbClr val=\"040404\"/>\n                    </a:solidFill>\n                    <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                  </a:rPr>\n                  <a:t>Tran Duc Huy</a:t>\n                </a:r>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:endParaRPr lang=\"en-US\" sz=\"1790\" baseline=\"0\">\n                  <a:solidFill>\n                    <a:srgbClr val=\"040404\"/>\n                  </a:solidFill>\n                  <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                </a:endParaRPr>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:endParaRPr lang=\"en-US\" sz=\"1790\" baseline=\"0\">\n                  <a:solidFill>\n                    <a:srgbClr val=\"040404\"/>\n                  </a:solidFill>\n                  <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                </a:endParaRPr>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:endParaRPr lang=\"en-US\" sz=\"1790\" baseline=\"0\">\n                  <a:solidFill>\n                    <a:srgbClr val=\"040404\"/>\n                  </a:solidFill>\n                  <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                </a:endParaRPr>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:extLst>\n            <a:ext uri=\"{0D108BD9-81ED-4DB2-BD59-A6C34878D82A}\">\n              <a16:rowId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" val=\"1802329613\"/>\n            </a:ext>\n          </a:extLst>\n        </a:tr>\n        <a:tr h=\"292100\">\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:r>\n                  <a:rPr lang=\"en-US\" sz=\"1790\" baseline=\"0\">\n                    <a:solidFill>\n                      <a:srgbClr val=\"040404\"/>\n                    </a:solidFill>\n                    <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                  </a:rPr>\n                  <a:t>2</a:t>\n                </a:r>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:endParaRPr lang=\"en-US\" sz=\"1790\" baseline=\"0\">\n                  <a:solidFill>\n                    <a:srgbClr val=\"040404\"/>\n                  </a:solidFill>\n                  <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                </a:endParaRPr>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:endParaRPr lang=\"en-US\" sz=\"1790\" baseline=\"0\">\n                  <a:solidFill>\n                    <a:srgbClr val=\"040404\"/>\n                  </a:solidFill>\n                  <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                </a:endParaRPr>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:endParaRPr lang=\"en-US\" sz=\"1790\" baseline=\"0\">\n                  <a:solidFill>\n                    <a:srgbClr val=\"040404\"/>\n                  </a:solidFill>\n                  <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                </a:endParaRPr>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:tc>\n            <a:txBody>\n              <a:bodyPr/>\n              <a:lstStyle/>\n              <a:p>\n                <a:endParaRPr lang=\"en-US\" sz=\"1790\" baseline=\"0\">\n                  <a:solidFill>\n                    <a:srgbClr val=\"040404\"/>\n                  </a:solidFill>\n                  <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n                </a:endParaRPr>\n              </a:p>\n            </a:txBody>\n            <a:tcPr>\n              <a:lnL w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnL>\n              <a:lnR w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnR>\n              <a:lnT w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnT>\n              <a:lnB w=\"12700\" cap=\"flat\" cmpd=\"sng\" algn=\"ctr\">\n                <a:solidFill>\n                  <a:srgbClr val=\"FF0000\"/>\n                </a:solidFill>\n                <a:prstDash val=\"solid\"/>\n                <a:round/>\n                <a:headEnd type=\"none\" w=\"med\" len=\"med\"/>\n                <a:tailEnd type=\"none\" w=\"med\" len=\"med\"/>\n              </a:lnB>\n              <a:solidFill>\n                <a:srgbClr val=\"D6D16C\"/>\n              </a:solidFill>\n            </a:tcPr>\n          </a:tc>\n          <a:extLst>\n            <a:ext uri=\"{0D108BD9-81ED-4DB2-BD59-A6C34878D82A}\">\n              <a16:rowId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" val=\"1908168385\"/>\n            </a:ext>\n          </a:extLst>\n        </a:tr>\n      </a:tbl>\n    </a:graphicData>\n  </a:graphic>\n</p:graphicFrame>\n",
+              "y": 1092200
+            },
+            "has_chart": "[Circular Reference]",
+            "has_table": true,
+            "has_text_frame": "[Circular Reference]",
+            "height": 3497072,
+            "is_placeholder": "[Circular Reference]",
+            "left": 0,
+            "name": "Table 1",
+            "ole_format": "[Error: not an OLE-object shape]",
+            "part": "[Circular Reference]",
+            "placeholder_format": "[Error: shape is not a placeholder]",
+            "rotation": "[Circular Reference]",
+            "shadow": "[Error: shadow property on GraphicFrame not yet supported]",
+            "shape_id": "[Circular Reference]",
+            "shape_type": 19,
+            "table": {
+              "columns": "<_ColumnCollection>",
+              "first_col": "[Circular Reference]",
+              "first_row": "[Circular Reference]",
+              "horz_banding": "[Circular Reference]",
+              "last_col": "[Circular Reference]",
+              "last_row": "[Circular Reference]",
+              "part": "[Circular Reference]",
+              "rows": "<_RowCollection>",
+              "vert_banding": "[Circular Reference]"
+            },
+            "top": 1092200,
+            "width": 12192000
+          }
+        },
+        {
+          "shape_index": 2,
+          "type": 1,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12192000,
+            "height": 1092200
+          },
+          "background_fill_color": "RGB:3B3838",
+          "border": {
+            "color": "None",
+            "width_pt": "Default",
+            "style": "None"
+          },
+          "text": [
+            {
+              "alignment": 1,
+              "runs": [
+                {
+                  "text": "Basic information",
+                  "font_name": "Calibri",
+                  "font_size": 36.0,
+                  "bold": true,
+                  "italic": null,
+                  "font_color": "RGB:FFFFFF",
+                  "run_index": 1
+                }
+              ],
+              "paragraph_index": 1,
+              "text": "Basic information"
+            }
+          ],
+          "table": null,
+          "raw_attributes": {
+            "adjustments": {},
+            "auto_shape_type": 1,
+            "click_action": {
+              "action": 0,
+              "hyperlink": "<Hyperlink>",
+              "part": "<SlidePart>",
+              "target_slide": null
+            },
+            "element": {
+              "attrib": "<_Attrib>",
+              "base": "[Circular Reference]",
+              "cx": 12192000,
+              "cy": 1092200,
+              "flipH": false,
+              "flipV": "[Circular Reference]",
+              "has_custom_geometry": "[Circular Reference]",
+              "has_ph_elm": "[Circular Reference]",
+              "is_autoshape": true,
+              "is_textbox": "[Circular Reference]",
+              "ln": "<CT_LineProperties>",
+              "nsmap": "<dict>",
+              "nvSpPr": "[Circular Reference]",
+              "ph": "[Circular Reference]",
+              "ph_idx": "[Error: not a placeholder shape]",
+              "ph_orient": "[Error: not a placeholder shape]",
+              "ph_sz": "[Error: not a placeholder shape]",
+              "ph_type": "[Error: not a placeholder shape]",
+              "prefix": "p",
+              "prst": "[Circular Reference]",
+              "prstGeom": "<CT_PresetGeometry2D>",
+              "rot": 0.0,
+              "shape_id": 5,
+              "shape_name": "Rectangle 4",
+              "sourceline": 2,
+              "spPr": "<CT_ShapeProperties>",
+              "tag": "{http://schemas.openxmlformats.org/presentationml/2006/main}sp",
+              "tail": "[Circular Reference]",
+              "text": "[Circular Reference]",
+              "txBody": "[Circular Reference]",
+              "x": 0,
+              "xfrm": "[Circular Reference]",
+              "xml": "<p:sp xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\" xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\">\n  <p:nvSpPr>\n    <p:cNvPr id=\"5\" name=\"Rectangle 4\">\n      <a:extLst>\n        <a:ext uri=\"{FF2B5EF4-FFF2-40B4-BE49-F238E27FC236}\">\n          <a16:creationId xmlns:a16=\"http://schemas.microsoft.com/office/drawing/2014/main\" id=\"{21EBBDEA-EF2B-9405-3847-708BF8B5A451}\"/>\n        </a:ext>\n      </a:extLst>\n    </p:cNvPr>\n    <p:cNvSpPr/>\n    <p:nvPr/>\n  </p:nvSpPr>\n  <p:spPr>\n    <a:xfrm>\n      <a:off x=\"0\" y=\"0\"/>\n      <a:ext cx=\"12192000\" cy=\"1092200\"/>\n    </a:xfrm>\n    <a:prstGeom prst=\"rect\">\n      <a:avLst/>\n    </a:prstGeom>\n    <a:solidFill>\n      <a:srgbClr val=\"3B3838\"/>\n    </a:solidFill>\n    <a:ln w=\"38100\">\n      <a:noFill/>\n    </a:ln>\n  </p:spPr>\n  <p:style>\n    <a:lnRef idx=\"2\">\n      <a:schemeClr val=\"accent1\">\n        <a:shade val=\"15000\"/>\n      </a:schemeClr>\n    </a:lnRef>\n    <a:fillRef idx=\"1\">\n      <a:schemeClr val=\"accent1\"/>\n    </a:fillRef>\n    <a:effectRef idx=\"0\">\n      <a:schemeClr val=\"accent1\"/>\n    </a:effectRef>\n    <a:fontRef idx=\"minor\">\n      <a:schemeClr val=\"lt1\"/>\n    </a:fontRef>\n  </p:style>\n  <p:txBody>\n    <a:bodyPr rtlCol=\"0\" anchor=\"ctr\"/>\n    <a:lstStyle/>\n    <a:p>\n      <a:r>\n        <a:rPr lang=\"en-US\" sz=\"3600\" b=\"1\">\n          <a:solidFill>\n            <a:srgbClr val=\"FFFFFF\"/>\n          </a:solidFill>\n          <a:latin typeface=\"Calibri\" panose=\"020F0502020204030204\" pitchFamily=\"34\" charset=\"0\"/>\n        </a:rPr>\n        <a:t>Basic information</a:t>\n      </a:r>\n    </a:p>\n  </p:txBody>\n</p:sp>\n",
+              "y": 0
+            },
+            "fill": {
+              "back_color": "[Error: fill type _SolidFill has no background color, call .patterned() first]",
+              "fore_color": "<ColorFormat>",
+              "gradient_angle": "[Error: Fill is not of type MSO_FILL_TYPE.GRADIENT]",
+              "gradient_stops": "[Error: Fill is not of type MSO_FILL_TYPE.GRADIENT]",
+              "pattern": "[Error: fill type _SolidFill has no pattern, call .patterned() first]",
+              "type": 1
+            },
+            "has_chart": "[Circular Reference]",
+            "has_table": "[Circular Reference]",
+            "has_text_frame": "[Circular Reference]",
+            "height": 1092200,
+            "is_placeholder": "[Circular Reference]",
+            "left": 0,
+            "line": {
+              "color": "<ColorFormat>",
+              "dash_style": "[Circular Reference]",
+              "fill": "<FillFormat>",
+              "width": 38100
+            },
+            "ln": {
+              "attrib": "[Circular Reference]",
+              "base": "[Circular Reference]",
+              "custDash": "[Circular Reference]",
+              "eg_fillProperties": "<CT_SolidColorFillProperties>",
+              "eg_lineFillProperties": "[Circular Reference]",
+              "gradFill": "[Circular Reference]",
+              "noFill": "[Circular Reference]",
+              "nsmap": "<dict>",
+              "pattFill": "[Circular Reference]",
+              "prefix": "a",
+              "prstDash": "[Circular Reference]",
+              "prstDash_val": "[Circular Reference]",
+              "solidFill": "[Circular Reference]",
+              "sourceline": "[Circular Reference]",
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}ln",
+              "tail": "[Circular Reference]",
+              "text": "[Circular Reference]",
+              "w": 38100,
+              "xml": "<a:ln xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:p=\"http://schemas.openxmlformats.org/presentationml/2006/main\" w=\"38100\">\n  <a:solidFill/>\n</a:ln>\n"
+            },
+            "name": "Rectangle 4",
+            "part": "[Circular Reference]",
+            "placeholder_format": "[Error: shape is not a placeholder]",
+            "rotation": "[Circular Reference]",
+            "shadow": {
+              "inherit": "[Circular Reference]"
+            },
+            "shape_id": "[Circular Reference]",
+            "shape_type": 1,
+            "text": "Basic information",
+            "text_frame": {
+              "auto_size": "[Circular Reference]",
+              "margin_bottom": 45720,
+              "margin_left": 91440,
+              "margin_right": 91440,
+              "margin_top": 45720,
+              "paragraphs": "<tuple>",
+              "part": "[Circular Reference]",
+              "text": "Basic information",
+              "vertical_anchor": 3,
+              "word_wrap": "[Circular Reference]"
+            },
+            "top": 0,
+            "width": 12192000
+          }
+        }
+      ]
+    }
+  ]
+}
