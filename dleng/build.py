@@ -1,8 +1,10 @@
 # Refactored build.py with modular table and text rebuild logic
 
 import json
+import os
 from pptx import Presentation
 from pptx.slide import Slide
+from pptx.shapes.picture import Picture
 from pptx.table import _Cell
 from pptx.util import Inches, Pt
 from pptx.enum.text import PP_ALIGN
@@ -250,6 +252,28 @@ def rebuild_textbox(shape_data: DL_Shape, slide: Slide):
     return shape
 
 
+def rebuild_image(shape_data: Picture, slide: Slide, json_path: str):
+    if not shape_data.image or not shape_data.image.filename:
+        raise ValueError(
+            f"[Slide {shape_data.shape_index}] Thiếu thông tin image để khôi phục")
+
+    # Tính full path từ đường dẫn tương đối trong JSON
+    json_folder = os.path.dirname(json_path)
+    image_path = os.path.join(json_folder, shape_data.image.filename)
+
+    if not os.path.isfile(image_path):
+        raise FileNotFoundError(f"Không tìm thấy file ảnh: {image_path}")
+
+    pos = shape_data.position
+    pic = slide.shapes.add_picture(
+        image_path,
+        pos.x, pos.y,
+        width=pos.width,
+        height=pos.height
+    )
+    return pic
+
+
 def build_pptx_from_json(json_path: str, output_path: str):
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -267,7 +291,8 @@ def build_pptx_from_json(json_path: str, output_path: str):
                 shape = rebuild_table(shape_data, slide)
             elif shape_data.text:
                 shape = rebuild_textbox(shape_data, slide)
-
+            elif shape_data.image:
+                shape = rebuild_image(shape_data, slide, json_path)
             if shape:
                 apply_fill_color(shape, shape_data.background_fill_color)
                 apply_border(shape, shape_data.border)
@@ -277,5 +302,7 @@ def build_pptx_from_json(json_path: str, output_path: str):
 
 
 if __name__ == "__main__":
-    build_pptx_from_json(r"utest\dump_test_ppt1.json",
-                         "bin/test_ppt1_restored_from_json.pptx")
+    # build_pptx_from_json(r"utest\dump_test_ppt1.json",
+    #                      "bin/test_ppt1_restored_from_json.pptx")
+    build_pptx_from_json(r"bin\new_form\new_form.json",
+                         r"bin\new_form\new_form_reverted.pptx")

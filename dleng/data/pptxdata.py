@@ -70,6 +70,13 @@ class DL_Border:
     color: Optional[str]
     width_pt: Union[float, str, None]
     style: Optional[str]
+    
+@dataclass
+class DL_Image:
+    filename: str                  # ví dụ: "asset/img_slide1_shape3_abcd1234.png"
+    ext: str                       # ví dụ: "png"
+    content_type: str              # ví dụ: "image/png"
+    size: int                      # kích thước byte
 
 @dataclass
 class DL_Shape:
@@ -80,6 +87,7 @@ class DL_Shape:
     border: Optional[DL_Border] = None
     text: Optional[List[DL_TextParagraph]] = None
     table: Optional[DL_Table] = None
+    image: Optional[DL_Image] = None   # 👈 Thêm dòng này
 
 @dataclass
 class DL_Slide:
