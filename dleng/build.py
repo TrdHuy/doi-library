@@ -161,17 +161,93 @@ def apply_run(run: _Run, run_data: DL_Run):
 
 
 def apply_paragraph(p: _Paragraph, para: DL_TextParagraph):
+    from pptx.util import Pt
+    from pptx.oxml.xmlchemy import OxmlElement
+    from pptx.oxml.ns import qn
+
+    # 1. Căn lề
     p.alignment = PP_ALIGN(para.alignment or PP_ALIGN.LEFT)
-    p.font.bold = False
-    p.font.italic = False
+
+    # 2. Level (bullet cấp mấy)
+    if para.level is not None:
+        p.level = para.level
+    elif para.bullet is not None:
+        p.level = para.bullet
+
+    # 4. Line spacing (khoảng cách giữa các dòng)
+    if para.line_spacing is not None:
+        p.line_spacing = para.line_spacing  # là float, ví dụ 1.15 = 115%
+
+    # 5. Bullet (ký tự hoặc kiểu đánh số)
+    pPr = p._element.get_or_add_pPr()
+
+    pPr = p._element.get_or_add_pPr()
+
+    # Set indent qua XML attribute
+    if para.left_indent is not None:
+        emu_val = int(para.left_indent * 12700)
+        pPr.set("marL", str(emu_val))
+
+    if para.first_line_indent is not None:
+        emu_val = int(para.first_line_indent * 12700)
+        pPr.set("indent", str(emu_val))
+
+    # Xoá bullet cũ nếu có
+    for tag in ["a:buChar", "a:buAutoNum"]:
+        old = pPr.find(qn(tag))
+        if old is not None:
+            pPr.remove(old)
+
+    if para.bullet_type == "char" and para.bullet_char:
+        buChar = OxmlElement("a:buChar")
+        buChar.set("char", para.bullet_char)
+        pPr.append(buChar)
+
+    elif para.bullet_type == "number" and para.number_type:
+        buAutoNum = OxmlElement("a:buAutoNum")
+        buAutoNum.set("type", para.number_type)
+        pPr.append(buAutoNum)
+
+    # 6. Các run bên trong đoạn
     for run_data in para.runs:
         run = p.add_run()
         apply_run(run, run_data)
 
 
-def apply_text_detail(text_frame: TextFrame, detail: List[DL_TextParagraph]):
+def apply_text_detail(text_frame: TextFrame, text: DL_Text):
+    # Khôi phục thông tin format của text frame
+    if text.frame_format:
+        fmt = text.frame_format
+
+        if fmt.wrap is not None:
+            text_frame.word_wrap = fmt.wrap
+
+        if fmt.auto_fit is not None:
+            # Hiện tại python-pptx chưa hỗ trợ set auto_size trực tiếp
+            # Có thể cần skip hoặc handle qua XML nếu cần sau
+            pass
+
+        if fmt.vertical_anchor:
+            try:
+                from pptx.enum.text import MSO_VERTICAL_ANCHOR
+                text_frame.vertical_anchor = fmt.vertical_anchor
+            except (KeyError, ValueError):
+                pass  # fallback nếu giá trị không hợp lệ
+
+        if fmt.margin:
+            if "left" in fmt.margin:
+                text_frame.margin_left = fmt.margin["left"]
+            if "right" in fmt.margin:
+                text_frame.margin_right = fmt.margin["right"]
+            if "top" in fmt.margin:
+                text_frame.margin_top = fmt.margin["top"]
+            if "bottom" in fmt.margin:
+                text_frame.margin_bottom = fmt.margin["bottom"]
+
+    # Xoá nội dung cũ và khôi phục các đoạn văn bản
     text_frame.clear()
-    for para in detail:
+
+    for para in text.paragraphs:
         if para is None:
             continue
         if len(text_frame.paragraphs) == 0:
@@ -304,5 +380,7 @@ def build_pptx_from_json(json_path: str, output_path: str):
 if __name__ == "__main__":
     # build_pptx_from_json(r"utest\dump_test_ppt1.json",
     #                      "bin/test_ppt1_restored_from_json.pptx")
-    build_pptx_from_json(r"bin\new_form\new_form.json",
-                         r"bin\new_form\new_form_reverted.pptx")
+    # build_pptx_from_json(r"bin\Pre_DOI_Form_05_2024v2\Pre_DOI_Form_05_2024v2.json",
+    #                      r"bin\Pre_DOI_Form_05_2024v2\Pre_DOI_Form_05_2024v2.json.pptx")
+    build_pptx_from_json(r"bin\Pre_DOI_Form_05_2024v3\Pre_DOI_Form_05_2024v3.json",
+                         r"bin\Pre_DOI_Form_05_2024v3\Pre_DOI_Form_05_2024v3.json.pptx")

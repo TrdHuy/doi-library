@@ -5,11 +5,20 @@ import os
 from pptx import Presentation
 from pptx.enum.shapes import MSO_SHAPE_TYPE
 from pptx.enum.text import PP_ALIGN
+from pptx.enum.text import MSO_VERTICAL_ANCHOR
 from pptx.oxml.ns import qn
 from pptx.dml.fill import _NoFill
+from pptx.dml.fill import _NoneFill
 from pptx.shapes.picture import Picture
 
-SHAPE_TYPES_WITH_FILL_LINE = {1, 8, 13, 17}
+SHAPE_TYPES_WITH_FILL_LINE = {
+    MSO_SHAPE_TYPE.AUTO_SHAPE,
+    MSO_SHAPE_TYPE.FORM_CONTROL,
+    MSO_SHAPE_TYPE.PICTURE,
+    MSO_SHAPE_TYPE.PLACEHOLDER,
+    MSO_SHAPE_TYPE.TEXT_BOX,
+    MSO_SHAPE_TYPE.FREEFORM
+    }
 TAG_MAP = {
     "left": "lnL",
     "right": "lnR",
@@ -108,8 +117,44 @@ def extract_paragraph_info(paragraph, context):
     alignment_val = paragraph.alignment or PP_ALIGN.LEFT
     para_info = {
         "alignment": alignment_val,
-        "runs": []
+        "runs": [],
+        "bullet": paragraph.level,
+        "bullet_type": None
     }
+
+    if paragraph.level is not None:
+        if paragraph._pPr is not None:
+            buChar = paragraph._pPr.find(qn("a:buChar"))
+            buAutoNum = paragraph._pPr.find(qn("a:buAutoNum"))
+            if buChar is not None:
+                para_info["bullet_type"] = "char"
+                para_info["bullet_char"] = buChar.attrib.get("char", "")
+            elif buAutoNum is not None:
+                para_info["bullet_type"] = "number"
+                para_info["number_type"] = buAutoNum.attrib.get("type", "arabicPeriod")
+    
+    if paragraph._pPr is not None:
+        marL = paragraph._pPr.attrib.get("marL")
+        indent = paragraph._pPr.attrib.get("indent")
+        level = paragraph._pPr.attrib.get("lvl")
+        para_info["level"] = int(level) if level is not None else 0
+        para_info["left_indent"] = round(int(marL) / 12700, 2) if marL else None
+        para_info["first_line_indent"] = round(int(indent) / 12700, 2) if indent else None
+    else:
+        para_info["left_indent"] = None
+        para_info["first_line_indent"] = None
+        para_info["level"] = None
+
+    lnSpc = paragraph._pPr.find(qn("a:lnSpc"))
+    if lnSpc is not None:
+        spcPct = lnSpc.find(qn("a:spcPct"))
+        if spcPct is not None and "val" in spcPct.attrib:
+            para_info["line_spacing"] = int(spcPct.attrib["val"]) / 100000  # chuyển về tỉ lệ thực
+        else:
+            para_info["line_spacing"] = None
+    else:
+        para_info["line_spacing"] = None
+
     for run_idx, run in enumerate(paragraph.runs):
         run_ctx = f"{context} - Run {run_idx+1}"
         run_info = extract_run_info(run, run_ctx)
@@ -126,7 +171,10 @@ def extract_cell_text_detail(cell, slide_idx, shape_idx, r_idx, c_idx):
         para_info = extract_paragraph_info(para, para_ctx)
         para_info["paragraph_index"] = p_idx + 1
         detail.append(para_info)
-    return detail
+    return {
+        "frame_format": extract_text_frame_format(cell.text_frame),
+        "paragraphs": detail
+    }
 
 
 def extract_cell_border(cell, slide_idx, shape_idx, r_idx, c_idx):
@@ -156,6 +204,34 @@ def extract_cell_border(cell, slide_idx, shape_idx, r_idx, c_idx):
     return borders
 
 
+def extract_text_frame_format(text_frame):
+    format_info = {}
+
+    # Có wrap word không?
+    format_info["wrap"] = text_frame.word_wrap
+
+    # Auto-fit text?
+    format_info["auto_fit"] = (
+        text_frame.auto_size is not None  # can be `None`, `TextAutoSize.SHAPE_TO_FIT_TEXT`, ...
+    )
+
+    # Vertical alignment
+    if text_frame.vertical_anchor:
+        format_info["vertical_anchor"] = int(text_frame.vertical_anchor)
+    else:
+        format_info["vertical_anchor"] = int(MSO_VERTICAL_ANCHOR.TOP)
+
+    # Margins (EMU)
+    format_info["margin"] = {
+        "left": text_frame.margin_left,
+        "right": text_frame.margin_right,
+        "top": text_frame.margin_top,
+        "bottom": text_frame.margin_bottom
+    }
+
+    return format_info
+
+
 def extract_text_from_shape(shape, slide_idx, shape_idx, for_txt):
     tf = shape.text_frame
     paragraphs = []
@@ -163,13 +239,13 @@ def extract_text_from_shape(shape, slide_idx, shape_idx, for_txt):
         context = f"[Slide {slide_idx+1} - Shape {shape_idx+1} - Paragraph {p_idx+1}]"
         para_info = extract_paragraph_info(para, context)
         para_info["paragraph_index"] = p_idx + 1
-        if for_txt and "text" in para:
-            para_info["text"] = para.text.strip().replace("\n", "\\n")
-        else:
-            para_info["text"] = para.text.strip()
+        para_info["text"] = para.text.strip().replace("\n", "\\n") if for_txt else para.text.strip()
         paragraphs.append(para_info)
-    return paragraphs
 
+    return {
+        "frame_format": extract_text_frame_format(tf),
+        "paragraphs": paragraphs
+    }
 
 def extract_table_from_shape(shape, slide_idx, shape_idx, for_txt):
     tbl = shape.table
@@ -191,6 +267,10 @@ def extract_table_from_shape(shape, slide_idx, shape_idx, for_txt):
                 "\n", "\\n") if for_txt else cell.text.strip()
             table_data_detail[r_idx][c_idx] = extract_cell_text_detail(
                 cell, slide_idx, shape_idx, r_idx, c_idx)
+            if not hasattr(cell, "fill") or cell.fill is None or isinstance(cell.fill._fill, _NoneFill):
+                raise ValueError(
+                    f"[Slide {slide_idx+1} - Shape {shape_idx+1} - Cell ({r_idx+1},{c_idx+1})] thiếu fill")
+
             if not hasattr(cell, "fill") or cell.fill is None or not cell.fill.fore_color:
                 raise ValueError(
                     f"[Slide {slide_idx+1} - Shape {shape_idx+1} - Cell ({r_idx+1},{c_idx+1})] thiếu fill")
@@ -263,7 +343,7 @@ def extract_slide_data(pptx_path, output_dir, for_txt=False, is_debug=False):
                 },
                 "background_fill_color": None,
                 "border": {},
-                "text": [],
+                "text": None,
                 "table": None
             }
 
@@ -272,6 +352,11 @@ def extract_slide_data(pptx_path, output_dir, for_txt=False, is_debug=False):
                     shape, max_depth=2)
 
             shape_type = shape.shape_type
+
+            if shape_type == MSO_SHAPE_TYPE.GROUP:
+                raise ValueError(
+                    f"[Slide {slide_info}] – Không hỗ trợ dump cho shape kiểu group, vui lòng bỏ group")
+
             has_visual_style = shape_type in SHAPE_TYPES_WITH_FILL_LINE
 
             if has_visual_style and hasattr(shape, "fill") and shape.fill and shape.fill.fore_color:
@@ -316,7 +401,9 @@ def describe_pptx_to_json_with_assets(pptx_path, output_root_folder):
 # Ví dụ sử dụng
 if __name__ == "__main__":
     describe_pptx_to_json_with_assets(
-        r"template\Pre_DOI_Form_05_2024_v2.pptx", "bin")
+        r"template\Pre_DOI_Form_05_2024v3.pptx", "bin")
+    # describe_pptx_to_json_with_assets(
+    #     r"dleng\utest\test_ppt1.pptx", "bin")
     # describe_pptx_to_json(
     #     "utest\\test_ppt1.pptx", "bin\\test_ppt1.json")
     # describe_pptx_to_json("bin\\test_ppt1_restored_from_json.pptx",

@@ -34,17 +34,31 @@ class DL_Run:
     run_index: int
 
 @dataclass
-class DL_Paragraph:
-    alignment: Optional[int]
-    runs: List[DL_Run]
-    paragraph_index: int
-
-@dataclass
 class DL_TextParagraph:
-    alignment: Optional[int]
+    alignment: int
     runs: List[DL_Run]
     paragraph_index: int
     text: Optional[str] = None
+    bullet: Optional[int] = None
+    bullet_type: Optional[str] = None
+    bullet_char: Optional[str] = None
+    number_type: Optional[str] = None
+    left_indent: Optional[float] = None            # Đơn vị pt
+    first_line_indent: Optional[float] = None      # Đơn vị pt
+    level: Optional[int] = None
+    line_spacing: Optional[float] = None
+
+@dataclass
+class DL_TextFrameFormat:
+    wrap: Optional[bool]
+    auto_fit: Optional[bool]
+    vertical_anchor: Optional[int]
+    margin: Dict[str, int]
+
+@dataclass
+class DL_Text:
+    frame_format: DL_TextFrameFormat
+    paragraphs: List[DL_TextParagraph]
 
 @dataclass
 class DL_MergeInfo:
@@ -58,7 +72,7 @@ class DL_Table:
     rows: int
     cols: int
     data: List[List[str]]
-    data_detail: List[List[Optional[List[DL_Paragraph]]]]
+    data_detail: List[List[Optional[DL_Text]]]
     cell_fills: List[List[str]]
     merge_info: List[DL_MergeInfo]
     col_widths: List[int]
@@ -85,7 +99,7 @@ class DL_Shape:
     position: DL_Position
     background_fill_color: Optional[str]
     border: Optional[DL_Border] = None
-    text: Optional[List[DL_TextParagraph]] = None
+    text: Optional[DL_Text] = None
     table: Optional[DL_Table] = None
     image: Optional[DL_Image] = None   # 👈 Thêm dòng này
 

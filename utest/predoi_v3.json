@@ -1,0 +1,5969 @@
+{
+  "slide_width": 12192000,
+  "slide_height": 6858000,
+  "slides": [
+    {
+      "slide_number": 1,
+      "shapes": [
+        {
+          "shape_index": 1,
+          "type": 1,
+          "position": {
+            "x": 0,
+            "y": 2384981,
+            "width": 12192000,
+            "height": 1806019
+          },
+          "background_fill_color": "RGB:002060",
+          "border": {
+            "color": "None",
+            "width_pt": "Default",
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 2,
+                "runs": [
+                  {
+                    "text": "Title",
+                    "font_name": "Calibri",
+                    "font_size": 28.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "Title"
+              }
+            ]
+          },
+          "table": null
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "shapes": [
+        {
+          "shape_index": 1,
+          "type": 19,
+          "position": {
+            "x": 0,
+            "y": 704850,
+            "width": 12192000,
+            "height": 3845506
+          },
+          "background_fill_color": null,
+          "border": {},
+          "text": null,
+          "table": {
+            "rows": 7,
+            "cols": 6,
+            "data": [
+              [
+                "For Patent Team Use\n \n \nInvention Number: \nDate Received:",
+                "",
+                "",
+                "",
+                "",
+                "Review Decision:\n☐ Priority in applying\n☐ Incomplete Invention\n✅ Non-publication"
+              ],
+              [
+                "Department:",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Project Name:",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Invention Title:",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "No.",
+                "Inventor’s Full Name",
+                "Contribution Rate (%)",
+                "Single ID/Employee No.",
+                "Employment Status\n(Employee, Dispatcher, Mentor or Contractor)",
+                ""
+              ],
+              [
+                "1",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "2",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            ],
+            "data_detail": [
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": "For Patent Team Use",
+                          "font_name": "Calibri",
+                          "font_size": 18.0,
+                          "bold": true,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    },
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": " ",
+                          "font_name": "Calibri",
+                          "font_size": 18.0,
+                          "bold": null,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 2
+                    },
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": " ",
+                          "font_name": "Calibri",
+                          "font_size": 18.0,
+                          "bold": null,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 3
+                    },
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": "Invention Number: ",
+                          "font_name": "Calibri",
+                          "font_size": 18.0,
+                          "bold": false,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 4
+                    },
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": "Date Received:",
+                          "font_name": "Calibri",
+                          "font_size": 18.0,
+                          "bold": false,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 5
+                    }
+                  ]
+                },
+                null,
+                null,
+                null,
+                null,
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": "Review Decision:",
+                          "font_name": "Calibri",
+                          "font_size": 18.0,
+                          "bold": true,
+                          "italic": false,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    },
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": "☐ ",
+                          "font_name": "Calibri",
+                          "font_size": 18.0,
+                          "bold": false,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        },
+                        {
+                          "text": "Priority in applying",
+                          "font_name": "Calibri",
+                          "font_size": 18.0,
+                          "bold": false,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 2
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 2
+                    },
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": "☐ ",
+                          "font_name": "Calibri",
+                          "font_size": 18.0,
+                          "bold": false,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        },
+                        {
+                          "text": "Incomplete Invention",
+                          "font_name": "Calibri",
+                          "font_size": 18.0,
+                          "bold": false,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 2
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 3
+                    },
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": "✅",
+                          "font_name": "Calibri",
+                          "font_size": 14.0,
+                          "bold": false,
+                          "italic": false,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        },
+                        {
+                          "text": " ",
+                          "font_name": "Calibri",
+                          "font_size": 18.0,
+                          "bold": false,
+                          "italic": false,
+                          "font_color": "RGB:000000",
+                          "run_index": 2
+                        },
+                        {
+                          "text": "Non-publication",
+                          "font_name": "Calibri",
+                          "font_size": 18.0,
+                          "bold": false,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 3
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 4
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": "Department:",
+                          "font_name": "Calibri",
+                          "font_size": 16.0,
+                          "bold": true,
+                          "italic": false,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                null,
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": null,
+                      "first_line_indent": null,
+                      "line_spacing": null,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                null,
+                null,
+                null
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": "Project Name:",
+                          "font_name": "Calibri",
+                          "font_size": 16.0,
+                          "bold": true,
+                          "italic": false,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                null,
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": null,
+                      "first_line_indent": null,
+                      "line_spacing": null,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                null,
+                null,
+                null
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": "Invention Title:",
+                          "font_name": "Calibri",
+                          "font_size": 16.0,
+                          "bold": true,
+                          "italic": false,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                null,
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": null,
+                      "first_line_indent": null,
+                      "line_spacing": null,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                null,
+                null,
+                null
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [
+                        {
+                          "text": "No.",
+                          "font_name": "Calibri",
+                          "font_size": 14.0,
+                          "bold": true,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": 0.0,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [
+                        {
+                          "text": "Inventor’s Full Name",
+                          "font_name": "Calibri",
+                          "font_size": 14.0,
+                          "bold": true,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": 0.0,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [
+                        {
+                          "text": "Contribution Rate (%)",
+                          "font_name": "Calibri",
+                          "font_size": 14.0,
+                          "bold": true,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [
+                        {
+                          "text": "Single ID/Employee No.",
+                          "font_name": "Calibri",
+                          "font_size": 14.0,
+                          "bold": true,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [
+                        {
+                          "text": "Employment Status",
+                          "font_name": "Calibri",
+                          "font_size": 14.0,
+                          "bold": true,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    },
+                    {
+                      "alignment": 1,
+                      "runs": [
+                        {
+                          "text": "(Employee, Dispatcher, Mentor or Contractor)",
+                          "font_name": "Calibri",
+                          "font_size": 14.0,
+                          "bold": true,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 2
+                    }
+                  ]
+                },
+                null
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [
+                        {
+                          "text": "1",
+                          "font_name": "Calibri",
+                          "font_size": 14.0,
+                          "bold": null,
+                          "italic": null,
+                          "font_color": "RGB:040404",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": null,
+                      "first_line_indent": null,
+                      "line_spacing": null,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": null,
+                      "first_line_indent": null,
+                      "line_spacing": null,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": null,
+                      "first_line_indent": null,
+                      "line_spacing": null,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": null,
+                      "first_line_indent": null,
+                      "line_spacing": null,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": null,
+                      "first_line_indent": null,
+                      "line_spacing": null,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                null
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [
+                        {
+                          "text": "2",
+                          "font_name": "Calibri",
+                          "font_size": 14.0,
+                          "bold": null,
+                          "italic": null,
+                          "font_color": "RGB:040404",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": null,
+                      "first_line_indent": null,
+                      "line_spacing": null,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": null,
+                      "first_line_indent": null,
+                      "line_spacing": null,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": null,
+                      "first_line_indent": null,
+                      "line_spacing": null,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": null,
+                      "first_line_indent": null,
+                      "line_spacing": null,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": null,
+                      "first_line_indent": null,
+                      "line_spacing": null,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                null
+              ]
+            ],
+            "cell_fills": [
+              [
+                "RGB:F0F7ED",
+                "None",
+                "None",
+                "None",
+                "None",
+                "RGB:F0F7ED"
+              ],
+              [
+                "RGB:F0F7ED",
+                "None",
+                "RGB:F0F7ED",
+                "None",
+                "None",
+                "None"
+              ],
+              [
+                "RGB:F0F7ED",
+                "None",
+                "RGB:F0F7ED",
+                "None",
+                "None",
+                "None"
+              ],
+              [
+                "RGB:F0F7ED",
+                "None",
+                "RGB:F0F7ED",
+                "None",
+                "None",
+                "None"
+              ],
+              [
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
+                "None"
+              ],
+              [
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
+                "None"
+              ],
+              [
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
+                "None"
+              ]
+            ],
+            "merge_info": [
+              {
+                "row": 0,
+                "col": 0,
+                "row_span": 1,
+                "col_span": 5
+              },
+              {
+                "row": 1,
+                "col": 0,
+                "row_span": 1,
+                "col_span": 2
+              },
+              {
+                "row": 1,
+                "col": 2,
+                "row_span": 1,
+                "col_span": 4
+              },
+              {
+                "row": 2,
+                "col": 0,
+                "row_span": 1,
+                "col_span": 2
+              },
+              {
+                "row": 2,
+                "col": 2,
+                "row_span": 1,
+                "col_span": 4
+              },
+              {
+                "row": 3,
+                "col": 0,
+                "row_span": 1,
+                "col_span": 2
+              },
+              {
+                "row": 3,
+                "col": 2,
+                "row_span": 1,
+                "col_span": 4
+              },
+              {
+                "row": 4,
+                "col": 4,
+                "row_span": 1,
+                "col_span": 2
+              },
+              {
+                "row": 5,
+                "col": 4,
+                "row_span": 1,
+                "col_span": 2
+              },
+              {
+                "row": 6,
+                "col": 4,
+                "row_span": 1,
+                "col_span": 2
+              }
+            ],
+            "col_widths": [
+              452846,
+              2307771,
+              2063932,
+              2098765,
+              391886,
+              4876800
+            ],
+            "row_heights": [
+              1559379,
+              217714,
+              138611,
+              251097,
+              462280,
+              292100,
+              292100
+            ],
+            "cell_borders": [
+              [
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null,
+                null,
+                null,
+                null,
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null,
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null,
+                null,
+                null
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null,
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null,
+                null,
+                null
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null,
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null,
+                null,
+                null
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null
+              ]
+            ]
+          }
+        },
+        {
+          "shape_index": 2,
+          "type": 1,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12192000,
+            "height": 704850
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "None",
+            "width_pt": "Default",
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "BASIC INFORMATION",
+                    "font_name": "Calibri",
+                    "font_size": 24.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "BASIC INFORMATION"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 3,
+          "type": 17,
+          "position": {
+            "x": 9805851,
+            "y": 152370,
+            "width": 2310223,
+            "height": 400110
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "RGB:FFFFFF",
+            "width_pt": 1.0,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 3,
+                "runs": [
+                  {
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION"
+              }
+            ]
+          },
+          "table": null
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "shapes": [
+        {
+          "shape_index": 1,
+          "type": 1,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12192000,
+            "height": 704850
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "None",
+            "width_pt": "Default",
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "DISCLOSURE OF INVENTION",
+                    "font_name": "Calibri",
+                    "font_size": 24.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "DISCLOSURE OF INVENTION"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 2,
+          "type": 17,
+          "position": {
+            "x": 9805851,
+            "y": 152370,
+            "width": 2310223,
+            "height": 400110
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "RGB:FFFFFF",
+            "width_pt": 1.0,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 3,
+                "runs": [
+                  {
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 3,
+          "type": 5,
+          "position": {
+            "x": 3158490,
+            "y": 1341169,
+            "width": 5737860,
+            "height": 1035579
+          },
+          "background_fill_color": "RGB:DDEBD6",
+          "border": {
+            "color": "RGB:6D7642",
+            "width_pt": 1.5,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 445322,
+                "right": 445322,
+                "top": 229108,
+                "bottom": 78232
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "Technical field",
+                    "font_name": "Calibri",
+                    "font_size": 12.0,
+                    "bold": null,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 1,
+                "bullet_type": "char",
+                "bullet_char": "••",
+                "level": 1,
+                "left_indent": 4.5,
+                "first_line_indent": -4.5,
+                "line_spacing": 0.9,
+                "paragraph_index": 1,
+                "text": "Technical field"
+              },
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "Problem",
+                    "font_name": "Calibri",
+                    "font_size": 12.0,
+                    "bold": null,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 1,
+                "bullet_type": "char",
+                "bullet_char": "••",
+                "level": 1,
+                "left_indent": 4.5,
+                "first_line_indent": -4.5,
+                "line_spacing": 0.9,
+                "paragraph_index": 2,
+                "text": "Problem"
+              },
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "Prior ",
+                    "font_name": "Calibri",
+                    "font_size": 12.0,
+                    "bold": null,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 1
+                  },
+                  {
+                    "text": "art",
+                    "font_name": "Calibri",
+                    "font_size": 12.0,
+                    "bold": null,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 2
+                  }
+                ],
+                "bullet": 1,
+                "bullet_type": "char",
+                "bullet_char": "••",
+                "level": 1,
+                "left_indent": 4.5,
+                "first_line_indent": -4.5,
+                "line_spacing": 0.9,
+                "paragraph_index": 3,
+                "text": "Prior art"
+              },
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "Purpose of Invention",
+                    "font_name": "Calibri",
+                    "font_size": 12.0,
+                    "bold": null,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 1,
+                "bullet_type": "char",
+                "bullet_char": "••",
+                "level": 1,
+                "left_indent": 4.5,
+                "first_line_indent": -4.5,
+                "line_spacing": 0.9,
+                "paragraph_index": 4,
+                "text": "Purpose of Invention"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 4,
+          "type": 5,
+          "position": {
+            "x": 3445383,
+            "y": 1141540,
+            "width": 4016502,
+            "height": 399259
+          },
+          "background_fill_color": "RGB:FFFFFF",
+          "border": {
+            "color": "RGB:6D7642",
+            "width_pt": 1.5,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 167666,
+                "right": 167666,
+                "top": 15852,
+                "bottom": 15852
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "I. BACKGROUND",
+                    "font_name": "Calibri",
+                    "font_size": 14.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": 0.9,
+                "paragraph_index": 1,
+                "text": "I. BACKGROUND"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 5,
+          "type": 5,
+          "position": {
+            "x": 3158490,
+            "y": 2849346,
+            "width": 5737860,
+            "height": 1025343
+          },
+          "background_fill_color": "RGB:DDEBD6",
+          "border": {
+            "color": "RGB:6D7642",
+            "width_pt": 1.5,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 445322,
+                "right": 445322,
+                "top": 229108,
+                "bottom": 78232
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "Summary",
+                    "font_name": "Calibri",
+                    "font_size": 12.0,
+                    "bold": null,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 1,
+                "bullet_type": "char",
+                "bullet_char": "••",
+                "level": 1,
+                "left_indent": 4.5,
+                "first_line_indent": -4.5,
+                "line_spacing": 0.9,
+                "paragraph_index": 1,
+                "text": "Summary"
+              },
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "Detail Description",
+                    "font_name": "Calibri",
+                    "font_size": 12.0,
+                    "bold": null,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 1,
+                "bullet_type": "char",
+                "bullet_char": "••",
+                "level": 1,
+                "left_indent": 4.5,
+                "first_line_indent": -4.5,
+                "line_spacing": 0.9,
+                "paragraph_index": 2,
+                "text": "Detail Description"
+              },
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "Alternatives (Various embodiments)",
+                    "font_name": "Calibri",
+                    "font_size": 12.0,
+                    "bold": null,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 1,
+                "bullet_type": "char",
+                "bullet_char": "••",
+                "level": 1,
+                "left_indent": 4.5,
+                "first_line_indent": -4.5,
+                "line_spacing": 0.9,
+                "paragraph_index": 3,
+                "text": "Alternatives (Various embodiments)"
+              },
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "Examples (Optional)",
+                    "font_name": "Calibri",
+                    "font_size": 12.0,
+                    "bold": null,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 1,
+                "bullet_type": "char",
+                "bullet_char": "••",
+                "level": 1,
+                "left_indent": 4.5,
+                "first_line_indent": -4.5,
+                "line_spacing": 0.9,
+                "paragraph_index": 4,
+                "text": "Examples (Optional)"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 6,
+          "type": 5,
+          "position": {
+            "x": 3445383,
+            "y": 2649715,
+            "width": 4016502,
+            "height": 399259
+          },
+          "background_fill_color": "RGB:FFFFFF",
+          "border": {
+            "color": "RGB:6D7642",
+            "width_pt": 1.5,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 167666,
+                "right": 167666,
+                "top": 15852,
+                "bottom": 15852
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "II. DESCRIPTION OF INVENTION",
+                    "font_name": "Calibri",
+                    "font_size": 14.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": 0.9,
+                "paragraph_index": 1,
+                "text": "II. DESCRIPTION OF INVENTION"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 7,
+          "type": 1,
+          "position": {
+            "x": 3158490,
+            "y": 4234730,
+            "width": 5737860,
+            "height": 340831
+          },
+          "background_fill_color": "RGB:DDEBD6",
+          "border": {
+            "color": "RGB:6D7642",
+            "width_pt": 1.5,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": ""
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 8,
+          "type": 5,
+          "position": {
+            "x": 3445383,
+            "y": 4035100,
+            "width": 4016502,
+            "height": 399259
+          },
+          "background_fill_color": "RGB:FFFFFF",
+          "border": {
+            "color": "RGB:6D7642",
+            "width_pt": 1.5,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 167666,
+                "right": 167666,
+                "top": 15852,
+                "bottom": 15852
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "III. EFFECT",
+                    "font_name": "Calibri",
+                    "font_size": 14.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": 0.9,
+                "paragraph_index": 1,
+                "text": "III. EFFECT"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 9,
+          "type": 1,
+          "position": {
+            "x": 3158490,
+            "y": 4856736,
+            "width": 5737860,
+            "height": 340831
+          },
+          "background_fill_color": "RGB:DDEBD6",
+          "border": {
+            "color": "RGB:6D7642",
+            "width_pt": 1.5,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": ""
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 10,
+          "type": 5,
+          "position": {
+            "x": 3445383,
+            "y": 4668528,
+            "width": 4016502,
+            "height": 399259
+          },
+          "background_fill_color": "RGB:FFFFFF",
+          "border": {
+            "color": "RGB:6D7642",
+            "width_pt": 1.5,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 167666,
+                "right": 167666,
+                "top": 15852,
+                "bottom": 15852
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "IV. DETECTABILITY",
+                    "font_name": "Calibri",
+                    "font_size": 14.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": 0.9,
+                "paragraph_index": 1,
+                "text": "IV. DETECTABILITY"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 11,
+          "type": 1,
+          "position": {
+            "x": 3158490,
+            "y": 5528394,
+            "width": 5737860,
+            "height": 340831
+          },
+          "background_fill_color": "RGB:DDEBD6",
+          "border": {
+            "color": "RGB:6D7642",
+            "width_pt": 1.5,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": ""
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 12,
+          "type": 5,
+          "position": {
+            "x": 3445383,
+            "y": 5328765,
+            "width": 4016502,
+            "height": 399259
+          },
+          "background_fill_color": "RGB:FFFFFF",
+          "border": {
+            "color": "RGB:6D7642",
+            "width_pt": 1.5,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 167666,
+                "right": 167666,
+                "top": 15852,
+                "bottom": 15852
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "V. IMPLEMENTATION PLAN",
+                    "font_name": "Calibri",
+                    "font_size": 14.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": 0.9,
+                "paragraph_index": 1,
+                "text": "V. IMPLEMENTATION PLAN"
+              }
+            ]
+          },
+          "table": null
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "shapes": [
+        {
+          "shape_index": 1,
+          "type": 1,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12192000,
+            "height": 704850
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "None",
+            "width_pt": "Default",
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "Abbreviation",
+                    "font_name": "Calibri",
+                    "font_size": 24.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "Abbreviation"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 2,
+          "type": 17,
+          "position": {
+            "x": 9805851,
+            "y": 152370,
+            "width": 2310223,
+            "height": 400110
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "RGB:FFFFFF",
+            "width_pt": 1.0,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 3,
+                "runs": [
+                  {
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 3,
+          "type": 19,
+          "position": {
+            "x": 771525,
+            "y": 847725,
+            "width": 10668000,
+            "height": 1876425
+          },
+          "background_fill_color": null,
+          "border": {},
+          "text": null,
+          "table": {
+            "rows": 7,
+            "cols": 2,
+            "data": [
+              [
+                "Abbreviation",
+                "Description"
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "",
+                ""
+              ]
+            ],
+            "data_detail": [
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": "Abbreviation",
+                          "font_name": "Calibri",
+                          "font_size": 11.0,
+                          "bold": null,
+                          "italic": null,
+                          "font_color": "RGB:1B1B1B",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": "Description",
+                          "font_name": "Calibri",
+                          "font_size": 11.0,
+                          "bold": null,
+                          "italic": null,
+                          "font_color": "RGB:1B1B1B",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                }
+              ]
+            ],
+            "cell_fills": [
+              [
+                "RGB:C5BD9B",
+                "RGB:C5BD9B"
+              ],
+              [
+                "RGB:FFFFFF",
+                "RGB:FFFFFF"
+              ],
+              [
+                "RGB:FFFFFF",
+                "RGB:FFFFFF"
+              ],
+              [
+                "RGB:FFFFFF",
+                "RGB:FFFFFF"
+              ],
+              [
+                "RGB:FFFFFF",
+                "RGB:FFFFFF"
+              ],
+              [
+                "RGB:FFFFFF",
+                "RGB:FFFFFF"
+              ],
+              [
+                "RGB:FFFFFF",
+                "RGB:FFFFFF"
+              ]
+            ],
+            "merge_info": [],
+            "col_widths": [
+              1497264,
+              9170736
+            ],
+            "row_heights": [
+              258621,
+              258621,
+              277601,
+              277601,
+              277601,
+              263190,
+              263190
+            ],
+            "cell_borders": [
+              [
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "shapes": [
+        {
+          "shape_index": 1,
+          "type": 1,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12192000,
+            "height": 704850
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "None",
+            "width_pt": "Default",
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "Appendix",
+                    "font_name": "Calibri",
+                    "font_size": 24.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "Appendix"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 2,
+          "type": 17,
+          "position": {
+            "x": 9805851,
+            "y": 152370,
+            "width": 2310223,
+            "height": 400110
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "RGB:FFFFFF",
+            "width_pt": 1.0,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 3,
+                "runs": [
+                  {
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 3,
+          "type": 19,
+          "position": {
+            "x": 771525,
+            "y": 847725,
+            "width": 10668000,
+            "height": 1876425
+          },
+          "background_fill_color": null,
+          "border": {},
+          "text": null,
+          "table": {
+            "rows": 7,
+            "cols": 2,
+            "data": [
+              [
+                "Name",
+                "Description"
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "",
+                ""
+              ],
+              [
+                "",
+                ""
+              ]
+            ],
+            "data_detail": [
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": "Name",
+                          "font_name": "Calibri",
+                          "font_size": 11.0,
+                          "bold": null,
+                          "italic": null,
+                          "font_color": "RGB:1B1B1B",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [
+                        {
+                          "text": "Description",
+                          "font_name": "Calibri",
+                          "font_size": 11.0,
+                          "bold": null,
+                          "italic": null,
+                          "font_color": "RGB:1B1B1B",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 4,
+                      "runs": [],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "level": 0,
+                      "left_indent": 0.0,
+                      "first_line_indent": null,
+                      "line_spacing": 1.07,
+                      "paragraph_index": 1
+                    }
+                  ]
+                }
+              ]
+            ],
+            "cell_fills": [
+              [
+                "RGB:C5BD9B",
+                "RGB:C5BD9B"
+              ],
+              [
+                "RGB:FFFFFF",
+                "RGB:FFFFFF"
+              ],
+              [
+                "RGB:FFFFFF",
+                "RGB:FFFFFF"
+              ],
+              [
+                "RGB:FFFFFF",
+                "RGB:FFFFFF"
+              ],
+              [
+                "RGB:FFFFFF",
+                "RGB:FFFFFF"
+              ],
+              [
+                "RGB:FFFFFF",
+                "RGB:FFFFFF"
+              ],
+              [
+                "RGB:FFFFFF",
+                "RGB:FFFFFF"
+              ]
+            ],
+            "merge_info": [],
+            "col_widths": [
+              1000125,
+              9667875
+            ],
+            "row_heights": [
+              258621,
+              258621,
+              277601,
+              277601,
+              277601,
+              263190,
+              263190
+            ],
+            "cell_borders": [
+              [
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:060602",
+                    "width": 1.0,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slide_number": 6,
+      "shapes": [
+        {
+          "shape_index": 1,
+          "type": 1,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12192000,
+            "height": 704850
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "None",
+            "width_pt": "Default",
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "I. BACKGROUND",
+                    "font_name": "Calibri",
+                    "font_size": 24.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "I. BACKGROUND"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 2,
+          "type": 17,
+          "position": {
+            "x": 9805851,
+            "y": 152370,
+            "width": 2310223,
+            "height": 400110
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "RGB:FFFFFF",
+            "width_pt": 1.0,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 3,
+                "runs": [
+                  {
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 3,
+          "type": 1,
+          "position": {
+            "x": 1,
+            "y": 704850,
+            "width": 1276350,
+            "height": 6153150
+          },
+          "background_fill_color": "RGB:FFFFFF",
+          "border": {
+            "color": "RGB:728A5C",
+            "width_pt": 2.25,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "1. Technical field",
+                    "font_name": "Calibri",
+                    "font_size": 16.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:000000",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "1. Technical field"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 4,
+          "type": 1,
+          "position": {
+            "x": 1276350,
+            "y": 704850,
+            "width": 10915649,
+            "height": 6153150
+          },
+          "background_fill_color": "RGB:FFFFFF",
+          "border": {
+            "color": "RGB:728A5C",
+            "width_pt": 2.25,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 2,
+                "runs": [],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": ""
+              }
+            ]
+          },
+          "table": null
+        }
+      ]
+    },
+    {
+      "slide_number": 7,
+      "shapes": [
+        {
+          "shape_index": 1,
+          "type": 1,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12192000,
+            "height": 704850
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "None",
+            "width_pt": "Default",
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "I. BACKGROUND",
+                    "font_name": "Calibri",
+                    "font_size": 24.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "I. BACKGROUND"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 2,
+          "type": 17,
+          "position": {
+            "x": 9805851,
+            "y": 152370,
+            "width": 2310223,
+            "height": 400110
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "RGB:FFFFFF",
+            "width_pt": 1.0,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 3,
+                "runs": [
+                  {
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 3,
+          "type": 1,
+          "position": {
+            "x": 1,
+            "y": 704850,
+            "width": 1276350,
+            "height": 6153150
+          },
+          "background_fill_color": "RGB:E4E6D6",
+          "border": {
+            "color": "RGB:728A5C",
+            "width_pt": 2.25,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "2",
+                    "font_name": "Calibri",
+                    "font_size": 16.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:000000",
+                    "run_index": 1
+                  },
+                  {
+                    "text": ". Problem",
+                    "font_name": "Calibri",
+                    "font_size": 16.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:000000",
+                    "run_index": 2
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "2. Problem"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 4,
+          "type": 1,
+          "position": {
+            "x": 1276350,
+            "y": 704850,
+            "width": 10915649,
+            "height": 6153150
+          },
+          "background_fill_color": "RGB:E4E6D6",
+          "border": {
+            "color": "RGB:728A5C",
+            "width_pt": 2.25,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 2,
+                "runs": [],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": ""
+              }
+            ]
+          },
+          "table": null
+        }
+      ]
+    },
+    {
+      "slide_number": 8,
+      "shapes": [
+        {
+          "shape_index": 1,
+          "type": 1,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12192000,
+            "height": 704850
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "None",
+            "width_pt": "Default",
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "I. BACKGROUND",
+                    "font_name": "Calibri",
+                    "font_size": 24.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "I. BACKGROUND"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 2,
+          "type": 17,
+          "position": {
+            "x": 9805851,
+            "y": 152370,
+            "width": 2310223,
+            "height": 400110
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "RGB:FFFFFF",
+            "width_pt": 1.0,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 3,
+                "runs": [
+                  {
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 3,
+          "type": 1,
+          "position": {
+            "x": 1,
+            "y": 704850,
+            "width": 1276350,
+            "height": 6153150
+          },
+          "background_fill_color": "RGB:FFFFFF",
+          "border": {
+            "color": "RGB:728A5C",
+            "width_pt": 2.25,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "3",
+                    "font_name": "Calibri",
+                    "font_size": 16.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:000000",
+                    "run_index": 1
+                  },
+                  {
+                    "text": ". Prior art",
+                    "font_name": "Calibri",
+                    "font_size": 16.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:000000",
+                    "run_index": 2
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "3. Prior art"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 4,
+          "type": 1,
+          "position": {
+            "x": 1276350,
+            "y": 704850,
+            "width": 10915649,
+            "height": 6153150
+          },
+          "background_fill_color": "RGB:FFFFFF",
+          "border": {
+            "color": "RGB:728A5C",
+            "width_pt": 2.25,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 2,
+                "runs": [],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": ""
+              }
+            ]
+          },
+          "table": null
+        }
+      ]
+    },
+    {
+      "slide_number": 9,
+      "shapes": [
+        {
+          "shape_index": 1,
+          "type": 1,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12192000,
+            "height": 704850
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "None",
+            "width_pt": "Default",
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "I. BACKGROUND",
+                    "font_name": "Calibri",
+                    "font_size": 24.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "I. BACKGROUND"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 2,
+          "type": 17,
+          "position": {
+            "x": 9805851,
+            "y": 152370,
+            "width": 2310223,
+            "height": 400110
+          },
+          "background_fill_color": "RGB:052569",
+          "border": {
+            "color": "RGB:FFFFFF",
+            "width_pt": 1.0,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": true,
+              "auto_fit": true,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 3,
+                "runs": [
+                  {
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 3,
+          "type": 1,
+          "position": {
+            "x": 1,
+            "y": 704850,
+            "width": 1276350,
+            "height": 6153150
+          },
+          "background_fill_color": "RGB:E4E6D6",
+          "border": {
+            "color": "RGB:728A5C",
+            "width_pt": 2.25,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [
+                  {
+                    "text": "4",
+                    "font_name": "Calibri",
+                    "font_size": 16.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:000000",
+                    "run_index": 1
+                  },
+                  {
+                    "text": ". Purpose of invention",
+                    "font_name": "Calibri",
+                    "font_size": 16.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:000000",
+                    "run_index": 2
+                  }
+                ],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": "4. Purpose of invention"
+              }
+            ]
+          },
+          "table": null
+        },
+        {
+          "shape_index": 4,
+          "type": 1,
+          "position": {
+            "x": 1276350,
+            "y": 704850,
+            "width": 10915649,
+            "height": 6153150
+          },
+          "background_fill_color": "RGB:E4E6D6",
+          "border": {
+            "color": "RGB:728A5C",
+            "width_pt": 2.25,
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 2,
+                "runs": [],
+                "bullet": 0,
+                "bullet_type": null,
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": ""
+              }
+            ]
+          },
+          "table": null
+        }
+      ]
+    }
+  ]
+}
