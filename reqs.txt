@@ -1,1 +1,3 @@
 dacite
+bs4
+pandas

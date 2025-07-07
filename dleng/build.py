@@ -372,7 +372,7 @@ def build_pptx_from_json(json_path: str, output_path: str):
             if shape:
                 apply_fill_color(shape, shape_data.background_fill_color)
                 apply_border(shape, shape_data.border)
-
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
     prs.save(output_path)
     print(f"✅ PPTX đã được tạo tại: {output_path}")
 
@@ -382,5 +382,5 @@ if __name__ == "__main__":
     #                      "bin/test_ppt1_restored_from_json.pptx")
     # build_pptx_from_json(r"bin\Pre_DOI_Form_05_2024v2\Pre_DOI_Form_05_2024v2.json",
     #                      r"bin\Pre_DOI_Form_05_2024v2\Pre_DOI_Form_05_2024v2.json.pptx")
-    build_pptx_from_json(r"bin\Pre_DOI_Form_05_2024v3\Pre_DOI_Form_05_2024v3.json",
-                         r"bin\Pre_DOI_Form_05_2024v3\Pre_DOI_Form_05_2024v3.json.pptx")
+    build_pptx_from_json(r"utest\predoi_v3.json",
+                         r"bin\predoi_v3\predoi_v3.pptx")
