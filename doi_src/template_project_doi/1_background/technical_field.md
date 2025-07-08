@@ -1,18 +1,28 @@
-### 🧪 Technical Field
 
-Hệ thống phát minh này thuộc lĩnh vực bảo mật ứng dụng Android, đặc biệt là kỹ thuật phát hiện phần mềm độc hại dựa trên hành vi runtime.
+# Technical Field
 
-- Áp dụng cho các hệ thống phân tích hành vi tự động.
-- Có thể triển khai như một công cụ sandbox hoặc tích hợp vào hệ thống MDM.
+## DGA Botnet
 
-![](../_assets/images/sample_diagram.png)
+These are botnets that utilize Domain Generation Algorithms (DGA) to automatically generate new domain names periodically, making detection and mitigation more challenging. DGA enables botnets to evade security measures such as blacklists by generating thousands of dynamic domains daily.
 
----
+![sample_diagram](../_assets/images/sample_diagram.png)
 
-### 🔍 Kỹ thuật cốt lõi
+## Character-Based DGA
 
-- Mô phỏng tương tác người dùng qua script điều khiển.
-- Thu thập hành vi ứng dụng khi tương tác như click, scroll, nhập liệu.
-- Phân tích các mẫu hành vi qua thống kê thời gian phản hồi, số lượng API gọi.
+Botnets such as Blackhole, Bamital, and CCleaner generate domain names based on random character patterns. This results in domain names that are difficult to predict and do not follow any semantic rules.
 
-Hệ thống này đặc biệt phù hợp để phân tích các APK chứa đoạn mã độc được kích hoạt bằng các trigger ẩn (delay, điều kiện môi trường...).
+![sample_diagram](../_assets/images/sample_diagram.png)
+
+</br>
+
+## Word-Based DGA
+
+Some botnets, such as Bigviktor and Matsnu, generate domain names by combining legitimate words. This makes DGA-generated domains appear similar to legitimate ones, making detection more challenging.
+
+## Hybrid DGA
+
+Banjori is an example of a hybrid DGA, which combines both characters and words to generate domains, further complicating detection. Examples include:
+
+- ``earn``estnessbiophysicalohax.com
+  - ``earn``estnessbiophysicalohax.com
+- ``kwto``estnessbiophysicalohax.com

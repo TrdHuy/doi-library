@@ -333,6 +333,7 @@ def extract_slide_data(pptx_path, output_dir, for_txt=False, is_debug=False):
         slide_info = {"slide_number": i + 1, "shapes": []}
         for j, shape in enumerate(slide.shapes):
             shape_info = {
+                "shape_name": shape.name,
                 "shape_index": j + 1,
                 "type": shape.shape_type,
                 "position": {
@@ -401,7 +402,7 @@ def describe_pptx_to_json_with_assets(pptx_path, output_root_folder):
 # Ví dụ sử dụng
 if __name__ == "__main__":
     describe_pptx_to_json_with_assets(
-        r"template\Pre_DOI_Form_05_2024v3.pptx", "bin")
+        r"C:\Users\huy.td1\Desktop\Temp\doi-library\template\Pre_DOI_Form_05_2024v3.pptx", r"C:\Users\huy.td1\Desktop\Temp\doi-library\bin")
     # describe_pptx_to_json_with_assets(
     #     r"dleng\utest\test_ppt1.pptx", "bin")
     # describe_pptx_to_json(
