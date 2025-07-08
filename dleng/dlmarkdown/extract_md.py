@@ -244,6 +244,6 @@ def load_background_from_folder(folder_path: str) -> Background:
     return Background(sections=sections)
 
 
-bg = load_background_from_folder(
-    r"C:\Users\huy.td1\Desktop\Temp\doi-library\doi_src\template_project_doi\1_background")
-bg
+# bg = load_background_from_folder(
+#     r"C:\Users\huy.td1\Desktop\Temp\doi-library\doi_src\template_project_doi\1_background")
+# bg

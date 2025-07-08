@@ -10,6 +10,7 @@ from pptx.oxml.ns import qn
 from pptx.dml.fill import _NoFill
 from pptx.dml.fill import _NoneFill
 from pptx.shapes.picture import Picture
+from utils.pptxhelper import *
 
 SHAPE_TYPES_WITH_FILL_LINE = {
     MSO_SHAPE_TYPE.AUTO_SHAPE,
@@ -330,7 +331,10 @@ def extract_slide_data(pptx_path, output_dir, for_txt=False, is_debug=False):
     os.makedirs(asset_dir, exist_ok=True)
 
     for i, slide in enumerate(prs.slides):
-        slide_info = {"slide_number": i + 1, "shapes": []}
+        slide_info = {"slide_number": i + 1, 
+                      "shapes": [],
+                      "slide_id": str(slide.slide_id)}
+        
         for j, shape in enumerate(slide.shapes):
             shape_info = {
                 "shape_name": shape.name,
@@ -345,7 +349,8 @@ def extract_slide_data(pptx_path, output_dir, for_txt=False, is_debug=False):
                 "background_fill_color": None,
                 "border": {},
                 "text": None,
-                "table": None
+                "table": None,
+                "shape_visible": get_shape_visible(shape)
             }
 
             if is_debug:
@@ -365,8 +370,18 @@ def extract_slide_data(pptx_path, output_dir, for_txt=False, is_debug=False):
                     shape.fill.fore_color, context=f"[Slide {i+1} - Shape {j+1}] fill")
                 shape_info["border"] = extract_shape_border_info(
                     shape, context=f"[Slide {i+1} - Shape {j+1}]")
-
-            if shape.has_text_frame:
+            
+            # Nếu là shape SLIDE_INFO → parse json trong text frame
+            if shape.name == "SLIDE_INFO" and shape.has_text_frame:
+                try:
+                    slide_tag_json = shape.text_frame.text.strip()
+                    slide_info["slide_tag_info"] = json.loads(slide_tag_json)
+                    shape_info["text"] = extract_text_from_shape(
+                    shape, i, j, for_txt)
+                except Exception as e:
+                    print(f"[Slide {i+1}] ❌ Không parse được JSON từ SLIDE_INFO: {e}")
+                    slide_info["slide_tag_info"] = None
+            elif shape.has_text_frame:
                 shape_info["text"] = extract_text_from_shape(
                     shape, i, j, for_txt)
 
@@ -402,7 +417,8 @@ def describe_pptx_to_json_with_assets(pptx_path, output_root_folder):
 # Ví dụ sử dụng
 if __name__ == "__main__":
     describe_pptx_to_json_with_assets(
-        r"C:\Users\huy.td1\Desktop\Temp\doi-library\template\Pre_DOI_Form_05_2024v3.pptx", r"C:\Users\huy.td1\Desktop\Temp\doi-library\bin")
+        r"C:\Users\Hp\Desktop\temp\python\doi-library\template\Pre_DOI_Form_05_2024_v3.pptx",
+        r"C:\Users\Hp\Desktop\temp\python\doi-library\bin\Pre_DOI_Form_05_2024v3")
     # describe_pptx_to_json_with_assets(
     #     r"dleng\utest\test_ppt1.pptx", "bin")
     # describe_pptx_to_json(

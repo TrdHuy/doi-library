@@ -95,6 +95,7 @@ class DL_Image:
 @dataclass
 class DL_Shape:
     shape_index: int
+    shape_name: str
     type: int
     position: DL_Position
     background_fill_color: Optional[str]
@@ -102,12 +103,14 @@ class DL_Shape:
     text: Optional[DL_Text] = None
     table: Optional[DL_Table] = None
     image: Optional[DL_Image] = None   # 👈 Thêm dòng này
-
+    
 @dataclass
 class DL_Slide:
     slide_number: int
     shapes: List[DL_Shape]
-
+    slide_id: str
+    slide_tag_info: Optional[dict]
+    
 @dataclass
 class DL_PPTXData:
     slide_width: int
