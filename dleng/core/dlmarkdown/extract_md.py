@@ -48,7 +48,9 @@ def parse_table(text: str, section_name: str = "unknown") -> pd.DataFrame:
             f"Parse thất bại ở bảng section `{section_name}`: {e}")
 
 
-def extract_basic_info_sections(markdown_text: str):
+def extract_basic_info_sections(basic_info_md_path: str) -> BasicInfo:
+    with open(basic_info_md_path, encoding="utf-8") as f:
+        markdown_text = f.read()
     pattern = r"^### .*?$"  # match section headers
     lines = markdown_text.strip().splitlines()
     sections = {}
@@ -80,7 +82,7 @@ def extract_basic_info_sections(markdown_text: str):
         else:
             sections[current_section] = body
 
-    return sections
+    return parse_basic_info(sections)
 
 
 # with open(r"C:\Users\Hp\Desktop\temp\python\doi-library\doi_src\template_project_doi\0_basic_info\basic_info.md", encoding="utf-8") as f:
@@ -102,7 +104,7 @@ def extract_config_from_line(line: str) -> (str, Optional[dict]):
     return line, None
 
 
-def parse_markdown_to_blocks(md_text: str) -> List[ContentBlock]:
+def __parse_markdown_to_blocks(md_text: str) -> List[ContentBlock]:
     blocks = []
     lines = md_text.splitlines()
     i = 0
@@ -111,7 +113,7 @@ def parse_markdown_to_blocks(md_text: str) -> List[ContentBlock]:
         if not line:
             i += 1
             continue
-        
+
         # Kiểm tra nếu là bảng
         if '|' in line and re.match(r'^\|.*\|$', line):
             table_lines = [line]
@@ -134,7 +136,7 @@ def parse_markdown_to_blocks(md_text: str) -> List[ContentBlock]:
                 table_data=table_data
             ))
             continue
-        
+
         i += 1
         line, config = extract_config_from_line(line)
         # Hình ảnh
@@ -198,7 +200,7 @@ def load_background_from_folder(folder_path: str) -> Background:
 
                     with open(md_path, "r", encoding="utf-8") as f:
                         content = f.read()
-                    blocks = parse_markdown_to_blocks(content)
+                    blocks = __parse_markdown_to_blocks(content)
 
                     config = None
                     if os.path.exists(json_path):
@@ -228,7 +230,7 @@ def load_background_from_folder(folder_path: str) -> Background:
 
                 for i, chunk in enumerate(slide_chunks):
                     slide_id = f"{section_name}_slide_{i+1}"
-                    blocks = parse_markdown_to_blocks(chunk.strip())
+                    blocks = __parse_markdown_to_blocks(chunk.strip())
                     cfg = config_data[i] if i < len(config_data) else None
                     slide_items.append(BackgroundSlide(
                         id=slide_id,

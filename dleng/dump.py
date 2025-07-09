@@ -418,7 +418,7 @@ def describe_pptx_to_json_with_assets(pptx_path, output_root_folder):
 if __name__ == "__main__":
     describe_pptx_to_json_with_assets(
         r"C:\Users\Hp\Desktop\temp\python\doi-library\template\Pre_DOI_Form_05_2024_v3.pptx",
-        r"C:\Users\Hp\Desktop\temp\python\doi-library\bin\Pre_DOI_Form_05_2024v3")
+        r"C:\Users\Hp\Desktop\temp\python\doi-library\bin")
     # describe_pptx_to_json_with_assets(
     #     r"dleng\utest\test_ppt1.pptx", "bin")
     # describe_pptx_to_json(
