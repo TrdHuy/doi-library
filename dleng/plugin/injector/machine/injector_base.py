@@ -1,20 +1,23 @@
 from abc import ABC, abstractmethod
-from plugin.injector.injection_map.decorator import inject_registry
 from data.doi_template.v1.contract import *
 from data.pptxdata_utils import *
-from data.pptxdata import *
+from data.pptxdata import DL_Shape, DL_PPTXData, DL_Slide, DL_Text, DL_Table, DL_MergeInfo
 from copy import deepcopy
 from plugin.injector.injection_map.InjectionMap import InjectionMap
+from typing import Callable, Any, Union
+from dataclasses import dataclass
 
+INJECT_REGISTRY: list[tuple[Callable[..., Any], Any]] = []
 
 @dataclass
 class InjectValue:
-    value: any
-    meta: dict = None  # metadata kèm theo nếu cần (vd: format, style, note...)
+    value: Any
+    # metadata kèm theo nếu cần (vd: format, style, note...)
+    meta: Optional[dict[str, Any]] = None
 
 
 def run_injection(pptx_data: DL_PPTXData, injection_map: InjectionMap):
-    for func, injector in inject_registry:
+    for func, injector in INJECT_REGISTRY:
         result = func(injection_map)
         if not isinstance(result, InjectValue):
             raise TypeError(
@@ -24,7 +27,7 @@ def run_injection(pptx_data: DL_PPTXData, injection_map: InjectionMap):
 
 class Injector(ABC):
     @abstractmethod
-    def inject(self, slide, shape_or_table, value):
+    def inject(self, pptx_data: DL_PPTXData, injected_value: InjectValue):
         pass
 
     def find_slide_by_inject_id(self, pptx_data: DL_PPTXData, slide_id: str) -> Optional[DL_Slide]:
@@ -52,6 +55,9 @@ class ShapeTextInjector(Injector):
         if shape is None:
             raise ValueError(
                 f"Không tìm thấy table shape có tên = {self.shape_name}")
+        if shape.text is None:
+            raise NotImplementedError(
+                "Chưa hỗ trợ nếu shape không có paragraph/run mẫu")
 
         paragraphs = shape.text.paragraphs
         if not paragraphs or not paragraphs[0].runs or not paragraphs[0].runs[0]:
@@ -112,27 +118,33 @@ class TableRowInserter(Injector):
             raise ValueError(
                 f"Không tìm thấy table shape tên = {self.table_shape_name}")
 
-        table = table_shape.table
-        insert_index = injected_value.meta.get("insert_index", table.rows)
+        table: DL_Table = table_shape.table
+        meta = injected_value.meta
+        if meta is None:
+            raise ValueError("meta không được None")
+
+        insert_index = int(meta.get("insert_index", table.rows))
 
         # Bắt buộc phải có template row index
-        template_row_index = injected_value.meta.get("template_row_index")
+        template_row_index = meta.get("template_row_index")
 
         if template_row_index is None:
             raise ValueError(
                 "inject meta cần có 'template_row_index' để lấy template cho cell border, fill, height...")
+        template_row_index = int(template_row_index)
 
         if template_row_index >= table.rows:
             raise IndexError(
                 f"template_row_index {template_row_index} vượt quá số row hiện tại trong bảng ({table.rows})")
 
-        row_data_list = injected_value.value
+        row_data_list: Union[tuple[str, ...],
+                             list[tuple[str, ...]]] = injected_value.value
 
         # Normalize
         if isinstance(row_data_list, tuple):
             row_data_list = [row_data_list]
-        elif isinstance(row_data_list, list):
-            if not all(isinstance(item, tuple) for item in row_data_list):
+        if isinstance(row_data_list, list):                                 # type: ignore
+            if not all(isinstance(item, tuple) for item in row_data_list):  # type: ignore
                 raise TypeError("Tất cả phần tử trong danh sách phải là tuple")
         else:
             raise TypeError(
@@ -147,12 +159,11 @@ class TableRowInserter(Injector):
             actual_index = insert_index + offset
             table.rows += 1
             table.data.insert(actual_index, [str(cell) for cell in row_data])
-
             # Clone các thuộc tính từ template
             template_detail_row = table.data_detail[template_row_index]
             template_fill_row = table.cell_fills[template_row_index]
             template_border_row = table.cell_borders[template_row_index]
-            new_detail_row = []
+            new_detail_row: list[Optional[DL_Text]] = []
             for col, cell_text in enumerate(row_data):
                 detail = deepcopy(template_detail_row[col])
                 if detail is not None:
@@ -164,16 +175,15 @@ class TableRowInserter(Injector):
                             first_run.text = str(cell_text)
                             first_paragraph.runs = [first_run]
                         else:
-                            first_paragraph.runs = [
-                                DL_Run(text=str(cell_text))]
+                            raise NotImplementedError(
+                                "Chưa hỗ trợ trường hợp paragraphs.runs là rỗng"
+                            )
                         detail.paragraphs = [first_paragraph]
                     else:
-                        detail.paragraphs = [
-                            DL_TextParagraph(
-                                runs=[DL_Run(text=str(cell_text))]
-                            )
-                        ]
-                new_detail_row.append(detail)
+                        raise NotImplementedError(
+                            "Chưa hỗ trợ trường hợp detail.paragraphs là rỗng"
+                        )
+                    new_detail_row.append(detail)
 
             # Ghi lại data_detail đã chuẩn hoá (chỉ 1 paragraph và 1 run mỗi cell)
             table.data_detail.insert(actual_index, new_detail_row)
@@ -187,7 +197,7 @@ class TableRowInserter(Injector):
             # Copy merge info từ template row
             template_merge_row_info = [
                 mi for mi in table.merge_info if mi.row == template_row_index]
-            copied_merges = []
+            copied_merges: list[DL_MergeInfo] = []
 
             for m in template_merge_row_info:
                 copied_merge = deepcopy(m)

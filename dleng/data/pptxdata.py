@@ -114,7 +114,7 @@ class DL_Slide:
     slide_number: int
     shapes: List[DL_Shape]
     slide_id: str
-    slide_tag_info: Optional[dict]
+    slide_tag_info: Optional[dict[str, str]]
     
 @dataclass
 class DL_PPTXData:

@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from typing import List
 import pandas as pd
 
+
 @dataclass
 class Inventor:
     no: int
@@ -10,15 +11,18 @@ class Inventor:
     employee_no: str
     status: str
 
+
 @dataclass
 class Abbreviation:
     abbreviation: str
     description: str
 
+
 @dataclass
 class AppendixItem:
     name: str
     description: str
+
 
 @dataclass
 class Disclosure:
@@ -26,6 +30,7 @@ class Disclosure:
     problem: str
     prior_art: str
     purpose: str
+
 
 @dataclass
 class BasicInfo:
@@ -41,7 +46,8 @@ class BasicInfo:
     abbreviations: List[Abbreviation]
     appendix: List[AppendixItem]
 
-def parse_basic_info(sections: dict) -> BasicInfo:
+
+def parse_basic_info(sections: dict[str, str]) -> BasicInfo:
     # 1. Title
     title = sections.get("title")
     if not title:
@@ -50,9 +56,12 @@ def parse_basic_info(sections: dict) -> BasicInfo:
     # 2. Invention Number
     patent_text = sections.get("for_patent_team_use", "")
     lines = patent_text.splitlines()
-    inv_number = next((l.split(":", 1)[-1].strip() for l in lines if "Invention Number" in l), None)
-    date_recv = next((l.split(":", 1)[-1].strip() for l in lines if "Date Received" in l), None)
-    review = next((l.split(":", 1)[-1].strip() for l in lines if "Review Decision" in l), None)
+    inv_number = next((l.split(":", 1)[-1].strip()
+                      for l in lines if "Invention Number" in l), None)
+    date_recv = next((l.split(":", 1)[-1].strip()
+                     for l in lines if "Date Received" in l), None)
+    review = next((l.split(":", 1)[-1].strip()
+                  for l in lines if "Review Decision" in l), None)
 #     if not (inv_number and date_recv and review):
 #         raise ValueError("Sai định dạng ở `for_patent_team_use`")
 
@@ -61,13 +70,15 @@ def parse_basic_info(sections: dict) -> BasicInfo:
     project_name = sections.get("project_name")
     invention_title = sections.get("invention_title")
     if not (department and project_name and invention_title):
-        raise ValueError("Thiếu trường `department`, `project_name` hoặc `invention_title`")
+        raise ValueError(
+            "Thiếu trường `department`, `project_name` hoặc `invention_title`")
 
     # 4. Inventors
     df = sections.get("inventors")
     if not isinstance(df, pd.DataFrame):
         raise ValueError("`inventors` không phải bảng")
-    expected_cols = ["No.", "Full Name", "Contribution", "Employee No.", "Status"]
+    expected_cols = ["No.", "Full Name",
+                     "Contribution", "Employee No.", "Status"]
     for col in expected_cols:
         if col not in df.columns:
             raise ValueError(f"Bảng inventors thiếu cột '{col}'")
@@ -83,7 +94,8 @@ def parse_basic_info(sections: dict) -> BasicInfo:
 
     # 5. Disclosure
     disclosure_raw = sections.get("disclosure_of_invention", "")
-    disclosure_lines = [l.strip("- ").strip() for l in disclosure_raw.splitlines() if l.strip()]
+    disclosure_lines = [l.strip("- ").strip()
+                        for l in disclosure_raw.splitlines() if l.strip()]
     disclosure_map = {}
     for l in disclosure_lines:
         if ":" in l:

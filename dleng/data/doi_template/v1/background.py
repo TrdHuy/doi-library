@@ -1,5 +1,5 @@
-from dataclasses import dataclass
-from typing import List, Optional, Literal
+from dataclasses import dataclass, field
+from typing import List, Optional, Literal, Any
 
 # Loại block có thể hiển thị được
 ContentBlockType = Literal["title", "paragraph", "bullet", "image", "table"]
@@ -12,15 +12,15 @@ class ContentBlock:
     level: Optional[int] = 0
     image_path: Optional[str] = None
     bullet_char: Optional[str] = None
-    config: Optional[dict] = None
+    config: Optional[dict[str, Any]] = None
     table_data: Optional[List[List[str]]] = None  
 
 @dataclass
 class BackgroundSlide:
     id: str
     title: Optional[str] = None
-    blocks: List[ContentBlock] = None
-    config: Optional[dict] = None
+    blocks: List[ContentBlock] = field(default_factory=list[ContentBlock])
+    config: Optional[dict[str, Any]] = None
 
 
 @dataclass
