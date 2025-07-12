@@ -20,14 +20,15 @@ from dacite import from_dict
 from dataclasses import asdict
 from pathlib import Path
 from utils.pptxhelper import *
-
-#region Plugin declaration
-from core.injector import injector_plugin as ip
-ip.register_all()
-
-#end region
+from plugin.dlmarkdown.extract_md import load_background_from_folder, extract_basic_info_sections
+from data.doi_template.v1.basic_info import BasicInfo
+from pptx.util import Pt
+from pptx.oxml.xmlchemy import OxmlElement
+from pptx.oxml.ns import qn
+from pptx.enum.text import MSO_VERTICAL_ANCHOR
 
 EMU = 1  # đơn vị đã là EMU trong JSON dump
+
 
 def apply_cell_border(cell: _Cell, border_info: DL_CellBorder):
     tcPr = cell._tc.get_or_add_tcPr()
@@ -169,9 +170,6 @@ def apply_run(run: _Run, run_data: DL_Run):
 
 
 def apply_paragraph(p: _Paragraph, para: DL_TextParagraph):
-    from pptx.util import Pt
-    from pptx.oxml.xmlchemy import OxmlElement
-    from pptx.oxml.ns import qn
 
     # 1. Căn lề
     p.alignment = PP_ALIGN(para.alignment or PP_ALIGN.LEFT)
@@ -237,7 +235,6 @@ def apply_text_detail(text_frame: TextFrame, text: DL_Text):
 
         if fmt.vertical_anchor:
             try:
-                from pptx.enum.text import MSO_VERTICAL_ANCHOR
                 text_frame.vertical_anchor = fmt.vertical_anchor
             except (KeyError, ValueError):
                 pass  # fallback nếu giá trị không hợp lệ
@@ -388,8 +385,6 @@ def build_pptx_from_json(json_path: str, output_path: str):
     prs.save(output_path)
     print(f"✅ PPTX đã được tạo tại: {output_path}")
 
-from core.dlmarkdown.extract_md import load_background_from_folder, extract_basic_info_sections
-from data.doi_template.v1.basic_info import BasicInfo
 
 def build_pptx_from_markdown(path_doi_src: str, path_output: str, path_template_json: str):
     """
@@ -402,45 +397,58 @@ def build_pptx_from_markdown(path_doi_src: str, path_output: str, path_template_
     # 1. Load template JSON thành DL_PPTXData
     with open(path_template_json, "r", encoding="utf-8") as f:
         template_dict = json.load(f)
-    pptx_data: DL_PPTXData = from_dict(data_class=DL_PPTXData, data=template_dict)
+    pptx_data: DL_PPTXData = from_dict(
+        data_class=DL_PPTXData, data=template_dict)
 
     # 2. Parse markdown thành các object BasicInfo, Background
     basic_info_path = path_doi_src / "0_basic_info/basic_info.md"
     if os.path.exists(basic_info_path):
         basic_info = extract_basic_info_sections(basic_info_path)
         if basic_info is None:
-            raise ValueError(f"Failed to extract basic info from: {basic_info_path}")
+            raise ValueError(
+                f"Failed to extract basic info from: {basic_info_path}")
     else:
-        raise FileNotFoundError(f"Không tìm thấy file basic info: {basic_info_path}")
+        raise FileNotFoundError(
+            f"Không tìm thấy file basic info: {basic_info_path}")
 
     background_dir = path_doi_src / "1_background"
     if background_dir.exists() and background_dir.is_dir():
         background = load_background_from_folder(background_dir)
         if background is None:
-            raise ValueError(f"Failed to extract background from: {basic_info_path}")
+            raise ValueError(
+                f"Failed to extract background from: {basic_info_path}")
     else:
-        raise FileNotFoundError(f"Không tìm thấy folder background: {background_dir}")
+        raise FileNotFoundError(
+            f"Không tìm thấy folder background: {background_dir}")
     # 3. Inject data vào template
-    context = ip.InjectContext(basic_info=basic_info, background=background)
-    inject_data_to_pptx(pptx_data, context)
-    
+    inject_data_to_pptx(pptx_data, basic_info)
+
     # 4. Lưu lại file json tạm từ A
     tmp_json_path = path_output.with_suffix(".json")
+    # Đảm bảo thư mục cha tồn tại
+    tmp_json_path.parent.mkdir(parents=True, exist_ok=True)
     with open(tmp_json_path, "w", encoding="utf-8") as f:
         json.dump(asdict(pptx_data), f, ensure_ascii=False, indent=2)
 
     # 5. Dùng hàm có sẵn để build ra PPTX
     build_pptx_from_json(str(tmp_json_path), str(path_output))
 
-def inject_data_to_pptx(pptx_data: DL_PPTXData, context: ip.InjectContext):
-    for slide in pptx_data.slides:
-        tag = slide.slide_tag_info.get("inject_id") if slide.slide_tag_info else None
-        injector = ip.INJECTOR_REGISTRY.get(tag)
-        if injector:
-            injector.inject(slide, context)
-        else:
-            print(f"⚠️ Không tìm thấy injector cho slide tag: {tag}")
-            
+
+def inject_data_to_pptx(pptx_data: DL_PPTXData, basic_info: BasicInfo):
+    from plugin.injector.injection_map.BasicInfoInjectionMap import BasicInfoInjectionMap
+    from plugin.injector.machine.injector_base import run_injection
+
+    basic_info_injection_map = BasicInfoInjectionMap(basic_info)
+    run_injection(pptx_data, basic_info_injection_map)
+    # for slide in pptx_data.slides:
+    #     tag = slide.slide_tag_info.get("inject_id") if slide.slide_tag_info else None
+    #     injector = ip.INJECTOR_REGISTRY.get(tag)
+    #     if injector:
+    #         injector.inject(slide, context)
+    #     else:
+    #         print(f"⚠️ Không tìm thấy injector cho slide tag: {tag}")
+
+
 if __name__ == "__main__":
     # build_pptx_from_json(r"utest\dump_test_ppt1.json",
     #                      "bin/test_ppt1_restored_from_json.pptx")
@@ -449,10 +457,19 @@ if __name__ == "__main__":
     # build_pptx_from_json(
     #     r"C:\Users\Hp\Desktop\temp\python\doi-library\bin\Pre_DOI_Form_05_2024v3\Pre_DOI_Form_05_2024_v3.json",
     #     r"C:\Users\Hp\Desktop\temp\python\doi-library\bin\Pre_DOI_Form_05_2024v3\Pre_DOI_Form_05_2024_v3.json.pptx")
-    
-    build_pptx_from_markdown(path_doi_src=
-                             r"C:\Users\Hp\Desktop\temp\python\doi-library\doi_src\template_project_doi",
-                             path_output=
-                             r"C:\Users\Hp\Desktop\temp\python\doi-library\bin\Pre_DOI_Form_05_2024_v3\template_project_doi.pptx",
-                             path_template_json=
-                             r"C:\Users\Hp\Desktop\temp\python\doi-library\template\Pre_DOI_Form_05_2024_v3.json")
+
+    from pathlib import Path
+    # Đường dẫn tuyệt đối của file đang chạy
+    current_file = Path(__file__).resolve()
+    # Lấy root folder (ở đây là cha của thư mục 'dleng')
+    root_dir = current_file.parents[1]
+    # Ví dụ sử dụng
+    build_pptx_from_markdown(
+        path_doi_src=root_dir / "doi_src" / "template_project_doi",
+        path_output=root_dir / "bin" / "Pre_DOI_Form_05_2024_v3" /
+        "template_project_doi.pptx",
+        path_template_json=root_dir / "template" / "Pre_DOI_Form_05_2024_v3.json"
+    )
+    # build_pptx_from_json(
+    #     json_path=root_dir / "template" / "Pre_DOI_Form_05_2024_v3.json",
+    #     output_path= root_dir / "bin" / "test.pptx")

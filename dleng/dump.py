@@ -116,11 +116,45 @@ def extract_run_info(run, context):
 
 def extract_paragraph_info(paragraph, context):
     alignment_val = paragraph.alignment or PP_ALIGN.LEFT
+    font = paragraph.font
+    
+    font_size_pt = font.size.pt if font.size else None
+    font_name = font.name if font.name else None
+    bold = font.bold if font.bold is not None else None
+    italic = font.italic if font.italic is not None else None
+    font_color = get_rgb_safe(font.color, context=context) if font.color.type else None
+
+    # Nếu thiếu thông tin nào → fallback bằng endParaRPr
+    if not all([font_size_pt, font_name, bold is not None, italic is not None, font_color]):
+        if paragraph.runs:
+            first_run_font = paragraph.runs[0].font
+            font_size_pt = first_run_font.size.pt if first_run_font.size else None
+            font_name = first_run_font.name if first_run_font.name else None
+            bold = first_run_font.bold if first_run_font.bold is not None else None
+            italic = first_run_font.italic if first_run_font.italic is not None else None
+            font_color = get_rgb_safe(first_run_font.color, context=context) if first_run_font.color else None
+        else:
+            fallback = extract_font_info_from_end_para(paragraph)
+            if fallback:
+                font_size_pt = font_size_pt or fallback["font_size"]
+                font_name = font_name or fallback["font_name"]
+                bold = bold if bold is not None else fallback["bold"]
+                italic = italic if italic is not None else fallback["italic"]
+                font_color = font_color or fallback["font_color"]
+
+    if font_size_pt is None:
+        raise ValueError(f"{context} thiếu font size rõ ràng")
+
     para_info = {
         "alignment": alignment_val,
         "runs": [],
         "bullet": paragraph.level,
-        "bullet_type": None
+        "bullet_type": None,
+        "font_name": font_name,
+        "font_size": font_size_pt,
+        "bold": bold,
+        "italic": italic,
+        "font_color": font_color
     }
 
     if paragraph.level is not None:
@@ -376,8 +410,6 @@ def extract_slide_data(pptx_path, output_dir, for_txt=False, is_debug=False):
                 try:
                     slide_tag_json = shape.text_frame.text.strip()
                     slide_info["slide_tag_info"] = json.loads(slide_tag_json)
-                    shape_info["text"] = extract_text_from_shape(
-                    shape, i, j, for_txt)
                 except Exception as e:
                     print(f"[Slide {i+1}] ❌ Không parse được JSON từ SLIDE_INFO: {e}")
                     slide_info["slide_tag_info"] = None
@@ -416,9 +448,16 @@ def describe_pptx_to_json_with_assets(pptx_path, output_root_folder):
 
 # Ví dụ sử dụng
 if __name__ == "__main__":
+
+    from pathlib import Path
+    # Đường dẫn tuyệt đối của file đang chạy
+    current_file = Path(__file__).resolve()
+    # Lấy root folder (ở đây là cha của thư mục 'dleng')
+    root_dir = current_file.parents[1]
+    # Ví dụ sử dụng
     describe_pptx_to_json_with_assets(
-        r"C:\Users\Hp\Desktop\temp\python\doi-library\template\Pre_DOI_Form_05_2024_v3.pptx",
-        r"C:\Users\Hp\Desktop\temp\python\doi-library\bin")
+        pptx_path=root_dir / "template" / "Pre_DOI_Form_05_2024_v3.pptx",
+        output_root_folder=root_dir / "template")
     # describe_pptx_to_json_with_assets(
     #     r"dleng\utest\test_ppt1.pptx", "bin")
     # describe_pptx_to_json(

@@ -47,6 +47,11 @@ class DL_TextParagraph:
     first_line_indent: Optional[float] = None      # Đơn vị pt
     level: Optional[int] = None
     line_spacing: Optional[float] = None
+    font_name:  Optional[str] = None
+    font_size: Optional[float] = None 
+    bold: Optional[bool] = None
+    italic: Optional[bool] = None
+    font_color: Optional[str] = None
 
 @dataclass
 class DL_TextFrameFormat:

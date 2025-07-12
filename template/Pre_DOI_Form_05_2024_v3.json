@@ -49,6 +49,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 28.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -77,43 +82,7 @@
             "width_pt": "Default",
             "style": "None"
           },
-          "text": {
-            "frame_format": {
-              "wrap": null,
-              "auto_fit": false,
-              "vertical_anchor": 1,
-              "margin": {
-                "left": 91440,
-                "right": 91440,
-                "top": 45720,
-                "bottom": 45720
-              }
-            },
-            "paragraphs": [
-              {
-                "alignment": 1,
-                "runs": [
-                  {
-                    "text": "{\"inject_id\": \"title_slide\"}",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 1
-                  }
-                ],
-                "bullet": 0,
-                "bullet_type": null,
-                "level": 0,
-                "left_indent": null,
-                "first_line_indent": null,
-                "line_spacing": null,
-                "paragraph_index": 1,
-                "text": "{\"inject_id\": \"title_slide\"}"
-              }
-            ]
-          },
+          "text": null,
           "table": null,
           "shape_visible": true
         }
@@ -127,20 +96,20 @@
       "slide_number": 2,
       "shapes": [
         {
-          "shape_name": "Table 1",
+          "shape_name": "ELE_BASICINFO_TABLE",
           "shape_index": 1,
           "type": 19,
           "position": {
             "x": 0,
             "y": 704850,
             "width": 12192000,
-            "height": 3926088
+            "height": 3332299
           },
           "background_fill_color": null,
           "border": {},
           "text": null,
           "table": {
-            "rows": 7,
+            "rows": 6,
             "cols": 6,
             "data": [
               [
@@ -148,13 +117,13 @@
                 "",
                 "",
                 "",
-                "",
-                "Review Decision:\n☐ Priority in applying\n☐ Incomplete Invention\n✅ Non-publication"
+                "Review Decision:\n☐ Priority in applying\n☐ Incomplete Invention\n✅ Non-publication",
+                ""
               ],
               [
                 "Department:",
                 "",
-                "",
+                "ELE_DEPARTMENT_RUN_SAMPLE",
                 "",
                 "",
                 ""
@@ -162,7 +131,7 @@
               [
                 "Project Name:",
                 "",
-                "",
+                "ELE_PROJECTNAME_RUN_SAMPLE",
                 "",
                 "",
                 ""
@@ -170,7 +139,7 @@
               [
                 "Invention Title:",
                 "",
-                "",
+                "ELE_INVENTION_TITLE_RUN_SAMPLE",
                 "",
                 "",
                 ""
@@ -180,24 +149,16 @@
                 "Inventor’s Full Name",
                 "Contribution Rate (%)",
                 "Single ID/Employee No.",
-                "Employment Status\n(Employee, Dispatcher, Mentor or Contractor)",
-                ""
+                "",
+                "Employment Status\n(Employee, Dispatcher, Mentor or Contractor)"
               ],
               [
                 "1",
+                "ELE_INV_NAME_RUN_SAMPLE",
+                "ELE_CR_RUN_SAMPLE",
+                "ELE_EM_ID_RUN_SAMPLE",
                 "",
-                "",
-                "",
-                "",
-                ""
-              ],
-              [
-                "2",
-                "",
-                "",
-                "",
-                "",
-                ""
+                "ELE_EM_STAT_RUN_SAMPLE"
               ]
             ],
             "data_detail": [
@@ -230,6 +191,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 18.0,
+                      "bold": true,
+                      "italic": null,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -251,6 +217,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 18.0,
+                      "bold": null,
+                      "italic": null,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -272,6 +243,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 18.0,
+                      "bold": null,
+                      "italic": null,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -293,6 +269,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 18.0,
+                      "bold": false,
+                      "italic": null,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -314,6 +295,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 18.0,
+                      "bold": false,
+                      "italic": null,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -322,7 +308,6 @@
                     }
                   ]
                 },
-                null,
                 null,
                 null,
                 null,
@@ -354,6 +339,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 18.0,
+                      "bold": true,
+                      "italic": false,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -364,17 +354,31 @@
                       "alignment": 4,
                       "runs": [
                         {
-                          "text": "☐ Priority in applying",
+                          "text": "☐ ",
                           "font_name": "Calibri",
                           "font_size": 18.0,
                           "bold": false,
                           "italic": null,
                           "font_color": "RGB:000000",
                           "run_index": 1
+                        },
+                        {
+                          "text": "Priority in applying",
+                          "font_name": "Calibri",
+                          "font_size": 18.0,
+                          "bold": false,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 2
                         }
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 18.0,
+                      "bold": false,
+                      "italic": null,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -385,17 +389,31 @@
                       "alignment": 4,
                       "runs": [
                         {
-                          "text": "☐ Incomplete Invention",
+                          "text": "☐ ",
                           "font_name": "Calibri",
                           "font_size": 18.0,
                           "bold": false,
                           "italic": null,
                           "font_color": "RGB:000000",
                           "run_index": 1
+                        },
+                        {
+                          "text": "Incomplete Invention",
+                          "font_name": "Calibri",
+                          "font_size": 18.0,
+                          "bold": false,
+                          "italic": null,
+                          "font_color": "RGB:000000",
+                          "run_index": 2
                         }
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 18.0,
+                      "bold": false,
+                      "italic": null,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -435,6 +453,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 14.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -442,7 +465,8 @@
                       "paragraph_index": 4
                     }
                   ]
-                }
+                },
+                null
               ],
               [
                 {
@@ -473,6 +497,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 16.0,
+                      "bold": true,
+                      "italic": false,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -497,9 +526,24 @@
                   "paragraphs": [
                     {
                       "alignment": 1,
-                      "runs": [],
+                      "runs": [
+                        {
+                          "text": "ELE_DEPARTMENT_RUN_SAMPLE",
+                          "font_name": "Calibri",
+                          "font_size": 16.0,
+                          "bold": false,
+                          "italic": null,
+                          "font_color": "RGB:040404",
+                          "run_index": 1
+                        }
+                      ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 16.0,
+                      "bold": false,
+                      "italic": null,
+                      "font_color": "RGB:040404",
                       "level": 0,
                       "left_indent": null,
                       "first_line_indent": null,
@@ -541,6 +585,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 16.0,
+                      "bold": true,
+                      "italic": false,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -565,9 +614,24 @@
                   "paragraphs": [
                     {
                       "alignment": 1,
-                      "runs": [],
+                      "runs": [
+                        {
+                          "text": "ELE_PROJECTNAME_RUN_SAMPLE",
+                          "font_name": "Calibri",
+                          "font_size": 16.0,
+                          "bold": false,
+                          "italic": null,
+                          "font_color": "RGB:040404",
+                          "run_index": 1
+                        }
+                      ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 16.0,
+                      "bold": false,
+                      "italic": null,
+                      "font_color": "RGB:040404",
                       "level": 0,
                       "left_indent": null,
                       "first_line_indent": null,
@@ -609,6 +673,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 16.0,
+                      "bold": true,
+                      "italic": false,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -633,9 +702,24 @@
                   "paragraphs": [
                     {
                       "alignment": 1,
-                      "runs": [],
+                      "runs": [
+                        {
+                          "text": "ELE_INVENTION_TITLE_RUN_SAMPLE",
+                          "font_name": "Calibri",
+                          "font_size": 16.0,
+                          "bold": false,
+                          "italic": null,
+                          "font_color": "RGB:040404",
+                          "run_index": 1
+                        }
+                      ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 16.0,
+                      "bold": false,
+                      "italic": null,
+                      "font_color": "RGB:040404",
                       "level": 0,
                       "left_indent": null,
                       "first_line_indent": null,
@@ -677,6 +761,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 14.0,
+                      "bold": true,
+                      "italic": null,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": 0.0,
@@ -713,6 +802,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 14.0,
+                      "bold": true,
+                      "italic": null,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": 0.0,
@@ -749,6 +843,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 14.0,
+                      "bold": true,
+                      "italic": null,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -785,6 +884,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 14.0,
+                      "bold": true,
+                      "italic": null,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -793,6 +897,7 @@
                     }
                   ]
                 },
+                null,
                 {
                   "frame_format": {
                     "wrap": null,
@@ -821,6 +926,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 14.0,
+                      "bold": true,
+                      "italic": null,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -842,6 +952,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 14.0,
+                      "bold": true,
+                      "italic": null,
+                      "font_color": "RGB:000000",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -849,8 +964,7 @@
                       "paragraph_index": 2
                     }
                   ]
-                },
-                null
+                }
               ],
               [
                 {
@@ -881,6 +995,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 14.0,
+                      "bold": null,
+                      "italic": null,
+                      "font_color": "RGB:040404",
                       "level": 0,
                       "left_indent": null,
                       "first_line_indent": null,
@@ -889,113 +1008,6 @@
                     }
                   ]
                 },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 1,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "level": 0,
-                      "left_indent": null,
-                      "first_line_indent": null,
-                      "line_spacing": null,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 1,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "level": 0,
-                      "left_indent": null,
-                      "first_line_indent": null,
-                      "line_spacing": null,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 1,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "level": 0,
-                      "left_indent": null,
-                      "first_line_indent": null,
-                      "line_spacing": null,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 1,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "level": 0,
-                      "left_indent": null,
-                      "first_line_indent": null,
-                      "line_spacing": null,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                null
-              ],
-              [
                 {
                   "frame_format": {
                     "wrap": null,
@@ -1013,7 +1025,48 @@
                       "alignment": 1,
                       "runs": [
                         {
-                          "text": "2",
+                          "text": "ELE_INV_NAME_RUN_SAMPLE",
+                          "font_name": "Calibri",
+                          "font_size": 13.0,
+                          "bold": null,
+                          "italic": null,
+                          "font_color": "RGB:040404",
+                          "run_index": 1
+                        }
+                      ],
+                      "bullet": 0,
+                      "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 13.0,
+                      "bold": null,
+                      "italic": null,
+                      "font_color": "RGB:040404",
+                      "level": 0,
+                      "left_indent": null,
+                      "first_line_indent": null,
+                      "line_spacing": null,
+                      "paragraph_index": 1
+                    }
+                  ]
+                },
+                {
+                  "frame_format": {
+                    "wrap": null,
+                    "auto_fit": false,
+                    "vertical_anchor": 1,
+                    "margin": {
+                      "left": 91440,
+                      "right": 91440,
+                      "top": 45720,
+                      "bottom": 45720
+                    }
+                  },
+                  "paragraphs": [
+                    {
+                      "alignment": 1,
+                      "runs": [
+                        {
+                          "text": "ELE_CR_RUN_SAMPLE",
                           "font_name": "Calibri",
                           "font_size": 14.0,
                           "bold": null,
@@ -1024,10 +1077,15 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 14.0,
+                      "bold": null,
+                      "italic": null,
+                      "font_color": "RGB:040404",
                       "level": 0,
-                      "left_indent": null,
-                      "first_line_indent": null,
-                      "line_spacing": null,
+                      "left_indent": 0.0,
+                      "first_line_indent": 0.0,
+                      "line_spacing": 1.0,
                       "paragraph_index": 1
                     }
                   ]
@@ -1047,9 +1105,24 @@
                   "paragraphs": [
                     {
                       "alignment": 1,
-                      "runs": [],
+                      "runs": [
+                        {
+                          "text": "ELE_EM_ID_RUN_SAMPLE",
+                          "font_name": "Calibri",
+                          "font_size": 14.0,
+                          "bold": null,
+                          "italic": null,
+                          "font_color": "RGB:040404",
+                          "run_index": 1
+                        }
+                      ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 14.0,
+                      "bold": null,
+                      "italic": null,
+                      "font_color": "RGB:040404",
                       "level": 0,
                       "left_indent": null,
                       "first_line_indent": null,
@@ -1058,6 +1131,7 @@
                     }
                   ]
                 },
+                null,
                 {
                   "frame_format": {
                     "wrap": null,
@@ -1073,9 +1147,24 @@
                   "paragraphs": [
                     {
                       "alignment": 1,
-                      "runs": [],
+                      "runs": [
+                        {
+                          "text": "ELE_EM_STAT_RUN_SAMPLE",
+                          "font_name": "Calibri",
+                          "font_size": 14.0,
+                          "bold": null,
+                          "italic": null,
+                          "font_color": "RGB:040404",
+                          "run_index": 1
+                        }
+                      ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 14.0,
+                      "bold": null,
+                      "italic": null,
+                      "font_color": "RGB:040404",
                       "level": 0,
                       "left_indent": null,
                       "first_line_indent": null,
@@ -1083,60 +1172,7 @@
                       "paragraph_index": 1
                     }
                   ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 1,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "level": 0,
-                      "left_indent": null,
-                      "first_line_indent": null,
-                      "line_spacing": null,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 1,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "level": 0,
-                      "left_indent": null,
-                      "first_line_indent": null,
-                      "line_spacing": null,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                null
+                }
               ]
             ],
             "cell_fills": [
@@ -1145,56 +1181,48 @@
                 "None",
                 "None",
                 "None",
+                "RGB:F0F7ED",
+                "None"
+              ],
+              [
+                "RGB:F0F7ED",
+                "None",
+                "RGB:F0F7ED",
+                "None",
+                "None",
+                "None"
+              ],
+              [
+                "RGB:F0F7ED",
+                "None",
+                "RGB:F0F7ED",
+                "None",
+                "None",
+                "None"
+              ],
+              [
+                "RGB:F0F7ED",
+                "None",
+                "RGB:F0F7ED",
+                "None",
+                "None",
+                "None"
+              ],
+              [
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
+                "RGB:F0F7ED",
                 "None",
                 "RGB:F0F7ED"
               ],
               [
                 "RGB:F0F7ED",
-                "None",
                 "RGB:F0F7ED",
-                "None",
-                "None",
-                "None"
-              ],
-              [
+                "RGB:F0F7ED",
                 "RGB:F0F7ED",
                 "None",
-                "RGB:F0F7ED",
-                "None",
-                "None",
-                "None"
-              ],
-              [
-                "RGB:F0F7ED",
-                "None",
-                "RGB:F0F7ED",
-                "None",
-                "None",
-                "None"
-              ],
-              [
-                "RGB:F0F7ED",
-                "RGB:F0F7ED",
-                "RGB:F0F7ED",
-                "RGB:F0F7ED",
-                "RGB:F0F7ED",
-                "None"
-              ],
-              [
-                "RGB:F0F7ED",
-                "RGB:F0F7ED",
-                "RGB:F0F7ED",
-                "RGB:F0F7ED",
-                "RGB:F0F7ED",
-                "None"
-              ],
-              [
-                "RGB:F0F7ED",
-                "RGB:F0F7ED",
-                "RGB:F0F7ED",
-                "RGB:F0F7ED",
-                "RGB:F0F7ED",
-                "None"
+                "RGB:F0F7ED"
               ]
             ],
             "merge_info": [
@@ -1202,7 +1230,13 @@
                 "row": 0,
                 "col": 0,
                 "row_span": 1,
-                "col_span": 5
+                "col_span": 4
+              },
+              {
+                "row": 0,
+                "col": 4,
+                "row_span": 1,
+                "col_span": 2
               },
               {
                 "row": 1,
@@ -1242,30 +1276,24 @@
               },
               {
                 "row": 4,
-                "col": 4,
+                "col": 3,
                 "row_span": 1,
                 "col_span": 2
               },
               {
                 "row": 5,
-                "col": 4,
-                "row_span": 1,
-                "col_span": 2
-              },
-              {
-                "row": 6,
-                "col": 4,
+                "col": 3,
                 "row_span": 1,
                 "col_span": 2
               }
             ],
             "col_widths": [
               452846,
-              2307771,
-              2063932,
-              2098765,
-              391886,
-              4876800
+              2952827,
+              1884784,
+              2024743,
+              298580,
+              4578220
             ],
             "row_heights": [
               1559379,
@@ -1273,7 +1301,6 @@
               138611,
               251097,
               462280,
-              292100,
               292100
             ],
             "cell_borders": [
@@ -1313,6 +1340,379 @@
                 null,
                 null,
                 null,
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null,
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null,
+                null,
+                null
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null,
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null,
+                null,
+                null
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null,
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                null,
+                null,
+                null
+              ],
+              [
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
+                {
+                  "left": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "right": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "top": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "bottom": {
+                    "color": "RGB:82803A",
+                    "width": 1.5,
+                    "dash_type": "solid"
+                  },
+                  "diagonal_down": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  },
+                  "diagonal_up": {
+                    "color": "None",
+                    "width": "Default",
+                    "dash_type": "None"
+                  }
+                },
                 null,
                 {
                   "left": {
@@ -1380,7 +1780,6 @@
                     "dash_type": "None"
                   }
                 },
-                null,
                 {
                   "left": {
                     "color": "RGB:82803A",
@@ -1413,11 +1812,6 @@
                     "dash_type": "None"
                   }
                 },
-                null,
-                null,
-                null
-              ],
-              [
                 {
                   "left": {
                     "color": "RGB:82803A",
@@ -1450,44 +1844,6 @@
                     "dash_type": "None"
                   }
                 },
-                null,
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                null,
-                null,
-                null
-              ],
-              [
                 {
                   "left": {
                     "color": "RGB:82803A",
@@ -1552,499 +1908,7 @@
                     "width": "Default",
                     "dash_type": "None"
                   }
-                },
-                null,
-                null,
-                null
-              ],
-              [
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                null
-              ],
-              [
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                null
-              ],
-              [
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:82803A",
-                    "width": 1.5,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                null
+                }
               ]
             ]
           },
@@ -2094,6 +1958,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 24.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -2107,7 +1976,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 3",
+          "shape_name": "TextBox 5",
           "shape_index": 3,
           "type": 17,
           "position": {
@@ -2139,17 +2008,31 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 10.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -2178,61 +2061,7 @@
             "width_pt": "Default",
             "style": "None"
           },
-          "text": {
-            "frame_format": {
-              "wrap": null,
-              "auto_fit": false,
-              "vertical_anchor": 1,
-              "margin": {
-                "left": 91440,
-                "right": 91440,
-                "top": 45720,
-                "bottom": 45720
-              }
-            },
-            "paragraphs": [
-              {
-                "alignment": 1,
-                "runs": [
-                  {
-                    "text": "{\"inject_id\": \"",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 1
-                  },
-                  {
-                    "text": "basic_info_slide",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
-                  },
-                  {
-                    "text": "\"}",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 3
-                  }
-                ],
-                "bullet": 0,
-                "bullet_type": null,
-                "level": 0,
-                "left_indent": null,
-                "first_line_indent": null,
-                "line_spacing": null,
-                "paragraph_index": 1,
-                "text": "{\"inject_id\": \"basic_info_slide\"}"
-              }
-            ]
-          },
+          "text": null,
           "table": null,
           "shape_visible": true
         }
@@ -2246,7 +2075,7 @@
       "slide_number": 3,
       "shapes": [
         {
-          "shape_name": "Rectangle 1",
+          "shape_name": "Rectangle 2",
           "shape_index": 1,
           "type": 1,
           "position": {
@@ -2289,6 +2118,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 24.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -2302,7 +2136,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 2",
+          "shape_name": "TextBox 5",
           "shape_index": 2,
           "type": 17,
           "position": {
@@ -2334,17 +2168,31 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 10.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -2358,9 +2206,9 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 3",
+          "shape_name": "Freeform 17",
           "shape_index": 3,
-          "type": 17,
+          "type": 5,
           "position": {
             "x": 3158490,
             "y": 1341169,
@@ -2401,6 +2249,11 @@
                 ],
                 "bullet": 1,
                 "bullet_type": "char",
+                "font_name": "Calibri",
+                "font_size": 12.0,
+                "bold": null,
+                "italic": null,
+                "font_color": "RGB:040404",
                 "bullet_char": "••",
                 "level": 1,
                 "left_indent": 4.5,
@@ -2424,6 +2277,11 @@
                 ],
                 "bullet": 1,
                 "bullet_type": "char",
+                "font_name": "Calibri",
+                "font_size": 12.0,
+                "bold": null,
+                "italic": null,
+                "font_color": "RGB:040404",
                 "bullet_char": "••",
                 "level": 1,
                 "left_indent": 4.5,
@@ -2436,17 +2294,31 @@
                 "alignment": 1,
                 "runs": [
                   {
-                    "text": "Prior art",
+                    "text": "Prior ",
                     "font_name": "Calibri",
                     "font_size": 12.0,
                     "bold": null,
                     "italic": null,
                     "font_color": "RGB:040404",
                     "run_index": 1
+                  },
+                  {
+                    "text": "art",
+                    "font_name": "Calibri",
+                    "font_size": 12.0,
+                    "bold": null,
+                    "italic": null,
+                    "font_color": "RGB:040404",
+                    "run_index": 2
                   }
                 ],
                 "bullet": 1,
                 "bullet_type": "char",
+                "font_name": "Calibri",
+                "font_size": 12.0,
+                "bold": null,
+                "italic": null,
+                "font_color": "RGB:040404",
                 "bullet_char": "••",
                 "level": 1,
                 "left_indent": 4.5,
@@ -2470,6 +2342,11 @@
                 ],
                 "bullet": 1,
                 "bullet_type": "char",
+                "font_name": "Calibri",
+                "font_size": 12.0,
+                "bold": null,
+                "italic": null,
+                "font_color": "RGB:040404",
                 "bullet_char": "••",
                 "level": 1,
                 "left_indent": 4.5,
@@ -2484,9 +2361,9 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 4",
+          "shape_name": "Freeform 18",
           "shape_index": 4,
-          "type": 17,
+          "type": 5,
           "position": {
             "x": 3445383,
             "y": 1141540,
@@ -2527,6 +2404,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 14.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:040404",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -2540,9 +2422,9 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 5",
+          "shape_name": "Freeform 19",
           "shape_index": 5,
-          "type": 17,
+          "type": 5,
           "position": {
             "x": 3158490,
             "y": 2849346,
@@ -2583,6 +2465,11 @@
                 ],
                 "bullet": 1,
                 "bullet_type": "char",
+                "font_name": "Calibri",
+                "font_size": 12.0,
+                "bold": null,
+                "italic": null,
+                "font_color": "RGB:040404",
                 "bullet_char": "••",
                 "level": 1,
                 "left_indent": 4.5,
@@ -2606,6 +2493,11 @@
                 ],
                 "bullet": 1,
                 "bullet_type": "char",
+                "font_name": "Calibri",
+                "font_size": 12.0,
+                "bold": null,
+                "italic": null,
+                "font_color": "RGB:040404",
                 "bullet_char": "••",
                 "level": 1,
                 "left_indent": 4.5,
@@ -2629,6 +2521,11 @@
                 ],
                 "bullet": 1,
                 "bullet_type": "char",
+                "font_name": "Calibri",
+                "font_size": 12.0,
+                "bold": null,
+                "italic": null,
+                "font_color": "RGB:040404",
                 "bullet_char": "••",
                 "level": 1,
                 "left_indent": 4.5,
@@ -2652,6 +2549,11 @@
                 ],
                 "bullet": 1,
                 "bullet_type": "char",
+                "font_name": "Calibri",
+                "font_size": 12.0,
+                "bold": null,
+                "italic": null,
+                "font_color": "RGB:040404",
                 "bullet_char": "••",
                 "level": 1,
                 "left_indent": 4.5,
@@ -2666,9 +2568,9 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 6",
+          "shape_name": "Freeform 20",
           "shape_index": 6,
-          "type": 17,
+          "type": 5,
           "position": {
             "x": 3445383,
             "y": 2649715,
@@ -2709,6 +2611,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 14.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:040404",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -2722,7 +2629,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "Rectangle 7",
+          "shape_name": "Rectangle 21",
           "shape_index": 7,
           "type": 1,
           "position": {
@@ -2755,6 +2662,11 @@
                 "runs": [],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "font_color": null,
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -2768,9 +2680,9 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 8",
+          "shape_name": "Freeform 22",
           "shape_index": 8,
-          "type": 17,
+          "type": 5,
           "position": {
             "x": 3445383,
             "y": 4035100,
@@ -2811,6 +2723,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 14.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:040404",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -2824,7 +2741,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "Rectangle 9",
+          "shape_name": "Rectangle 23",
           "shape_index": 9,
           "type": 1,
           "position": {
@@ -2857,6 +2774,11 @@
                 "runs": [],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "font_color": null,
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -2870,9 +2792,9 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 10",
+          "shape_name": "Freeform 24",
           "shape_index": 10,
-          "type": 17,
+          "type": 5,
           "position": {
             "x": 3445383,
             "y": 4668528,
@@ -2913,6 +2835,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 14.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:040404",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -2926,7 +2853,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "Rectangle 11",
+          "shape_name": "Rectangle 25",
           "shape_index": 11,
           "type": 1,
           "position": {
@@ -2959,6 +2886,11 @@
                 "runs": [],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "font_color": null,
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -2972,9 +2904,9 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 12",
+          "shape_name": "Freeform 26",
           "shape_index": 12,
-          "type": 17,
+          "type": 5,
           "position": {
             "x": 3445383,
             "y": 5328765,
@@ -3015,6 +2947,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 14.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:040404",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -3034,7 +2971,7 @@
       "slide_number": 4,
       "shapes": [
         {
-          "shape_name": "Rectangle 1",
+          "shape_name": "Rectangle 2",
           "shape_index": 1,
           "type": 1,
           "position": {
@@ -3077,6 +3014,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 24.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -3090,7 +3032,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 2",
+          "shape_name": "TextBox 5",
           "shape_index": 2,
           "type": 17,
           "position": {
@@ -3122,17 +3064,31 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 10.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -3146,14 +3102,14 @@
           "shape_visible": true
         },
         {
-          "shape_name": "Table 3",
+          "shape_name": "AbbreviationTable",
           "shape_index": 3,
           "type": 19,
           "position": {
             "x": 771525,
             "y": 847725,
             "width": 10668000,
-            "height": 2494410
+            "height": 1876425
           },
           "background_fill_color": null,
           "border": {},
@@ -3221,6 +3177,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 11.0,
+                      "bold": null,
+                      "italic": null,
+                      "font_color": "RGB:1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3257,6 +3218,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 11.0,
+                      "bold": null,
+                      "italic": null,
+                      "font_color": "RGB:1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3285,6 +3251,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3311,6 +3282,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3339,6 +3315,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3365,6 +3346,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3393,6 +3379,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3419,6 +3410,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3447,6 +3443,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3473,6 +3474,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3501,6 +3507,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3527,6 +3538,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3555,6 +3571,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3581,6 +3602,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4118,61 +4144,7 @@
             "width_pt": "Default",
             "style": "None"
           },
-          "text": {
-            "frame_format": {
-              "wrap": null,
-              "auto_fit": false,
-              "vertical_anchor": 1,
-              "margin": {
-                "left": 91440,
-                "right": 91440,
-                "top": 45720,
-                "bottom": 45720
-              }
-            },
-            "paragraphs": [
-              {
-                "alignment": 1,
-                "runs": [
-                  {
-                    "text": "{\"inject_id\": \"",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 1
-                  },
-                  {
-                    "text": "abbreviation_slide",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
-                  },
-                  {
-                    "text": "\"}",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 3
-                  }
-                ],
-                "bullet": 0,
-                "bullet_type": null,
-                "level": 0,
-                "left_indent": null,
-                "first_line_indent": null,
-                "line_spacing": null,
-                "paragraph_index": 1,
-                "text": "{\"inject_id\": \"abbreviation_slide\"}"
-              }
-            ]
-          },
+          "text": null,
           "table": null,
           "shape_visible": true
         }
@@ -4186,7 +4158,7 @@
       "slide_number": 5,
       "shapes": [
         {
-          "shape_name": "Rectangle 1",
+          "shape_name": "Rectangle 2",
           "shape_index": 1,
           "type": 1,
           "position": {
@@ -4229,6 +4201,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 24.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -4242,7 +4219,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 2",
+          "shape_name": "TextBox 5",
           "shape_index": 2,
           "type": 17,
           "position": {
@@ -4274,17 +4251,31 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 10.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -4298,14 +4289,14 @@
           "shape_visible": true
         },
         {
-          "shape_name": "Table 3",
+          "shape_name": "AppendixTable",
           "shape_index": 3,
           "type": 19,
           "position": {
             "x": 771525,
             "y": 847725,
             "width": 10668000,
-            "height": 2494410
+            "height": 1876425
           },
           "background_fill_color": null,
           "border": {},
@@ -4373,6 +4364,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 11.0,
+                      "bold": null,
+                      "italic": null,
+                      "font_color": "RGB:1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4409,6 +4405,11 @@
                       ],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 11.0,
+                      "bold": null,
+                      "italic": null,
+                      "font_color": "RGB:1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4437,6 +4438,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4463,6 +4469,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4491,6 +4502,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4517,6 +4533,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4545,6 +4566,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4571,6 +4597,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4599,6 +4630,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4625,6 +4661,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4653,6 +4694,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4679,6 +4725,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4707,6 +4758,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4733,6 +4789,11 @@
                       "runs": [],
                       "bullet": 0,
                       "bullet_type": null,
+                      "font_name": "Calibri",
+                      "font_size": 9.0,
+                      "bold": false,
+                      "italic": false,
+                      "font_color": "#1B1B1B",
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -5270,61 +5331,7 @@
             "width_pt": "Default",
             "style": "None"
           },
-          "text": {
-            "frame_format": {
-              "wrap": null,
-              "auto_fit": false,
-              "vertical_anchor": 1,
-              "margin": {
-                "left": 91440,
-                "right": 91440,
-                "top": 45720,
-                "bottom": 45720
-              }
-            },
-            "paragraphs": [
-              {
-                "alignment": 1,
-                "runs": [
-                  {
-                    "text": "{\"inject_id\": \"",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 1
-                  },
-                  {
-                    "text": "appendix_slide",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
-                  },
-                  {
-                    "text": "\"}",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 3
-                  }
-                ],
-                "bullet": 0,
-                "bullet_type": null,
-                "level": 0,
-                "left_indent": null,
-                "first_line_indent": null,
-                "line_spacing": null,
-                "paragraph_index": 1,
-                "text": "{\"inject_id\": \"appendix_slide\"}"
-              }
-            ]
-          },
+          "text": null,
           "table": null,
           "shape_visible": true
         }
@@ -5338,7 +5345,7 @@
       "slide_number": 6,
       "shapes": [
         {
-          "shape_name": "Rectangle 1",
+          "shape_name": "Rectangle 2",
           "shape_index": 1,
           "type": 1,
           "position": {
@@ -5381,6 +5388,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 24.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -5394,7 +5406,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 2",
+          "shape_name": "TextBox 5",
           "shape_index": 2,
           "type": 17,
           "position": {
@@ -5426,17 +5438,31 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 10.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -5450,7 +5476,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "Rectangle 3",
+          "shape_name": "HeaderBox",
           "shape_index": 3,
           "type": 1,
           "position": {
@@ -5493,6 +5519,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 16.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:000000",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -5506,7 +5537,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "Rectangle 4",
+          "shape_name": "ContentBox",
           "shape_index": 4,
           "type": 1,
           "position": {
@@ -5539,6 +5570,11 @@
                 "runs": [],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "font_color": null,
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -5567,61 +5603,7 @@
             "width_pt": "Default",
             "style": "None"
           },
-          "text": {
-            "frame_format": {
-              "wrap": null,
-              "auto_fit": false,
-              "vertical_anchor": 1,
-              "margin": {
-                "left": 91440,
-                "right": 91440,
-                "top": 45720,
-                "bottom": 45720
-              }
-            },
-            "paragraphs": [
-              {
-                "alignment": 1,
-                "runs": [
-                  {
-                    "text": "{\"inject_id\": \"",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 1
-                  },
-                  {
-                    "text": "bg_technical_field_slide",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
-                  },
-                  {
-                    "text": "\"}",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 3
-                  }
-                ],
-                "bullet": 0,
-                "bullet_type": null,
-                "level": 0,
-                "left_indent": null,
-                "first_line_indent": null,
-                "line_spacing": null,
-                "paragraph_index": 1,
-                "text": "{\"inject_id\": \"bg_technical_field_slide\"}"
-              }
-            ]
-          },
+          "text": null,
           "table": null,
           "shape_visible": true
         }
@@ -5635,7 +5617,7 @@
       "slide_number": 7,
       "shapes": [
         {
-          "shape_name": "Rectangle 1",
+          "shape_name": "Rectangle 2",
           "shape_index": 1,
           "type": 1,
           "position": {
@@ -5678,6 +5660,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 24.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -5691,7 +5678,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 2",
+          "shape_name": "TextBox 5",
           "shape_index": 2,
           "type": 17,
           "position": {
@@ -5723,17 +5710,31 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 10.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -5747,7 +5748,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "Rectangle 3",
+          "shape_name": "HeaderBox",
           "shape_index": 3,
           "type": 1,
           "position": {
@@ -5779,17 +5780,31 @@
                 "alignment": 1,
                 "runs": [
                   {
-                    "text": "2. Problem",
+                    "text": "2",
                     "font_name": "Calibri",
                     "font_size": 16.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:000000",
                     "run_index": 1
+                  },
+                  {
+                    "text": ". Problem",
+                    "font_name": "Calibri",
+                    "font_size": 16.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:000000",
+                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 16.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:000000",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -5803,7 +5818,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "Rectangle 4",
+          "shape_name": "ContentBox",
           "shape_index": 4,
           "type": 1,
           "position": {
@@ -5836,6 +5851,11 @@
                 "runs": [],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "font_color": null,
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -5864,61 +5884,7 @@
             "width_pt": "Default",
             "style": "None"
           },
-          "text": {
-            "frame_format": {
-              "wrap": null,
-              "auto_fit": false,
-              "vertical_anchor": 1,
-              "margin": {
-                "left": 91440,
-                "right": 91440,
-                "top": 45720,
-                "bottom": 45720
-              }
-            },
-            "paragraphs": [
-              {
-                "alignment": 1,
-                "runs": [
-                  {
-                    "text": "{\"inject_id\": \"",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 1
-                  },
-                  {
-                    "text": "bg_problem_slide",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
-                  },
-                  {
-                    "text": "\"}",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 3
-                  }
-                ],
-                "bullet": 0,
-                "bullet_type": null,
-                "level": 0,
-                "left_indent": null,
-                "first_line_indent": null,
-                "line_spacing": null,
-                "paragraph_index": 1,
-                "text": "{\"inject_id\": \"bg_problem_slide\"}"
-              }
-            ]
-          },
+          "text": null,
           "table": null,
           "shape_visible": true
         }
@@ -5932,7 +5898,7 @@
       "slide_number": 8,
       "shapes": [
         {
-          "shape_name": "Rectangle 1",
+          "shape_name": "Rectangle 2",
           "shape_index": 1,
           "type": 1,
           "position": {
@@ -5975,6 +5941,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 24.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -5988,7 +5959,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 2",
+          "shape_name": "TextBox 5",
           "shape_index": 2,
           "type": 17,
           "position": {
@@ -6020,17 +5991,31 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 10.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -6044,7 +6029,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "Rectangle 3",
+          "shape_name": "HeaderBox",
           "shape_index": 3,
           "type": 1,
           "position": {
@@ -6076,17 +6061,31 @@
                 "alignment": 1,
                 "runs": [
                   {
-                    "text": "3. Prior art",
+                    "text": "3",
                     "font_name": "Calibri",
                     "font_size": 16.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:000000",
                     "run_index": 1
+                  },
+                  {
+                    "text": ". Prior art",
+                    "font_name": "Calibri",
+                    "font_size": 16.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:000000",
+                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 16.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:000000",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -6100,7 +6099,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "Rectangle 4",
+          "shape_name": "ContentBox",
           "shape_index": 4,
           "type": 1,
           "position": {
@@ -6133,6 +6132,11 @@
                 "runs": [],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "font_color": null,
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -6161,61 +6165,7 @@
             "width_pt": "Default",
             "style": "None"
           },
-          "text": {
-            "frame_format": {
-              "wrap": null,
-              "auto_fit": false,
-              "vertical_anchor": 1,
-              "margin": {
-                "left": 91440,
-                "right": 91440,
-                "top": 45720,
-                "bottom": 45720
-              }
-            },
-            "paragraphs": [
-              {
-                "alignment": 1,
-                "runs": [
-                  {
-                    "text": "{\"inject_id\": \"",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 1
-                  },
-                  {
-                    "text": "bg_pa_slide",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
-                  },
-                  {
-                    "text": "\"}",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 3
-                  }
-                ],
-                "bullet": 0,
-                "bullet_type": null,
-                "level": 0,
-                "left_indent": null,
-                "first_line_indent": null,
-                "line_spacing": null,
-                "paragraph_index": 1,
-                "text": "{\"inject_id\": \"bg_pa_slide\"}"
-              }
-            ]
-          },
+          "text": null,
           "table": null,
           "shape_visible": true
         }
@@ -6229,7 +6179,7 @@
       "slide_number": 9,
       "shapes": [
         {
-          "shape_name": "Rectangle 1",
+          "shape_name": "Rectangle 2",
           "shape_index": 1,
           "type": 1,
           "position": {
@@ -6272,6 +6222,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 24.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -6285,7 +6240,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "TextBox 2",
+          "shape_name": "TextBox 5",
           "shape_index": 2,
           "type": 17,
           "position": {
@@ -6317,17 +6272,31 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
+                  },
+                  {
+                    "text": "COMMUNICATION",
+                    "font_name": "Calibri",
+                    "font_size": 10.0,
+                    "bold": true,
+                    "italic": null,
+                    "font_color": "RGB:FFFFFF",
+                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 10.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:FFFFFF",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -6341,7 +6310,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "Rectangle 3",
+          "shape_name": "HeaderBox",
           "shape_index": 3,
           "type": 1,
           "position": {
@@ -6384,6 +6353,11 @@
                 ],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 16.0,
+                "bold": true,
+                "italic": null,
+                "font_color": "RGB:000000",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -6397,7 +6371,7 @@
           "shape_visible": true
         },
         {
-          "shape_name": "Rectangle 4",
+          "shape_name": "ContentBox",
           "shape_index": 4,
           "type": 1,
           "position": {
@@ -6430,6 +6404,11 @@
                 "runs": [],
                 "bullet": 0,
                 "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "font_color": null,
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -6458,61 +6437,7 @@
             "width_pt": "Default",
             "style": "None"
           },
-          "text": {
-            "frame_format": {
-              "wrap": null,
-              "auto_fit": false,
-              "vertical_anchor": 1,
-              "margin": {
-                "left": 91440,
-                "right": 91440,
-                "top": 45720,
-                "bottom": 45720
-              }
-            },
-            "paragraphs": [
-              {
-                "alignment": 1,
-                "runs": [
-                  {
-                    "text": "{\"inject_id\": \"",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 1
-                  },
-                  {
-                    "text": "bg_purpose_slide",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
-                  },
-                  {
-                    "text": "\"}",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 3
-                  }
-                ],
-                "bullet": 0,
-                "bullet_type": null,
-                "level": 0,
-                "left_indent": null,
-                "first_line_indent": null,
-                "line_spacing": null,
-                "paragraph_index": 1,
-                "text": "{\"inject_id\": \"bg_purpose_slide\"}"
-              }
-            ]
-          },
+          "text": null,
           "table": null,
           "shape_visible": true
         }
