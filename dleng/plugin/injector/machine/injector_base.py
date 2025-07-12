@@ -1,8 +1,7 @@
 from abc import ABC, abstractmethod
 from data.doi_template.v1.contract import *
 from data.pptxdata_utils import *
-from data.pptxdata import DL_Shape, DL_PPTXData, DL_Slide, DL_Text, DL_Table, DL_MergeInfo
-from copy import deepcopy
+from data.pptxdata import DL_Shape, DL_PPTXData, DL_Slide, DL_Table
 from plugin.injector.injection_map.InjectionMap import InjectionMap
 from typing import Callable, Any, Union
 from dataclasses import dataclass,  field
@@ -11,8 +10,9 @@ INJECT_REGISTRY: list[tuple[Callable[..., Any], Any]] = []
 
 
 class InjectMetaKey(str, Enum):
-    INSERT_INDEX = "insert_index"
-    TEMPLATE_ROW_INDEX = "template_row_index"
+    INSERT_INDEX = "INSERT_INDEX"
+    TEMPLATE_ROW_INDEX = "TEMPLATE_ROW_INDEX"
+    IS_DELETE_TEMPLATE_ROW = "IS_DELETE_TEMPLATE_ROW"
 
 
 @dataclass
@@ -24,7 +24,7 @@ class InjectValue:
     def __init__(self, value: Any, meta: Optional[dict[InjectMetaKey, Any]] = None):
         self.value = value
         self.__meta = {k.value: v for k, v in meta.items()} if meta else {}
-        
+
     def __getitem__(self, key: InjectMetaKey) -> Optional[Any]:
         return self.__meta.get(key.value)
 
@@ -39,17 +39,17 @@ class InjectValue:
 
     def keys(self):
         return [InjectMetaKey(k) for k in self.__meta]
-    
+
     def get(self, key: InjectMetaKey, default: Any = None) -> Any:
         return self.__meta.get(key.value, default)
-    
+
     def get_int(self, key: InjectMetaKey, default: int = 0) -> int:
         val = self.get(key, default)
         try:
             return int(val)
         except (ValueError, TypeError):
             return default
-        
+
     def __repr__(self):
         return f"InjectValue(value={self.value})"
 
@@ -137,6 +137,7 @@ class TableCellInjector(Injector):
             raise NotImplementedError(
                 "Chưa hỗ trợ nếu cell không chứa " + self.cell_text_id)
 
+
 class TableRowInserter(Injector):
     def __init__(self,
                  slide_id: SlideInjectId,
@@ -157,7 +158,8 @@ class TableRowInserter(Injector):
 
         table: DL_Table = table_shape.table
 
-        insert_index = injected_value.get_int(InjectMetaKey.INSERT_INDEX, table.rows)
+        insert_index = injected_value.get_int(
+            InjectMetaKey.INSERT_INDEX, table.rows)
 
         # Bắt buộc phải có template row index
         template_row_index = injected_value[InjectMetaKey.TEMPLATE_ROW_INDEX]
@@ -189,72 +191,38 @@ class TableRowInserter(Injector):
                 raise ValueError(
                     f"Tuple tại index {i} có {len(row_data)} phần tử, nhưng bảng có {table.cols} cột")
 
+        # Dữ liệu từ template row
+        template_fill = table.cell_fills[template_row_index]
+        template_border = table.cell_borders[template_row_index]
+        template_height = table.row_heights[template_row_index]
+
         for offset, row_data in enumerate(row_data_list):
+            if len(row_data) != table.cols:
+                raise ValueError(
+                    f"Tuple tại index {offset} có {len(row_data)} phần tử, bảng có {table.cols} cột")
+
             actual_index = insert_index + offset
-            table.rows += 1
-            table.data.insert(actual_index, [str(cell) for cell in row_data])
-            # Clone các thuộc tính từ template
-            template_detail_row = table.data_detail[template_row_index]
-            template_fill_row = table.cell_fills[template_row_index]
-            template_border_row = table.cell_borders[template_row_index]
-            new_detail_row: list[Optional[DL_Text]] = []
-            for col, cell_text in enumerate(row_data):
-                detail = deepcopy(template_detail_row[col])
-                if detail is not None:
-                    # Clear paragraphs và chỉ giữ 1 paragraph + 1 run
-                    if detail.paragraphs:
-                        first_paragraph = detail.paragraphs[0]
-                        if first_paragraph.runs:
-                            first_run = first_paragraph.runs[0]
-                            first_run.text = str(cell_text)
-                            first_paragraph.runs = [first_run]
-                        else:
-                            raise NotImplementedError(
-                                "Chưa hỗ trợ trường hợp paragraphs.runs là rỗng"
-                            )
-                        detail.paragraphs = [first_paragraph]
-                    else:
-                        raise NotImplementedError(
-                            "Chưa hỗ trợ trường hợp detail.paragraphs là rỗng"
-                        )
-                new_detail_row.append(detail)
 
-            # Ghi lại data_detail đã chuẩn hoá (chỉ 1 paragraph và 1 run mỗi cell)
-            table.data_detail.insert(actual_index, new_detail_row)
-            table.cell_fills.insert(actual_index, list(template_fill_row))
-            table.cell_borders.insert(actual_index, list(template_border_row))
-            table.row_heights.insert(
-                actual_index, table.row_heights[template_row_index])
-
-            # region: Xử lý merge info
-            # Merge info: nếu có merge tại hàng này thì cần update lại merge index
-            # Copy merge info từ template row
-            template_merge_row_info = [
-                mi for mi in table.merge_info if mi.row == template_row_index]
-            copied_merges: list[DL_MergeInfo] = []
-
-            for m in template_merge_row_info:
-                copied_merge = deepcopy(m)
-                copied_merge.row = actual_index
-                copied_merges.append(copied_merge)
-                table.merge_info.append(copied_merge)
-
-            # Dùng id để tránh tăng row cho những merge vừa tạo hoặc là của template
-            excluded_ids = {id(m) for m in copied_merges}
-
-            for mi in table.merge_info:
-                if mi.row >= actual_index and id(mi) not in excluded_ids:
-                    mi.row += 1
-
-            # endregion
-
-            # Ghi lại text thực tế (chèn nội dung mới nhưng giữ nguyên format từ template)
-            for col, cell_text in enumerate(row_data):
-                detail = deepcopy(template_detail_row[col])
-                if detail is not None:
-                    # Ghi đè text vào run đầu tiên
-                    if detail.paragraphs and detail.paragraphs[0].runs:
-                        detail.paragraphs[0].runs[0].text = str(cell_text)
-                table.data_detail[actual_index][col] = detail
+            # Gọi insert
+            table.insert_row(
+                index=actual_index,
+                content=row_data,
+                data_detail=table.build_data_detail_row(
+                    row_data, template_row_index),
+                cell_fill=list(template_fill),
+                cell_border=list(template_border),
+                row_height=template_height,
+                merge_info=table.build_merge_info_row(
+                    actual_index=actual_index,
+                    template_row_index=template_row_index)
+            )
 
             print(f"✔️ Đã chèn dòng vào index {actual_index}: {row_data}")
+        num_rows_inserted_before_template = 0 if template_row_index < insert_index else len(
+            row_data_list)
+        adjusted_template_row_index = template_row_index + \
+            num_rows_inserted_before_template
+        if injected_value.get(InjectMetaKey.IS_DELETE_TEMPLATE_ROW, False):
+            table.delete_row(adjusted_template_row_index)
+            print(
+                f"🗑️ Đã xoá dòng template tại index {adjusted_template_row_index}")

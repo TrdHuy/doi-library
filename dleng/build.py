@@ -25,7 +25,7 @@ from pptx.util import Pt
 from pptx.oxml.ns import qn
 from utils.pptxhelper.paragraph import *
 from pptx.enum.text import MSO_VERTICAL_ANCHOR
-from typing import Set, Tuple
+from typing import Set, Tuple, Any
 from pptx.enum.shapes import MSO_AUTO_SHAPE_TYPE
 from pptx.shapes.graphfrm import GraphicFrame
 

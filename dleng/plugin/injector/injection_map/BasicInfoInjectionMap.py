@@ -1,7 +1,6 @@
 from data.doi_template.v1.basic_info import BasicInfo
 from plugin.injector.machine.injector_base import *
 from .decorator import inject_with
-from dataclasses import dataclass
 from .InjectionMap import InjectionMap
 
 
@@ -32,6 +31,8 @@ class BasicInfoInjectionMap(InjectionMap):
             value=inventor_rows,
             meta={
                 InjectMetaKey.INSERT_INDEX: 5,
-                InjectMetaKey.TEMPLATE_ROW_INDEX: 5
+                InjectMetaKey.TEMPLATE_ROW_INDEX: 5,
+                InjectMetaKey.IS_DELETE_TEMPLATE_ROW: True
+
             }
         )
