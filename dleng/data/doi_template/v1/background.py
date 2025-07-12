@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import List, Optional, Literal, Union
+from typing import List, Optional, Literal
 
 # Loại block có thể hiển thị được
 ContentBlockType = Literal["title", "paragraph", "bullet", "image", "table"]

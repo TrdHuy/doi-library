@@ -4,6 +4,7 @@ from data.doi_template.v1.contract import *
 from data.pptxdata_utils import *
 from data.pptxdata import *
 from copy import deepcopy
+from plugin.injector.injection_map.InjectionMap import InjectionMap
 
 
 @dataclass
@@ -12,7 +13,7 @@ class InjectValue:
     meta: dict = None  # metadata kèm theo nếu cần (vd: format, style, note...)
 
 
-def run_injection(pptx_data: DL_PPTXData, injection_map):
+def run_injection(pptx_data: DL_PPTXData, injection_map: InjectionMap):
     for func, injector in inject_registry:
         result = func(injection_map)
         if not isinstance(result, InjectValue):

@@ -10,7 +10,7 @@ from pptx.oxml.ns import qn
 from pptx.dml.fill import _NoFill
 from pptx.dml.fill import _NoneFill
 from pptx.shapes.picture import Picture
-from utils.pptxhelper import *
+from utils.pptxhelper.helper import *
 
 SHAPE_TYPES_WITH_FILL_LINE = {
     MSO_SHAPE_TYPE.AUTO_SHAPE,
@@ -456,7 +456,7 @@ if __name__ == "__main__":
     root_dir = current_file.parents[1]
     # Ví dụ sử dụng
     describe_pptx_to_json_with_assets(
-        pptx_path=root_dir / "template" / "Pre_DOI_Form_05_2024_v3.pptx",
+        pptx_path=root_dir / "template" / "Pre_DOI_Form_05_2024.pptx",
         output_root_folder=root_dir / "template")
     # describe_pptx_to_json_with_assets(
     #     r"dleng\utest\test_ppt1.pptx", "bin")

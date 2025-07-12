@@ -2,9 +2,9 @@ from data.doi_template.v1.basic_info import BasicInfo
 from plugin.injector.machine.injector_base import *
 from .decorator import inject_with
 from dataclasses import dataclass
-
-
-class BasicInfoInjectionMap:
+from .InjectionMap import InjectionMap
+    
+class BasicInfoInjectionMap(InjectionMap):
     def __init__(self, basic_info: BasicInfo):
         self.basic_info = basic_info
 

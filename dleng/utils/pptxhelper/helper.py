@@ -1,6 +1,20 @@
 from pptx.slide import Slide
 from pptx.shapes.autoshape import Shape
 from pptx.dml.color import RGBColor
+from pptx.util import Length
+
+def to_length(val: int | float, unit: str = "emu") -> Length:
+    from pptx.util import Pt, Cm, Inches
+    if unit == "cm":
+        return Cm(val)
+    elif unit == "in":
+        return Inches(val)
+    elif unit == "pt":
+        return Pt(val)
+    elif unit == "emu":
+        return Length(int(val)) 
+    else:
+        raise ValueError(f"Unsupported unit: {unit}")
 
 def get_slide_visible(slide: Slide) -> bool:
     """

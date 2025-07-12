@@ -4,34 +4,36 @@ import json
 import os
 from pptx import Presentation
 from pptx.slide import Slide
-from pptx.shapes.picture import Picture
-from pptx.table import _Cell
-from pptx.util import Inches, Pt
+from pptx.table import _Cell                # type: ignore
+from pptx.text.text import _Run             # type: ignore
+from pptx.text.text import _Paragraph       # type: ignore
+from pptx.util import Pt
 from pptx.enum.text import PP_ALIGN
 from pptx.dml.color import RGBColor
 from pptx.enum.dml import MSO_THEME_COLOR
 from pptx.oxml.xmlchemy import OxmlElement
 from pptx.shapes.autoshape import Shape
-from pptx.text.text import _Run
-from pptx.text.text import _Paragraph
 from pptx.text.text import TextFrame
 from data.pptxdata import *
 from dacite import from_dict
 from dataclasses import asdict
 from pathlib import Path
-from utils.pptxhelper import *
+from utils.pptxhelper.helper import *
 from plugin.dlmarkdown.extract_md import load_background_from_folder, extract_basic_info_sections
 from data.doi_template.v1.basic_info import BasicInfo
 from pptx.util import Pt
-from pptx.oxml.xmlchemy import OxmlElement
 from pptx.oxml.ns import qn
+from utils.pptxhelper.paragraph import *
 from pptx.enum.text import MSO_VERTICAL_ANCHOR
+from typing import Set, Tuple
+from pptx.enum.shapes import MSO_AUTO_SHAPE_TYPE
+from pptx.shapes.graphfrm import GraphicFrame
 
 EMU = 1  # đơn vị đã là EMU trong JSON dump
 
 
 def apply_cell_border(cell: _Cell, border_info: DL_CellBorder):
-    tcPr = cell._tc.get_or_add_tcPr()
+    tcPr = SafeElementWrapper(cell._tc.get_or_add_tcPr())  # type: ignore
     side_map = {
         "left": ("a:lnL", border_info.left),
         "right": ("a:lnR", border_info.right),
@@ -45,9 +47,9 @@ def apply_cell_border(cell: _Cell, border_info: DL_CellBorder):
         if side_border is None or side_border.color == 'None':
             continue
 
-        ln = OxmlElement(tag)
+        ln = SafeElementWrapper(OxmlElement(tag))
 
-        # W + style mặc định giống origin
+        # Thiết lập thuộc tính độ dày và kiểu đường viền
         width = side_border.width
         if isinstance(width, (int, float)):
             ln.set("w", str(int(width * 12700)))
@@ -55,50 +57,51 @@ def apply_cell_border(cell: _Cell, border_info: DL_CellBorder):
         ln.set("cmpd", "sng")
         ln.set("algn", "ctr")
 
-        # Color
+        # Thiết lập màu sắc viền
         color_info = parse_color(side_border.color)
         if color_info["type"] == "rgb":
-            solidFill = OxmlElement("a:solidFill")
-            srgbClr = OxmlElement("a:srgbClr")
+            solidFill = SafeElementWrapper(OxmlElement("a:solidFill"))
+            srgbClr = SafeElementWrapper(OxmlElement("a:srgbClr"))
             rgb_val = color_info["value"]
             srgbClr.set(
                 "val", f"{rgb_val[0]:02X}{rgb_val[1]:02X}{rgb_val[2]:02X}")
             solidFill.append(srgbClr)
             ln.append(solidFill)
         elif color_info["type"] == "theme":
-            solidFill = OxmlElement("a:solidFill")
-            schemeClr = OxmlElement("a:schemeClr")
+            solidFill = SafeElementWrapper(OxmlElement("a:solidFill"))
+            schemeClr = SafeElementWrapper(OxmlElement("a:schemeClr"))
             schemeClr.set("val", color_info["value"].name.lower())
             solidFill.append(schemeClr)
             ln.append(solidFill)
 
-        # Dash style (mặc định solid)
+        # Thiết lập dash (kiểu đứt, chấm,...)
         dash_style = (side_border.dash_type or "solid").lower()
-        prstDash = OxmlElement("a:prstDash")
+        prstDash = SafeElementWrapper(OxmlElement("a:prstDash"))
         prstDash.set("val", dash_style)
         ln.append(prstDash)
 
-        # round (origin có)
-        ln.append(OxmlElement("a:round"))
+        # Bo tròn góc
+        ln.append(SafeElementWrapper(OxmlElement("a:round")))
 
-        # headEnd và tailEnd (mặc định none)
-        headEnd = OxmlElement("a:headEnd")
+        # Đầu mút và đuôi mút
+        headEnd = SafeElementWrapper(OxmlElement("a:headEnd"))
         headEnd.set("type", "none")
         headEnd.set("w", "med")
         headEnd.set("len", "med")
         ln.append(headEnd)
 
-        tailEnd = OxmlElement("a:tailEnd")
+        tailEnd = SafeElementWrapper(OxmlElement("a:tailEnd"))
         tailEnd.set("type", "none")
         tailEnd.set("w", "med")
         tailEnd.set("len", "med")
         ln.append(tailEnd)
 
         tcPr.append(ln)
+
     return tcPr
 
 
-def parse_color(color_str: Optional[str]) -> dict:
+def parse_color(color_str: Optional[str]) -> dict[str, Any]:
     if color_str is None or color_str == "None":
         return {"type": "none"}
     if color_str.startswith("RGB:"):
@@ -116,7 +119,7 @@ def parse_color(color_str: Optional[str]) -> dict:
     return {"type": "unknown"}
 
 
-def apply_fill_color(shape_obj: Shape, color_str: Optional[str]):
+def apply_fill_color(shape_obj: Union[Shape, _Cell], color_str: Optional[str]):
     if color_str in [None, "None"]:
         return
     color_info = parse_color(color_str)
@@ -145,7 +148,8 @@ def apply_border(shape_obj: Shape, border: Optional[DL_Border]):
 
     if border.width_pt not in [None, "Default"]:
         try:
-            line.width = Pt(float(border.width_pt))
+            line.width = Pt(float(border.width_pt)
+                            ) if border.width_pt is not None else Pt(0)
         except:
             pass
 
@@ -155,8 +159,7 @@ def apply_run(run: _Run, run_data: DL_Run):
     font = run.font
     if run_data.font_name:
         font.name = run_data.font_name
-        if font._element is not None:
-            font._element.set("typeface", run_data.font_name)
+        font._element.set("typeface", run_data.font_name)  # type: ignore
     if run_data.font_size:
         font.size = Pt(run_data.font_size)
     font.bold = run_data.bold
@@ -185,9 +188,7 @@ def apply_paragraph(p: _Paragraph, para: DL_TextParagraph):
         p.line_spacing = para.line_spacing  # là float, ví dụ 1.15 = 115%
 
     # 5. Bullet (ký tự hoặc kiểu đánh số)
-    pPr = p._element.get_or_add_pPr()
-
-    pPr = p._element.get_or_add_pPr()
+    pPr = get_or_add_pPr(p)
 
     # Set indent qua XML attribute
     if para.left_indent is not None:
@@ -205,12 +206,12 @@ def apply_paragraph(p: _Paragraph, para: DL_TextParagraph):
             pPr.remove(old)
 
     if para.bullet_type == "char" and para.bullet_char:
-        buChar = OxmlElement("a:buChar")
+        buChar = SafeElementWrapper(OxmlElement("a:buChar"))
         buChar.set("char", para.bullet_char)
         pPr.append(buChar)
 
     elif para.bullet_type == "number" and para.number_type:
-        buAutoNum = OxmlElement("a:buAutoNum")
+        buAutoNum = SafeElementWrapper(OxmlElement("a:buAutoNum"))
         buAutoNum.set("type", para.number_type)
         pPr.append(buAutoNum)
 
@@ -235,26 +236,25 @@ def apply_text_detail(text_frame: TextFrame, text: DL_Text):
 
         if fmt.vertical_anchor:
             try:
-                text_frame.vertical_anchor = fmt.vertical_anchor
+                text_frame.vertical_anchor = MSO_VERTICAL_ANCHOR(
+                    fmt.vertical_anchor)
             except (KeyError, ValueError):
                 pass  # fallback nếu giá trị không hợp lệ
 
         if fmt.margin:
             if "left" in fmt.margin:
-                text_frame.margin_left = fmt.margin["left"]
+                text_frame.margin_left = to_length(fmt.margin["left"])
             if "right" in fmt.margin:
-                text_frame.margin_right = fmt.margin["right"]
+                text_frame.margin_right = to_length(fmt.margin["right"])
             if "top" in fmt.margin:
-                text_frame.margin_top = fmt.margin["top"]
+                text_frame.margin_top = to_length(fmt.margin["top"])
             if "bottom" in fmt.margin:
-                text_frame.margin_bottom = fmt.margin["bottom"]
+                text_frame.margin_bottom = to_length(fmt.margin["bottom"])
 
     # Xoá nội dung cũ và khôi phục các đoạn văn bản
     text_frame.clear()
 
     for para in text.paragraphs:
-        if para is None:
-            continue
         if len(text_frame.paragraphs) == 0:
             p = text_frame.add_paragraph()
         elif len(text_frame.paragraphs) == 1 and len(text_frame.paragraphs[0].runs) == 0:
@@ -264,27 +264,34 @@ def apply_text_detail(text_frame: TextFrame, text: DL_Text):
         apply_paragraph(p, para)
 
 
-def rebuild_table(shape_data: DL_Shape, slide: Slide):
+def rebuild_table(shape_data: DL_Shape, slide: Slide) -> GraphicFrame:
     tbl_info = shape_data.table
-    rows, cols = tbl_info.rows, tbl_info.cols
+    if tbl_info is not None:
+        rows, cols = tbl_info.rows, tbl_info.cols
+    else:
+        # fallback giá trị hoặc raise lỗi rõ ràng
+        raise ValueError("tbl_info is None, cannot access rows and cols")
     pos = shape_data.position
     shape = slide.shapes.add_table(
-        rows, cols, pos.x, pos.y, pos.width, pos.height)
+        rows, cols,
+        to_length(pos.x), to_length(pos.y),
+        to_length(pos.width), to_length(pos.height)
+    )
     tbl = shape.table
 
     # Set col widths
     for c in range(min(cols, len(tbl_info.col_widths))):
-        tbl.columns[c].width = tbl_info.col_widths[c]
+        tbl.columns[c].width = to_length(tbl_info.col_widths[c])
 
     # Set row heights
     for r in range(min(rows, len(tbl_info.row_heights))):
-        tbl.rows[r].height = tbl_info.row_heights[r]
+        tbl.rows[r].height = to_length(tbl_info.row_heights[r])
 
-    shape.width = pos.width
-    shape.height = pos.height
+    shape.width = to_length(pos.width)
+    shape.height = to_length(pos.height)
 
     # Merge cells
-    merged_cells = set()
+    merged_cells: Set[Tuple[int, int]] = set()
     for merge in tbl_info.merge_info:
         r, c = merge.row, merge.col
         row_span = merge.row_span
@@ -303,13 +310,14 @@ def rebuild_table(shape_data: DL_Shape, slide: Slide):
             cell = tbl.cell(r, c)
             cell.text_frame.word_wrap = True
 
-            # Border
-            if tbl_info.cell_borders and tbl_info.cell_borders[r][c]:
-                apply_cell_border(cell, tbl_info.cell_borders[r][c])
+            border_info = tbl_info.cell_borders[r][c]
+            if border_info is not None:
+                apply_cell_border(cell, border_info)
 
             # Text
-            if tbl_info.data_detail and tbl_info.data_detail[r][c]:
-                apply_text_detail(cell.text_frame, tbl_info.data_detail[r][c])
+            data_detail = tbl_info.data_detail[r][c]
+            if data_detail is not None:
+                apply_text_detail(cell.text_frame, data_detail)
 
             # Fill
             if tbl_info.cell_fills and tbl_info.cell_fills[r][c]:
@@ -324,16 +332,18 @@ def rebuild_textbox(shape_data: DL_Shape, slide: Slide):
     if shape_type == 1:
         autoshape_type_id = 1
         shape = slide.shapes.add_shape(
-            autoshape_type_id, pos.x, pos.y, pos.width, pos.height)
+            MSO_AUTO_SHAPE_TYPE(autoshape_type_id),
+            to_length(pos.x), to_length(pos.y), to_length(pos.width), to_length(pos.height))
     else:
-        shape = slide.shapes.add_textbox(pos.x, pos.y, pos.width, pos.height)
+        shape = slide.shapes.add_textbox(to_length(pos.x), to_length(pos.y),
+                                         to_length(pos.width), to_length(pos.height))
     tf = shape.text_frame
     if shape_data.text:
         apply_text_detail(tf, shape_data.text)
     return shape
 
 
-def rebuild_image(shape_data: Picture, slide: Slide, json_path: str):
+def rebuild_image(shape_data: DL_Shape, slide: Slide, json_path: str):
     if not shape_data.image or not shape_data.image.filename:
         raise ValueError(
             f"[Slide {shape_data.shape_index}] Thiếu thông tin image để khôi phục")
@@ -348,9 +358,9 @@ def rebuild_image(shape_data: Picture, slide: Slide, json_path: str):
     pos = shape_data.position
     pic = slide.shapes.add_picture(
         image_path,
-        pos.x, pos.y,
-        width=pos.width,
-        height=pos.height
+        to_length(pos.x), to_length(pos.y),
+        width=to_length(pos.width),
+        height=to_length(pos.height)
     )
     return pic
 
@@ -361,8 +371,8 @@ def build_pptx_from_json(json_path: str, output_path: str):
     pptx_data = from_dict(data_class=DL_PPTXData, data=data)
     prs = Presentation()
     blank_layout = prs.slide_layouts[6]
-    prs.slide_width = pptx_data.slide_width
-    prs.slide_height = pptx_data.slide_height
+    prs.slide_width = to_length(pptx_data.slide_width)
+    prs.slide_height = to_length(pptx_data.slide_height)
 
     for slide_data in pptx_data.slides:
         slide = prs.slides.add_slide(blank_layout)
@@ -374,25 +384,24 @@ def build_pptx_from_json(json_path: str, output_path: str):
                 shape = rebuild_textbox(shape_data, slide)
             elif shape_data.image:
                 shape = rebuild_image(shape_data, slide, json_path)
-            if shape:
+            if shape and isinstance(shape, (Shape, _Cell)):
                 shape.name = shape_data.shape_name
                 apply_fill_color(shape, shape_data.background_fill_color)
                 apply_border(shape, shape_data.border)
+
                 if shape.name == "SLIDE_INFO":
                     lock_shape_position(shape)
-                    set_shape_visible(shape, False)  # ẩn + khóa luôn
+                    set_shape_visible(shape, False)
+
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     prs.save(output_path)
     print(f"✅ PPTX đã được tạo tại: {output_path}")
 
 
-def build_pptx_from_markdown(path_doi_src: str, path_output: str, path_template_json: str):
+def build_pptx_from_markdown(path_doi_src: Path, path_output: Path, path_template_json: Path):
     """
     Tạo file PPTX từ thư mục markdown DOI sử dụng template json.
     """
-    path_doi_src = Path(path_doi_src)
-    path_output = Path(path_output)
-    path_template_json = Path(path_template_json)
 
     # 1. Load template JSON thành DL_PPTXData
     with open(path_template_json, "r", encoding="utf-8") as f:
@@ -403,7 +412,7 @@ def build_pptx_from_markdown(path_doi_src: str, path_output: str, path_template_
     # 2. Parse markdown thành các object BasicInfo, Background
     basic_info_path = path_doi_src / "0_basic_info/basic_info.md"
     if os.path.exists(basic_info_path):
-        basic_info = extract_basic_info_sections(basic_info_path)
+        basic_info = extract_basic_info_sections(str(basic_info_path))
         if basic_info is None:
             raise ValueError(
                 f"Failed to extract basic info from: {basic_info_path}")
@@ -413,7 +422,7 @@ def build_pptx_from_markdown(path_doi_src: str, path_output: str, path_template_
 
     background_dir = path_doi_src / "1_background"
     if background_dir.exists() and background_dir.is_dir():
-        background = load_background_from_folder(background_dir)
+        background = load_background_from_folder(str(background_dir))
         if background is None:
             raise ValueError(
                 f"Failed to extract background from: {basic_info_path}")
@@ -470,6 +479,4 @@ if __name__ == "__main__":
         "template_project_doi.pptx",
         path_template_json=root_dir / "template" / "Pre_DOI_Form_05_2024_v3.json"
     )
-    # build_pptx_from_json(
-    #     json_path=root_dir / "template" / "Pre_DOI_Form_05_2024_v3.json",
-    #     output_path= root_dir / "bin" / "test.pptx")
+    

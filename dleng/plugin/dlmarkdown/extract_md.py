@@ -48,7 +48,7 @@ def parse_table(text: str, section_name: str = "unknown") -> pd.DataFrame:
             f"Parse thất bại ở bảng section `{section_name}`: {e}")
 
 
-def extract_basic_info_sections(basic_info_path_md: str) -> BasicInfo:
+def extract_basic_info_sections(basic_info_path_md: str) -> Optional[BasicInfo]:
     with open(basic_info_path_md, encoding="utf-8") as f:
         markdown_text = f.read()
     pattern = r"^### .*?$"  # match section headers
@@ -182,7 +182,7 @@ def parse_markdown_to_blocks(md_text: str) -> List[ContentBlock]:
     return blocks
 
 
-def load_background_from_folder(folder_path: str) -> Background:
+def load_background_from_folder(folder_path: str) -> Optional[Background]:
     sections = []
 
     for section_name in os.listdir(folder_path):
