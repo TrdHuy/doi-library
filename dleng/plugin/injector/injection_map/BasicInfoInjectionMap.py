@@ -3,7 +3,8 @@ from plugin.injector.machine.injector_base import *
 from .decorator import inject_with
 from dataclasses import dataclass
 from .InjectionMap import InjectionMap
-    
+
+
 class BasicInfoInjectionMap(InjectionMap):
     def __init__(self, basic_info: BasicInfo):
         self.basic_info = basic_info
@@ -30,7 +31,7 @@ class BasicInfoInjectionMap(InjectionMap):
         return InjectValue(
             value=inventor_rows,
             meta={
-                "insert_index": 5,
-                "template_row_index": 5,  # Dòng mẫu đã có định dạng sẵn
+                InjectMetaKey.INSERT_INDEX: 5,
+                InjectMetaKey.TEMPLATE_ROW_INDEX: 5
             }
         )

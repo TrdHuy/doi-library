@@ -5,15 +5,53 @@ from data.pptxdata import DL_Shape, DL_PPTXData, DL_Slide, DL_Text, DL_Table, DL
 from copy import deepcopy
 from plugin.injector.injection_map.InjectionMap import InjectionMap
 from typing import Callable, Any, Union
-from dataclasses import dataclass
+from dataclasses import dataclass,  field
 
 INJECT_REGISTRY: list[tuple[Callable[..., Any], Any]] = []
+
+
+class InjectMetaKey(str, Enum):
+    INSERT_INDEX = "insert_index"
+    TEMPLATE_ROW_INDEX = "template_row_index"
+
 
 @dataclass
 class InjectValue:
     value: Any
-    # metadata kèm theo nếu cần (vd: format, style, note...)
-    meta: Optional[dict[str, Any]] = None
+    __meta: dict[str, Any] = field(
+        default_factory=dict[str, Any], init=False, repr=False)
+
+    def __init__(self, value: Any, meta: Optional[dict[InjectMetaKey, Any]] = None):
+        self.value = value
+        self.__meta = {k.value: v for k, v in meta.items()} if meta else {}
+        
+    def __getitem__(self, key: InjectMetaKey) -> Optional[Any]:
+        return self.__meta.get(key.value)
+
+    def __setitem__(self, key: InjectMetaKey, val: Any) -> None:
+        self.__meta[key.value] = val
+
+    def __contains__(self, key: InjectMetaKey) -> bool:
+        return key.value in self.__meta
+
+    def remove(self, key: InjectMetaKey) -> None:
+        self.__meta.pop(key.value, None)
+
+    def keys(self):
+        return [InjectMetaKey(k) for k in self.__meta]
+    
+    def get(self, key: InjectMetaKey, default: Any = None) -> Any:
+        return self.__meta.get(key.value, default)
+    
+    def get_int(self, key: InjectMetaKey, default: int = 0) -> int:
+        val = self.get(key, default)
+        try:
+            return int(val)
+        except (ValueError, TypeError):
+            return default
+        
+    def __repr__(self):
+        return f"InjectValue(value={self.value})"
 
 
 def run_injection(pptx_data: DL_PPTXData, injection_map: InjectionMap):
@@ -99,7 +137,6 @@ class TableCellInjector(Injector):
             raise NotImplementedError(
                 "Chưa hỗ trợ nếu cell không chứa " + self.cell_text_id)
 
-
 class TableRowInserter(Injector):
     def __init__(self,
                  slide_id: SlideInjectId,
@@ -119,14 +156,11 @@ class TableRowInserter(Injector):
                 f"Không tìm thấy table shape tên = {self.table_shape_name}")
 
         table: DL_Table = table_shape.table
-        meta = injected_value.meta
-        if meta is None:
-            raise ValueError("meta không được None")
 
-        insert_index = int(meta.get("insert_index", table.rows))
+        insert_index = injected_value.get_int(InjectMetaKey.INSERT_INDEX, table.rows)
 
         # Bắt buộc phải có template row index
-        template_row_index = meta.get("template_row_index")
+        template_row_index = injected_value[InjectMetaKey.TEMPLATE_ROW_INDEX]
 
         if template_row_index is None:
             raise ValueError(
@@ -183,7 +217,7 @@ class TableRowInserter(Injector):
                         raise NotImplementedError(
                             "Chưa hỗ trợ trường hợp detail.paragraphs là rỗng"
                         )
-                    new_detail_row.append(detail)
+                new_detail_row.append(detail)
 
             # Ghi lại data_detail đã chuẩn hoá (chỉ 1 paragraph và 1 run mỗi cell)
             table.data_detail.insert(actual_index, new_detail_row)
