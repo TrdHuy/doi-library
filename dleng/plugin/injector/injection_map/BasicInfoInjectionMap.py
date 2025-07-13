@@ -1,5 +1,8 @@
 from data.doi_template.v1.basic_info import BasicInfo
-from plugin.injector.machine.injector_base import *
+from data.doi_template.v1.contracts.pptx_contract import SlideInjectId, ShapeName, RunSample
+from plugin.injector.machine.injector_base import TableCellInjector, TemplateShapeTextInjector
+from plugin.injector.machine.table_row_inserter import TableRowInserter
+from plugin.injector.machine.inject_value import InjectValue, InjectMetaKey
 from .decorator import inject_with, register_injections
 from .InjectionMap import InjectionMap
 

@@ -28,8 +28,9 @@ from pptx.enum.text import MSO_VERTICAL_ANCHOR
 from typing import Set, Tuple, Any
 from pptx.enum.shapes import MSO_AUTO_SHAPE_TYPE
 from pptx.shapes.graphfrm import GraphicFrame
-
+from plugin.mock.slide_data_model_mock import MOCK_DOCUMENT
 EMU = 1  # đơn vị đã là EMU trong JSON dump
+
 
 
 def apply_cell_border(cell: _Cell, border_info: DL_CellBorder):
@@ -445,10 +446,13 @@ def build_pptx_from_markdown(path_doi_src: Path, path_output: Path, path_templat
 
 def inject_data_to_pptx(pptx_data: DL_PPTXData, basic_info: BasicInfo):
     from plugin.injector.injection_map.BasicInfoInjectionMap import BasicInfoInjectionMap
+    #from plugin.injector.injection_map.BackgroundInjectionMap import BackgroundInjectionMap
     from plugin.injector.machine.injector_base import run_injection
 
+    #background_map = BackgroundInjectionMap(MOCK_DOCUMENT)
     basic_info_injection_map = BasicInfoInjectionMap(basic_info)
     run_injection(pptx_data, basic_info_injection_map)
+    #run_injection(pptx_data, background_map)
     # for slide in pptx_data.slides:
     #     tag = slide.slide_tag_info.get("inject_id") if slide.slide_tag_info else None
     #     injector = ip.INJECTOR_REGISTRY.get(tag)
@@ -480,3 +484,7 @@ if __name__ == "__main__":
         path_template_json=root_dir / "template" / "Pre_DOI_Form_05_2024_v3.json"
     )
     
+    # build_pptx_from_json(
+    #     json_path= str(root_dir / "template" / "Pre_DOI_Form_05_2024_v3.json"),
+    #     output_path= str(root_dir / "template" / "Pre_DOI_Form_05_2024_v3" / "Pre_DOI_Form_05_2024_v3.pptx"))
+
