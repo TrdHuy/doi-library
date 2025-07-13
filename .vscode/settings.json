@@ -1,3 +1,11 @@
 {
-     "python.analysis.typeCheckingMode": "strict"
+     "editor.codeActionsOnSave": {
+          "source.organizeImports": true
+     },
+     "python.analysis.autoImportCompletions": true,
+     "python.analysis.typeCheckingMode": "strict",
+     "python.analysis.extraPaths": ["./dleng"],
+     "terminal.integrated.env.windows": {
+          "PYTHONPATH": "${workspaceFolder}/dleng"
+     }
 }
