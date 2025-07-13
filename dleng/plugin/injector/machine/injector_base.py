@@ -1,71 +1,17 @@
 from abc import ABC, abstractmethod
-from data.doi_template.v1.contract import *
+from data.doi_template.v1.contracts.pptx_contract import *
 from data.pptxdata_utils import *
 from data.pptxdata import DL_Shape, DL_PPTXData, DL_Slide, DL_Table
 from plugin.injector.injection_map.InjectionMap import InjectionMap
 from typing import Callable, Any, Union
-from dataclasses import dataclass,  field
-
-INJECT_REGISTRY: list[tuple[Callable[..., Any], Any]] = []
-
-
-class InjectMetaKey(str, Enum):
-    INSERT_INDEX = "INSERT_INDEX"
-    TEMPLATE_ROW_INDEX = "TEMPLATE_ROW_INDEX"
-    IS_DELETE_TEMPLATE_ROW = "IS_DELETE_TEMPLATE_ROW"
+from data.doi_template.v1.slide_data_model import SectionContent, SlideContent, SlideBlock
+from typing import Dict, List, Tuple, Type, Generic, Optional, Any
+from .InjectValue import T, InjectValue, InjectMetaKey
 
 
-@dataclass
-class InjectValue:
-    value: Any
-    __meta: dict[str, Any] = field(
-        default_factory=dict[str, Any], init=False, repr=False)
-
-    def __init__(self, value: Any, meta: Optional[dict[InjectMetaKey, Any]] = None):
-        self.value = value
-        self.__meta = {k.value: v for k, v in meta.items()} if meta else {}
-
-    def __getitem__(self, key: InjectMetaKey) -> Optional[Any]:
-        return self.__meta.get(key.value)
-
-    def __setitem__(self, key: InjectMetaKey, val: Any) -> None:
-        self.__meta[key.value] = val
-
-    def __contains__(self, key: InjectMetaKey) -> bool:
-        return key.value in self.__meta
-
-    def remove(self, key: InjectMetaKey) -> None:
-        self.__meta.pop(key.value, None)
-
-    def keys(self):
-        return [InjectMetaKey(k) for k in self.__meta]
-
-    def get(self, key: InjectMetaKey, default: Any = None) -> Any:
-        return self.__meta.get(key.value, default)
-
-    def get_int(self, key: InjectMetaKey, default: int = 0) -> int:
-        val = self.get(key, default)
-        try:
-            return int(val)
-        except (ValueError, TypeError):
-            return default
-
-    def __repr__(self):
-        return f"InjectValue(value={self.value})"
-
-
-def run_injection(pptx_data: DL_PPTXData, injection_map: InjectionMap):
-    for func, injector in INJECT_REGISTRY:
-        result = func(injection_map)
-        if not isinstance(result, InjectValue):
-            raise TypeError(
-                f"Hàm {func.__name__} phải trả về InjectValue, nhưng lại nhận được {type(result)}")
-        injector.inject(pptx_data, result)
-
-
-class Injector(ABC):
+class Injector(ABC, Generic[T]):
     @abstractmethod
-    def inject(self, pptx_data: DL_PPTXData, injected_value: InjectValue):
+    def inject(self, pptx_data: DL_PPTXData, injected_value: InjectValue[T]) -> None:
         pass
 
     def find_slide_by_inject_id(self, pptx_data: DL_PPTXData, slide_id: str) -> Optional[DL_Slide]:
@@ -75,15 +21,14 @@ class Injector(ABC):
     def find_shape_by_name(self, slide: DL_Slide, shape_name: str) -> Optional[DL_Shape]:
         return next((s for s in slide.shapes if s.shape_name == shape_name), None)
 
-
-class ShapeTextInjector(Injector):
+class TemplateShapeTextInjector(Injector[str]):
     def __init__(self,
                  slide_id: SlideInjectId,
                  shape_name: ShapeName):
         self.shape_name = shape_name
         self.slide_id = slide_id
 
-    def inject(self, pptx_data: DL_PPTXData, injected_value: InjectValue):
+    def inject(self, pptx_data: DL_PPTXData, injected_value: InjectValue[str]):
         slide = self.find_slide_by_inject_id(pptx_data, self.slide_id)
         if slide is None:
             raise ValueError(
@@ -106,8 +51,7 @@ class ShapeTextInjector(Injector):
         new_run = make_run_from_template(template_run, injected_value.value)
         shape.text.paragraphs[0].runs[0] = new_run
 
-
-class TableCellInjector(Injector):
+class TableCellInjector(Injector[str]):
     def __init__(self,
                  slide_id: SlideInjectId,
                  table_shape_name: ShapeName,
@@ -116,7 +60,7 @@ class TableCellInjector(Injector):
         self.cell_text_id = cell_text_id
         self.slide_id = slide_id
 
-    def inject(self, pptx_data: DL_PPTXData, injected_value: InjectValue):
+    def inject(self, pptx_data: DL_PPTXData, injected_value: InjectValue[str]):
         slide = self.find_slide_by_inject_id(pptx_data, self.slide_id)
         if slide is None:
             raise ValueError(
@@ -137,15 +81,14 @@ class TableCellInjector(Injector):
             raise NotImplementedError(
                 "Chưa hỗ trợ nếu cell không chứa " + self.cell_text_id)
 
-
-class TableRowInserter(Injector):
+class TableRowInserter(Injector[list[tuple[str]]]):
     def __init__(self,
                  slide_id: SlideInjectId,
                  table_shape_name: ShapeName):
         self.slide_id = slide_id
         self.table_shape_name = table_shape_name
 
-    def inject(self, pptx_data: DL_PPTXData, injected_value: InjectValue):
+    def inject(self, pptx_data: DL_PPTXData, injected_value: InjectValue[list[tuple[str]]]):
         slide = self.find_slide_by_inject_id(pptx_data, self.slide_id)
         if slide is None:
             raise ValueError(
@@ -173,18 +116,10 @@ class TableRowInserter(Injector):
             raise IndexError(
                 f"template_row_index {template_row_index} vượt quá số row hiện tại trong bảng ({table.rows})")
 
-        row_data_list: Union[tuple[str, ...],
-                             list[tuple[str, ...]]] = injected_value.value
-
-        # Normalize
-        if isinstance(row_data_list, tuple):
-            row_data_list = [row_data_list]
-        if isinstance(row_data_list, list):                                 # type: ignore
-            if not all(isinstance(item, tuple) for item in row_data_list):  # type: ignore
+        row_data_list: list[tuple[str]] = injected_value.value
+        if not all(isinstance(item, tuple) for item in row_data_list):
                 raise TypeError("Tất cả phần tử trong danh sách phải là tuple")
-        else:
-            raise TypeError(
-                "Giá trị injected vào TableRowInserter phải là tuple hoặc list các tuple")
+       
 
         for i, row_data in enumerate(row_data_list):
             if len(row_data) != table.cols:
@@ -226,3 +161,62 @@ class TableRowInserter(Injector):
             table.delete_row(adjusted_template_row_index)
             print(
                 f"🗑️ Đã xoá dòng template tại index {adjusted_template_row_index}")
+
+
+INJECT_REGISTRY: Dict[
+    Type[InjectionMap],
+    List[Tuple[Callable[..., InjectValue[Any]], Injector[Any]]]
+] = {}
+
+
+def run_injection(pptx_data: DL_PPTXData, injection_map: InjectionMap):
+    cls = type(injection_map)
+    inject_list = INJECT_REGISTRY.get(cls, [])
+
+    for func, injector in inject_list:
+        result = func(injection_map)
+        injector.inject(pptx_data, result)
+
+
+# class SectionContentInjector(Injector):
+#     def __init__(self, slide_id: SlideInjectId,
+#                  text_content_shape_name: ShapeName,
+#                  image_content_shape_name: ShapeName):
+#         self.slide_id = slide_id
+#         self.text_content_shape_name = text_content_shape_name
+#         self.image_content_shape_name = image_content_shape_name
+
+#     def inject(self, pptx_data: DL_PPTXData, injected_value: InjectValue) -> None:
+#         section: SectionContent = injected_value.value
+
+#         for slide_index, slide_content in enumerate(section.slides):
+#             if slide_index >= len(slide_content.blocks):
+#                 continue
+
+#             for block in slide_content.blocks:
+#                 dl_text = self.build_dl_text(block)
+#                 block_value = InjectValue(value=dl_text)
+
+#                 injector = TemplateShapeTextInjector(
+#                     slide_id=self.slide_id,
+#                     shape_name=self.text_content_shape_name
+#                 )
+#                 injector.inject(pptx_data, block_value)
+
+#     def build_dl_text(self, block: SlideBlock) -> DL_Text:
+#         lines = []
+
+#         if block.heading:
+#             lines.append(DL_TextLine(text=block.heading, is_bold=True))
+
+#         for item in block.items:
+#             lines.append(
+#                 DL_TextLine(
+#                     text=item.text,
+#                     is_bullet=(item.type == "bullet"),
+#                     bullet_level=item.level if item.type == "bullet" else 0
+#                 )
+#             )
+
+#         paragraph = DL_TextParagraph(lines=lines)
+#         return DL_Text(paragraphs=[paragraph])
