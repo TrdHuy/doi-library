@@ -399,9 +399,14 @@ def extract_slide_data(pptx_path, output_dir, for_txt=False, is_debug=False):
 
             has_visual_style = shape_type in SHAPE_TYPES_WITH_FILL_LINE
 
-            if has_visual_style and hasattr(shape, "fill") and shape.fill and shape.fill.fore_color:
-                shape_info["background_fill_color"] = get_rgb_safe(
-                    shape.fill.fore_color, context=f"[Slide {i+1} - Shape {j+1}] fill")
+            if has_visual_style and hasattr(shape, "fill"):
+                fill = shape.fill
+                if isinstance(fill._fill, _NoFill):
+                    shape_info["background_fill_color"] = "none"
+                else:
+                    shape_info["background_fill_color"] = get_rgb_safe(
+                        fill.fore_color, context=f"[Slide {i+1} - Shape {j+1}] fill")
+
                 shape_info["border"] = extract_shape_border_info(
                     shape, context=f"[Slide {i+1} - Shape {j+1}]")
             
@@ -456,7 +461,7 @@ if __name__ == "__main__":
     root_dir = current_file.parents[1]
     # Ví dụ sử dụng
     describe_pptx_to_json_with_assets(
-        pptx_path=root_dir / "template" / "Pre_DOI_Form_05_2024.pptx",
+        pptx_path=root_dir / "template" / "Pre_DOI_Form_05_2024_v3.pptx",
         output_root_folder=root_dir / "template")
     # describe_pptx_to_json_with_assets(
     #     r"dleng\utest\test_ppt1.pptx", "bin")

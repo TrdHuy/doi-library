@@ -103,7 +103,7 @@
             "x": 0,
             "y": 704850,
             "width": 12192000,
-            "height": 3332299
+            "height": 3424311
           },
           "background_fill_color": null,
           "border": {},
@@ -354,22 +354,13 @@
                       "alignment": 4,
                       "runs": [
                         {
-                          "text": "☐ ",
+                          "text": "☐ Priority in applying",
                           "font_name": "Calibri",
                           "font_size": 18.0,
                           "bold": false,
                           "italic": null,
                           "font_color": "RGB:000000",
                           "run_index": 1
-                        },
-                        {
-                          "text": "Priority in applying",
-                          "font_name": "Calibri",
-                          "font_size": 18.0,
-                          "bold": false,
-                          "italic": null,
-                          "font_color": "RGB:000000",
-                          "run_index": 2
                         }
                       ],
                       "bullet": 0,
@@ -389,22 +380,13 @@
                       "alignment": 4,
                       "runs": [
                         {
-                          "text": "☐ ",
+                          "text": "☐ Incomplete Invention",
                           "font_name": "Calibri",
                           "font_size": 18.0,
                           "bold": false,
                           "italic": null,
                           "font_color": "RGB:000000",
                           "run_index": 1
-                        },
-                        {
-                          "text": "Incomplete Invention",
-                          "font_name": "Calibri",
-                          "font_size": 18.0,
-                          "bold": false,
-                          "italic": null,
-                          "font_color": "RGB:000000",
-                          "run_index": 2
                         }
                       ],
                       "bullet": 0,
@@ -2008,22 +1990,13 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
-                  },
-                  {
-                    "text": "COMMUNICATION",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": true,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
@@ -2168,22 +2141,13 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
-                  },
-                  {
-                    "text": "COMMUNICATION",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": true,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
@@ -2208,7 +2172,7 @@
         {
           "shape_name": "Freeform 17",
           "shape_index": 3,
-          "type": 5,
+          "type": 17,
           "position": {
             "x": 3158490,
             "y": 1341169,
@@ -2294,22 +2258,13 @@
                 "alignment": 1,
                 "runs": [
                   {
-                    "text": "Prior ",
+                    "text": "Prior art",
                     "font_name": "Calibri",
                     "font_size": 12.0,
                     "bold": null,
                     "italic": null,
                     "font_color": "RGB:040404",
                     "run_index": 1
-                  },
-                  {
-                    "text": "art",
-                    "font_name": "Calibri",
-                    "font_size": 12.0,
-                    "bold": null,
-                    "italic": null,
-                    "font_color": "RGB:040404",
-                    "run_index": 2
                   }
                 ],
                 "bullet": 1,
@@ -2363,7 +2318,7 @@
         {
           "shape_name": "Freeform 18",
           "shape_index": 4,
-          "type": 5,
+          "type": 17,
           "position": {
             "x": 3445383,
             "y": 1141540,
@@ -2424,7 +2379,7 @@
         {
           "shape_name": "Freeform 19",
           "shape_index": 5,
-          "type": 5,
+          "type": 17,
           "position": {
             "x": 3158490,
             "y": 2849346,
@@ -2570,7 +2525,7 @@
         {
           "shape_name": "Freeform 20",
           "shape_index": 6,
-          "type": 5,
+          "type": 17,
           "position": {
             "x": 3445383,
             "y": 2649715,
@@ -2682,7 +2637,7 @@
         {
           "shape_name": "Freeform 22",
           "shape_index": 8,
-          "type": 5,
+          "type": 17,
           "position": {
             "x": 3445383,
             "y": 4035100,
@@ -2794,7 +2749,7 @@
         {
           "shape_name": "Freeform 24",
           "shape_index": 10,
-          "type": 5,
+          "type": 17,
           "position": {
             "x": 3445383,
             "y": 4668528,
@@ -2906,7 +2861,7 @@
         {
           "shape_name": "Freeform 26",
           "shape_index": 12,
-          "type": 5,
+          "type": 17,
           "position": {
             "x": 3445383,
             "y": 5328765,
@@ -3064,22 +3019,13 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
-                  },
-                  {
-                    "text": "COMMUNICATION",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": true,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
@@ -3102,45 +3048,25 @@
           "shape_visible": true
         },
         {
-          "shape_name": "AbbreviationTable",
+          "shape_name": "ELE_ABBREVIATION_TABLE",
           "shape_index": 3,
           "type": 19,
           "position": {
             "x": 771525,
             "y": 847725,
             "width": 10668000,
-            "height": 1876425
+            "height": 603631
           },
           "background_fill_color": null,
           "border": {},
           "text": null,
           "table": {
-            "rows": 7,
+            "rows": 2,
             "cols": 2,
             "data": [
               [
                 "Abbreviation",
                 "Description"
-              ],
-              [
-                "",
-                ""
-              ],
-              [
-                "",
-                ""
-              ],
-              [
-                "",
-                ""
-              ],
-              [
-                "",
-                ""
-              ],
-              [
-                "",
-                ""
               ],
               [
                 "",
@@ -3252,10 +3178,10 @@
                       "bullet": 0,
                       "bullet_type": null,
                       "font_name": "Calibri",
-                      "font_size": 9.0,
+                      "font_size": 16.0,
                       "bold": false,
                       "italic": false,
-                      "font_color": "#1B1B1B",
+                      "font_color": null,
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3283,330 +3209,10 @@
                       "bullet": 0,
                       "bullet_type": null,
                       "font_name": "Calibri",
-                      "font_size": 9.0,
+                      "font_size": 16.0,
                       "bold": false,
                       "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
+                      "font_color": null,
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -3625,26 +3231,6 @@
               [
                 "RGB:FFFFFF",
                 "RGB:FFFFFF"
-              ],
-              [
-                "RGB:FFFFFF",
-                "RGB:FFFFFF"
-              ],
-              [
-                "RGB:FFFFFF",
-                "RGB:FFFFFF"
-              ],
-              [
-                "RGB:FFFFFF",
-                "RGB:FFFFFF"
-              ],
-              [
-                "RGB:FFFFFF",
-                "RGB:FFFFFF"
-              ],
-              [
-                "RGB:FFFFFF",
-                "RGB:FFFFFF"
               ]
             ],
             "merge_info": [],
@@ -3654,344 +3240,9 @@
             ],
             "row_heights": [
               258621,
-              258621,
-              277601,
-              277601,
-              277601,
-              263190,
-              263190
+              258621
             ],
             "cell_borders": [
-              [
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                }
-              ],
-              [
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                }
-              ],
-              [
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                }
-              ],
-              [
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                }
-              ],
-              [
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                }
-              ],
               [
                 {
                   "left": {
@@ -4251,22 +3502,13 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
-                  },
-                  {
-                    "text": "COMMUNICATION",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": true,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
@@ -4289,45 +3531,25 @@
           "shape_visible": true
         },
         {
-          "shape_name": "AppendixTable",
+          "shape_name": "ELE_APEENDIX_TABLE",
           "shape_index": 3,
           "type": 19,
           "position": {
             "x": 771525,
             "y": 847725,
             "width": 10668000,
-            "height": 1876425
+            "height": 603631
           },
           "background_fill_color": null,
           "border": {},
           "text": null,
           "table": {
-            "rows": 7,
+            "rows": 2,
             "cols": 2,
             "data": [
               [
                 "Name",
                 "Description"
-              ],
-              [
-                "",
-                ""
-              ],
-              [
-                "",
-                ""
-              ],
-              [
-                "",
-                ""
-              ],
-              [
-                "",
-                ""
-              ],
-              [
-                "",
-                ""
               ],
               [
                 "",
@@ -4439,10 +3661,10 @@
                       "bullet": 0,
                       "bullet_type": null,
                       "font_name": "Calibri",
-                      "font_size": 9.0,
+                      "font_size": 16.0,
                       "bold": false,
                       "italic": false,
-                      "font_color": "#1B1B1B",
+                      "font_color": null,
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4470,330 +3692,10 @@
                       "bullet": 0,
                       "bullet_type": null,
                       "font_name": "Calibri",
-                      "font_size": 9.0,
+                      "font_size": 16.0,
                       "bold": false,
                       "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
-                      "level": 0,
-                      "left_indent": 0.0,
-                      "first_line_indent": null,
-                      "line_spacing": 1.07,
-                      "paragraph_index": 1
-                    }
-                  ]
-                },
-                {
-                  "frame_format": {
-                    "wrap": null,
-                    "auto_fit": false,
-                    "vertical_anchor": 1,
-                    "margin": {
-                      "left": 91440,
-                      "right": 91440,
-                      "top": 45720,
-                      "bottom": 45720
-                    }
-                  },
-                  "paragraphs": [
-                    {
-                      "alignment": 4,
-                      "runs": [],
-                      "bullet": 0,
-                      "bullet_type": null,
-                      "font_name": "Calibri",
-                      "font_size": 9.0,
-                      "bold": false,
-                      "italic": false,
-                      "font_color": "#1B1B1B",
+                      "font_color": null,
                       "level": 0,
                       "left_indent": 0.0,
                       "first_line_indent": null,
@@ -4812,26 +3714,6 @@
               [
                 "RGB:FFFFFF",
                 "RGB:FFFFFF"
-              ],
-              [
-                "RGB:FFFFFF",
-                "RGB:FFFFFF"
-              ],
-              [
-                "RGB:FFFFFF",
-                "RGB:FFFFFF"
-              ],
-              [
-                "RGB:FFFFFF",
-                "RGB:FFFFFF"
-              ],
-              [
-                "RGB:FFFFFF",
-                "RGB:FFFFFF"
-              ],
-              [
-                "RGB:FFFFFF",
-                "RGB:FFFFFF"
               ]
             ],
             "merge_info": [],
@@ -4841,344 +3723,9 @@
             ],
             "row_heights": [
               258621,
-              258621,
-              277601,
-              277601,
-              277601,
-              263190,
-              263190
+              258621
             ],
             "cell_borders": [
-              [
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                }
-              ],
-              [
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                }
-              ],
-              [
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                }
-              ],
-              [
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                }
-              ],
-              [
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                },
-                {
-                  "left": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "right": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "top": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "bottom": {
-                    "color": "RGB:060602",
-                    "width": 1.0,
-                    "dash_type": "solid"
-                  },
-                  "diagonal_down": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  },
-                  "diagonal_up": {
-                    "color": "None",
-                    "width": "Default",
-                    "dash_type": "None"
-                  }
-                }
-              ],
               [
                 {
                   "left": {
@@ -5438,22 +3985,13 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
-                  },
-                  {
-                    "text": "COMMUNICATION",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": true,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
@@ -5574,7 +4112,7 @@
                 "font_size": 16.0,
                 "bold": false,
                 "italic": false,
-                "font_color": null,
+                "font_color": "#000000",
                 "level": 0,
                 "left_indent": null,
                 "first_line_indent": null,
@@ -5604,6 +4142,108 @@
             "style": "None"
           },
           "text": null,
+          "table": null,
+          "shape_visible": true
+        },
+        {
+          "shape_name": "ELE_VERTICAL_TEXT_AREA",
+          "shape_index": 6,
+          "type": 1,
+          "position": {
+            "x": 1276352,
+            "y": 704849,
+            "width": 6732268,
+            "height": 6153150
+          },
+          "background_fill_color": "none",
+          "border": {
+            "color": "None",
+            "width_pt": "Default",
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 1,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 1,
+                "runs": [],
+                "bullet": 0,
+                "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "font_color": "#000000",
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": ""
+              }
+            ]
+          },
+          "table": null,
+          "shape_visible": true
+        },
+        {
+          "shape_name": "ELE_VERTICAL_IMAGE_AREA",
+          "shape_index": 7,
+          "type": 1,
+          "position": {
+            "x": 8008620,
+            "y": 704849,
+            "width": 4183380,
+            "height": 6153150
+          },
+          "background_fill_color": "none",
+          "border": {
+            "color": "None",
+            "width_pt": "Default",
+            "style": "None"
+          },
+          "text": {
+            "frame_format": {
+              "wrap": null,
+              "auto_fit": false,
+              "vertical_anchor": 3,
+              "margin": {
+                "left": 91440,
+                "right": 91440,
+                "top": 45720,
+                "bottom": 45720
+              }
+            },
+            "paragraphs": [
+              {
+                "alignment": 2,
+                "runs": [],
+                "bullet": 0,
+                "bullet_type": null,
+                "font_name": "Calibri",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "font_color": "#000000",
+                "level": 0,
+                "left_indent": null,
+                "first_line_indent": null,
+                "line_spacing": null,
+                "paragraph_index": 1,
+                "text": ""
+              }
+            ]
+          },
           "table": null,
           "shape_visible": true
         }
@@ -5710,22 +4350,13 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
-                  },
-                  {
-                    "text": "COMMUNICATION",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": true,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
@@ -5780,22 +4411,13 @@
                 "alignment": 1,
                 "runs": [
                   {
-                    "text": "2",
+                    "text": "2. Problem",
                     "font_name": "Calibri",
                     "font_size": 16.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:000000",
                     "run_index": 1
-                  },
-                  {
-                    "text": ". Problem",
-                    "font_name": "Calibri",
-                    "font_size": 16.0,
-                    "bold": true,
-                    "italic": null,
-                    "font_color": "RGB:000000",
-                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
@@ -5891,7 +4513,7 @@
       ],
       "slide_id": "262",
       "slide_tag_info": {
-        "inject_id": "bg_problem_slide"
+        "inject_id": "bg_problem_field_slide"
       }
     },
     {
@@ -5991,22 +4613,13 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
-                  },
-                  {
-                    "text": "COMMUNICATION",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": true,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
@@ -6061,22 +4674,13 @@
                 "alignment": 1,
                 "runs": [
                   {
-                    "text": "3",
+                    "text": "3. Prior art",
                     "font_name": "Calibri",
                     "font_size": 16.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:000000",
                     "run_index": 1
-                  },
-                  {
-                    "text": ". Prior art",
-                    "font_name": "Calibri",
-                    "font_size": 16.0,
-                    "bold": true,
-                    "italic": null,
-                    "font_color": "RGB:000000",
-                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
@@ -6272,22 +4876,13 @@
                 "alignment": 3,
                 "runs": [
                   {
-                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT ",
+                    "text": "PRIVILEGED AND CONFIDENTIAL ATTORNEY CLIENT COMMUNICATION",
                     "font_name": "Calibri",
                     "font_size": 10.0,
                     "bold": true,
                     "italic": null,
                     "font_color": "RGB:FFFFFF",
                     "run_index": 1
-                  },
-                  {
-                    "text": "COMMUNICATION",
-                    "font_name": "Calibri",
-                    "font_size": 10.0,
-                    "bold": true,
-                    "italic": null,
-                    "font_color": "RGB:FFFFFF",
-                    "run_index": 2
                   }
                 ],
                 "bullet": 0,
